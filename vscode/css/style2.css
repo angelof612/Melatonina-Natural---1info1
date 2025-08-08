@@ -8,6 +8,8 @@ html {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: calc(15px + 0.390625vw);
     background-color: #2A2B5B;
+    color: white;
+    padding: 40px 40px 40px 40px;
 }
 
 
@@ -16,7 +18,9 @@ html {
 header
 =====================================================================
 */
-
+header img {
+    width: 30%;
+}
 
 /*
 =====================================================================
@@ -28,4 +32,26 @@ main section.qualidadeSono h1 {
     font-size: 5vw;
     text-align: center;
     color: white;
+}
+
+main section.qualidadeSono p {
+    text-align: center;
+    margin: 20px 20px 20px 20px;
+}
+
+main section.qualidadeSono ul li h2 {
+    text-align: center;
+    margin: 20px 20px 20px 20px;
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+main section.qualidadeSono ul li {
+    background-color: #36243F;
+    padding: 20px 20px 20px 20px;
+    border-radius: 35px;
+    margin: 10px 10px 40px 10px;
+    display: flex;
+}
+main section.qualidadeSono ul li img {
+    width: 50%;
 }
