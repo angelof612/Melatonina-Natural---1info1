@@ -1,0 +1,51 @@
+/*
+==========================================================
+Geral
+==========================================================
+*/
+
+html {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: calc(15px + 0.390625vw);
+    background-color: #2A2B5B;
+    color: white;
+}
+
+/*
+==========================================================
+header
+==========================================================
+*/
+header nav a img {
+    width: 20%;
+    height: auto;
+    margin: 10px 10px 10px 10px;
+    opacity: 0.67;
+}
+header img {
+    width: 100%;
+    height: 10%;
+}
+header h1 {
+    text-align: center;
+    font-size: calc(20px + 0.390625vw);
+    color: #F2F2F2;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/*
+==========================================================
+main
+==========================================================
+*/
+main {
+    padding: 10px 40px 10px 40px;
+    text-align: center;;
+}
+main p {
+    margin: 10px 0;
+}
+main p span {
+    font-weight: bold;
+}
