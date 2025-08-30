@@ -5,23 +5,38 @@ Geral
 */
 
 html {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Times, serif;
     font-size: calc(15px + 0.390625vw);
+    background-color: #2A2B5B ;
+    color: #E8D257;
 }
 
 
 /*
-============================================================
+==========================================================
 Cabeçalho
-============================================================
+==========================================================
 */
 
 body header nav img {
     margin: 20px 3vw 20px 3vw;
+    justify-content: center;
     
 }
 
 body header nav h1 {
     margin: 30px 0px 20px 0px;
     text-align: center;
+}
+
+/*
+==========================================================
+Serviços
+==========================================================
+*/
+
+section.servicos ul{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
