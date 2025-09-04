@@ -1,7 +1,7 @@
 /*
-===========================================================
+=====================================================================
 Geral
-===========================================================
+=====================================================================
 */
 
 html {
@@ -9,12 +9,14 @@ html {
     font-size: calc(15px + 0.390625vw);
     background-color: #2A2B5B ;
     color: #E8D257;
-    padding: 2vw 3vw 2vw 3vw;
-    
 }
 p a {
     color: #E8D257;
 }
+li.atual p a {
+    font-weight: bold;
+}
+
 /*
 ==========================================================
 Cabeçalho
@@ -37,42 +39,10 @@ body header nav ul li img {
     
 }
 
-
 body header nav ul li h1 {
     margin: 30px 0px 20px 0px;
     text-align: center;
     font-weight: bold;
     font-size: 1.2rem;
     
-}
-
-/*
-==========================================================
-Outras Coisas (nome provisório)
-==========================================================
-*/
-
-
-main section ul li{
-    margin: 2vw 3vw 3vw 3vw;
-    background: #5B5D96;
-    padding: 20px 30px 30px 30px;
-    border-radius: 62px;
-}
-
-main section ul li h2 {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin: 0px 10px 20px 0px;
-}
-
-main section ul li p {
-    color: #C7BAFF;
-    font-weight: bold;
-}
-
-main section ul li a p {
-    margin: 4vw 0px 0 0;
-    color: #B4CCFF;
-    font-size: 0.8rem;
 }
