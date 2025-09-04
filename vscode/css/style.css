@@ -9,6 +9,7 @@ html {
     font-size: calc(15px + 0.390625vw);
     background-color: #2A2B5B ;
     color: #E8D257;
+    padding: 2vw 3vw 2vw 3vw;
 }
 
 
@@ -17,22 +18,29 @@ html {
 Cabeçalho
 ==========================================================
 */
-header nav {
+header nav ul li {
     display: flex;
     align-items: center;
 }
-
-body header nav img {
-    margin: 20px 3vw 20px 3vw;
-    justify-content: center;
-    width: 25%;
+header nav  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-body header nav h1 {
+body header nav ul li img {
+    margin: 20px 3vw 20px 3vw;
+    justify-content: center;
+    width: 20%;
+    
+}
+
+body header nav ul li h1 {
     margin: 30px 0px 20px 0px;
     text-align: center;
     font-weight: bold;
     font-size: 1.2rem;
+    
 }
 
 /*
