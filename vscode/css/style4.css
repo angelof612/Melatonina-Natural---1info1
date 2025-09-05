@@ -1,7 +1,7 @@
 /*
-=====================================================================
+===========================================================
 Geral
-=====================================================================
+===========================================================
 */
 
 html {
@@ -9,12 +9,21 @@ html {
     font-size: calc(15px + 0.390625vw);
     background-color: #2A2B5B ;
     color: #E8D257;
+    padding: 2vw 3vw 2vw 3vw;
+    
 }
 p a {
     color: #E8D257;
+    text-decoration: none;
 }
-li.atual p a {
+header nav ul li.atual p a {
     font-weight: bold;
+    background-color: black;
+    padding: 10px 15px 10px 15px;
+    border-radius: 30px;
+}
+hr {
+    margin: 3vw 0 3vw 0;
 }
 
 /*
@@ -25,6 +34,7 @@ Cabeçalho
 header nav ul li {
     display: flex;
     align-items: center;
+    margin: 0 10px 0 10px;
 }
 header nav  {
     display: flex;
@@ -38,6 +48,9 @@ body header nav ul li img {
     width: 20%;
     
 }
+body header nav ul {
+    display: flex;
+}
 
 body header nav ul li h1 {
     margin: 30px 0px 20px 0px;
@@ -45,4 +58,86 @@ body header nav ul li h1 {
     font-weight: bold;
     font-size: 1.2rem;
     
+}
+/*
+=====================================================================
+Serviços de Monitoramento
+=====================================================================
+*/
+section {
+    margin: 1vw 0 1vw 0;
+}
+
+section h2 {
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: bold;
+}
+section nav ul li {
+    text-align: center;
+}
+section nav ul li div {
+    background-color: #5B5D96;
+    margin: 3vw 10vw 3vw 10vw;
+    padding: 0 1.5vw 1vw 1.5vw;
+    border-radius: 56px;
+}
+
+section nav ul li div h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin: 0 0 1vw 0;
+}
+section nav ul li p {
+    color: #C4B1FF;
+    font-size: 1.1rem;
+}
+section nav ul {
+    display: flex;
+    align-items: flex-start;
+}
+
+/*
+=====================================================================
+Formulário
+=====================================================================
+*/
+section.Formulário {
+    background-color: #3f4074;
+    border: 3px black ;
+    border-radius: 20px;
+    margin: 2vw 0 2vw 0;
+    padding: 3vw 3vw 3vw 3vw;
+}
+section.Formulário h3 {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+section.Formulário div {
+    display: flex;
+    align-items: center;
+}
+section.Formulário div img {
+    width: 12%;
+}
+/*
+=====================================================================
+Calculadora de Sono
+=====================================================================
+*/
+
+section.Calculadora {
+    background-color: #3f4074;
+    border: 3px black ;
+    border-radius: 20px;
+    margin: 2vw 0 2vw 0;
+    padding: 3vw 3vw 3vw 3vw;
+}
+section.Calculadora h3 {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+section.Calculadora div img {
+    width: 12%;
 }
