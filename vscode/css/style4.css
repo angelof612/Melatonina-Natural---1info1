@@ -18,7 +18,7 @@ p a {
 }
 header nav ul li.atual p a {
     font-weight: bold;
-    background-color: black;
+    background-color: rgb(12, 16, 61);
     padding: 10px 15px 10px 15px;
     border-radius: 30px;
 }
