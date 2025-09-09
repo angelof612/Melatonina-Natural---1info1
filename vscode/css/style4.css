@@ -78,7 +78,7 @@ section nav ul li {
 }
 section nav ul li div {
     background-color: #5B5D96;
-    margin: 3vw 10vw 3vw 10vw;
+    margin: 3vw 9vw 3vw 9vw;
     padding: 0 1.5vw 1vw 1.5vw;
     border-radius: 56px;
 }
@@ -103,23 +103,42 @@ section nav ul {
 Formulário
 =====================================================================
 */
-section.Formulário {
+section.formulario {
     background-color: #3f4074;
     border: 3px black ;
     border-radius: 20px;
     margin: 2vw 0 2vw 0;
     padding: 3vw 3vw 3vw 3vw;
 }
-section.Formulário h3 {
+
+section.formulario h3 {
     font-weight: bold;
     font-size: 1.3rem;
 }
-section.Formulário div {
+section.formulario div {
     display: flex;
     align-items: center;
 }
-section.Formulário div img {
+
+section.formulario div img {
     width: 12%;
+}
+section.formulario Form label {
+    color: #D0A5F2;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+section.formulario Form p {
+    margin: 20px 10px 20px 10px;
+}
+section.formulario Form p input {
+    color: black;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border-radius: 200px;
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    flex-wrap: wrap;
 }
 /*
 =====================================================================

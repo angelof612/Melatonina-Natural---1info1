@@ -103,18 +103,39 @@
                 </nav>
             </section>
             <hr>
-            <section class="Formulário" id="formulario">
+            <section class="formulario" id="formulario">
 
                 <div>
-                    <img src="imagens/formulario.png" alt="Formulário">
+                    <img src="imagens/formulario.png" alt="formulario">
                     <h3>Formulário...</h3>
 
                 </div>
 
 
                 <Form>
-
-                    <input type="text" placeholder="Horário de Dormir" name="nome">
+                    <p>
+                        <label for="dormir">Horário de Dormir: </label>
+                    <input type="text" placeholder=". . ." name="nome" id="dormir">
+                    </p>
+                    <p>
+                        <label for="telas">Horário que deixa de usar as telas:</label>
+                    <input type="text" id="telas" placeholder=". . .">
+                    </p>
+                    <p>
+                        <label for="tecnicas">Você utiliza alguma técnica de meditação, reflexão, leitura ou alguma outra técnica antes de dormir?</label>
+                        <input type="text" id="tecnicas" placeholder=". . . ">
+                    </p>
+                    <p>
+                        <label for="medicamentos">Você utiliza algum medicamento ou toma algum chá para dormir?</label>
+                        <input type="text" id="medicamentos" placeholder=". . . ">
+                    </p>
+                    <p>
+                        <label for="qualidade">Você considera sua qualidade de sono com uma boa qualidade?</label>
+                        <input type="text" id="qualidade" placeholder=". . . ">
+                    </p>
+                    <button>Enviar</button>
+                    <button>Limpar</button>
+                    
                 </Form>
 
 
