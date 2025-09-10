@@ -123,15 +123,15 @@ section.formulario div {
 section.formulario div img {
     width: 12%;
 }
-section.formulario Form label {
+section.formulario form label {
     color: #D0A5F2;
     font-size: 1.3rem;
     font-weight: bold;
 }
-section.formulario Form p {
+section.formulario form p {
     margin: 20px 10px 20px 10px;
 }
-section.formulario Form p input {
+section.formulario form p input {
     color: black;
     font-weight: bold;
     font-size: 1.1rem;
@@ -145,18 +145,46 @@ section.formulario Form p input {
 Calculadora de Sono
 =====================================================================
 */
+section.calculadora {
+    text-align: center;
+}
 
-section.Calculadora {
+section.calculadora div {
     background-color: #3f4074;
     border: 3px black ;
     border-radius: 20px;
     margin: 2vw 0 2vw 0;
     padding: 3vw 3vw 3vw 3vw;
 }
-section.Calculadora h3 {
+section.calculadora h3 {
     font-weight: bold;
     font-size: 1.3rem;
 }
-section.Calculadora div img {
+section.calculadora div img {
     width: 12%;
+}
+section.calculadora form label {
+    color: #D0A5F2;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+section.calculadora form p {
+    margin: 20px 10px 20px 10px;
+    
+}
+section.calculadora form p input {
+    color: black;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border-radius: 200px;
+    padding: 10px 10px 10px 10px;  
+    margin: 20px 0 10px 0;
+}
+section.calculadora button {
+    background-color: #5A5BA1;
+    color: #D0A5F2;
+    padding: 10px 30px 10px 30px;
+    border-radius: 18px;
+    font-size: 1.2rem;
+    font-weight: bold;
 }

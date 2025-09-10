@@ -11,6 +11,19 @@ html {
     color: white;
     padding: 2vw 3vw 2vw 3vw;
 }
+p a {
+    color: #E8D257;
+    text-decoration: none;
+}
+header nav ul li.atual p a {
+    font-weight: bold;
+    background-color: rgb(12, 16, 61);
+    padding: 10px 15px 10px 15px;
+    border-radius: 30px;
+}
+hr {
+    margin: 3vw 0 3vw 0;
+}
 
 
 /*
@@ -32,7 +45,7 @@ header nav  {
 body header nav ul li img {
     margin: 20px 3vw 20px 3vw;
     justify-content: center;
-    width: 30%;
+    width: 20%;
     
 }
 body header nav ul {
@@ -77,12 +90,16 @@ main section.qualidadeSono ul li h2 {
 }
 main section.qualidadeSono ul li {
     background-color: #36243F;
-    padding: 20px 20px 20px 20px;
+    padding: 3vw 20vw 3vw 10vw;
     border-radius: 35px;
     margin: 10px 10px 40px 10px;
+    display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 main section.qualidadeSono ul li img {
-    width: 40dvi;
-    height: 40dvi;
+    width: 70%;
+}
+section.qualidadeSono ul li div.esquerda {
+    text-align: center;
 }

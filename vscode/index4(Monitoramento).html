@@ -10,8 +10,6 @@
 </head>
 
 <body>
-
-    <body>
         <header>
             <nav>
                 <ul>
@@ -112,17 +110,18 @@
                 </div>
 
 
-                <Form>
+                <form>
                     <p>
                         <label for="dormir">Horário de Dormir: </label>
-                    <input type="text" placeholder=". . ." name="nome" id="dormir">
+                        <input type="text" placeholder=". . ." name="nome" id="dormir">
                     </p>
                     <p>
                         <label for="telas">Horário que deixa de usar as telas:</label>
-                    <input type="text" id="telas" placeholder=". . .">
+                        <input type="text" id="telas" placeholder=". . .">
                     </p>
                     <p>
-                        <label for="tecnicas">Você utiliza alguma técnica de meditação, reflexão, leitura ou alguma outra técnica antes de dormir?</label>
+                        <label for="tecnicas">Você utiliza alguma técnica de meditação, reflexão, leitura ou alguma
+                            outra técnica antes de dormir?</label>
                         <input type="text" id="tecnicas" placeholder=". . . ">
                     </p>
                     <p>
@@ -135,16 +134,40 @@
                     </p>
                     <button>Enviar</button>
                     <button>Limpar</button>
-                    
-                </Form>
+
+                </form>
 
 
             </section>
-            <section class="Calculadora">
+            <hr>
+            <section class="calculadora">
 
 
                 <h3>Calculadora de Sono</h3>
-                <img src="imagens/Lua.png" alt="Lua">
+                <div>
+                    <img src="imagens/Lua.png" alt="Lua">
+                    <form action="">
+                        <p>
+                            <label for="idade">
+                                Quantos anos você tem?
+                            </label> <br>
+                            <input type="number" id="idade" placeholder=". . . ">
+                        </p>
+                        <p>
+                            <label for="idade">
+                                Que horas pretende dormir?
+                            </label> <br>
+                            <input type="number" id="horaSono" placeholder=". . . ">
+                        </p>
+
+                    </form>
+
+                </div>
+                <button>
+                    Calcular
+                </button>
+
+
 
             </section>
 
