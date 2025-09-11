@@ -18,7 +18,7 @@ p a {
 header nav ul li.atual p a {
     font-weight: bold;
     background-color: rgb(12, 16, 61);
-    padding: 10px 20px 10px 20px;
+    padding: 10px 15px 10px 15px;
     border-radius: 30px;
 }
 hr {
@@ -31,66 +31,51 @@ hr {
 Cabeçalho
 ==========================================================
 */
-header nav ul div.direita {
-    background-color: #5B5D96 ;
-    padding: 2vw 1vw 2vw 1vw;
-    border-radius: 5px;
-}
-header nav ul div {
+header nav ul li {
     display: flex;
-    margin: 1vw 2vw 1vw 2vw;
+    align-items: center;
+    margin: 0 10px 0 10px;
+}
+header nav  {
+    display: flex;
     align-items: center;
     justify-content: space-between;
 }
-header nav ul li h1 {
-    font-size: 2rem;
-    font-weight: bold;
+
+body header nav ul li img {
+    margin: 20px 3vw 20px 3vw;
+    justify-content: center;
+    width: 20%;
+    
 }
-/*
-==========================================================
-Introdução
-==========================================================
-*/
-section.introducao {
+body header nav ul {
+    display: flex;
+}
+
+body header nav ul li h1 {
+    margin: 30px 0px 20px 0px;
     text-align: center;
-    color: white;
-}
-section.introducao h2 {
-    font-size: 2rem;
     font-weight: bold;
-    margin: 2vw 0 5vw 0;
-}
-section.introducao p {
     font-size: 1.2rem;
-    margin: 3vw 6vw 3vw 6vw;
+    
 }
+
 /*
 ==========================================================
-Outras Coisas (nome provisório)
+intermediário de Páginas
 ==========================================================
 */
+section.indice {
+    text-align: center;
 
 
-main section ul li{
-    margin: 2vw 3vw 3vw 3vw;
-    background: #5B5D96;
-    padding: 20px 30px 30px 30px;
-    border-radius: 62px;
 }
+section.indice h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
 
-main section ul li h2 {
+}
+section.indice p {
     font-size: 1.2rem;
-    font-weight: bold;
-    margin: 0px 10px 20px 0px;
-}
-
-main section ul li p {
-    color: #C7BAFF;
-    font-weight: bold;
-}
-
-main section ul li a p {
-    margin: 4vw 0px 0 0;
-    color: #B4CCFF;
-    font-size: 0.8rem;
+    margin: 2vw 3vw 2vw 3vw;
 }

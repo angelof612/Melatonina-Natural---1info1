@@ -1,16 +1,15 @@
 /*
-===========================================================
+==========================================================
 Geral
-===========================================================
+==========================================================
 */
 
 html {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif, Times, serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: calc(15px + 0.390625vw);
-    background-color: #2A2B5B ;
+    background-color: #2A2B5B;
     color: #E8D257;
     padding: 2vw 3vw 2vw 3vw;
-    
 }
 p a {
     color: #E8D257;
@@ -19,45 +18,33 @@ p a {
 header nav ul li.atual p a {
     font-weight: bold;
     background-color: rgb(12, 16, 61);
-    padding: 10px 15px 10px 15px;
+    padding: 10px 20px 10px 20px;
     border-radius: 30px;
 }
 hr {
     margin: 3vw 0 3vw 0;
 }
 
+
 /*
 ==========================================================
 Cabeçalho
 ==========================================================
 */
-header nav ul li {
-    display: flex;
-    align-items: center;
-    margin: 0 10px 0 10px;
+header nav ul div.direita {
+    background-color: #5B5D96 ;
+    padding: 2vw 1vw 2vw 1vw;
+    border-radius: 5px;
 }
-header nav  {
+header nav ul div {
     display: flex;
+    margin: 1vw 2vw 1vw 2vw;
     align-items: center;
     justify-content: space-between;
 }
-
-body header nav ul li img {
-    margin: 20px 3vw 20px 3vw;
-    justify-content: center;
-    width: 20%;
-    
-}
-body header nav ul {
-    display: flex;
-}
-
-body header nav ul li h1 {
-    margin: 30px 0px 20px 0px;
-    text-align: center;
+header nav ul li h1 {
+    font-size: 2rem;
     font-weight: bold;
-    font-size: 1.2rem;
-    
 }
 /*
 =====================================================================

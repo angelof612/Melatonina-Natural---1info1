@@ -10,6 +10,9 @@ html {
     background-color: #2A2B5B;
     color: white;
 }
+p {
+    font-size: 1.1rem;
+}
 
 /*
 ==========================================================
@@ -17,10 +20,12 @@ header
 ==========================================================
 */
 header {
-    background: url(../imagens/image\ 28\.png);
+    background: url(../imagens/Cronometro3\ \(1\).png);
+    
     padding: 2vw 0 5vw 0;
     background-repeat: no-repeat;
     background-position: center;
+    
 }
 header nav ul {
     display: flex;
@@ -35,36 +40,54 @@ header nav a img {
 header h1 {
     text-align: center;
     font-size: 2rem;
-    color: #F2F2F2;
+    color: #ffffff;
     font-weight: bold;
     margin: 10px 0;
+}
+hr {
+    margin: 2vw 5vw 2vw 5vw;
+}
+/*
+==========================================================
+Introdução
+==========================================================
+*/
+
+section.introducao {
+    text-align: center;
+    margin: 3vw 0 3vw 0;
+}
+section.introducao h2 {
+    margin: 5vw 0 5vw 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+section h3 {
+    font-size: 1.3rem;
 }
 
 /*
 ==========================================================
-main
+Horários e Fases do Sono
 ==========================================================
 */
-main {
-    padding: 10px 40px 10px 40px;
-    text-align: center;;
+section {
+    margin: 3vw 0 3vw 0;
+    padding: 0 10vw 0 10vw;
 }
-main p {
-    margin: 10px 0;
-}
-main p span {
-    font-weight: bold;
-    font-size: 1.1rem;
-}
-
-main ul li h3 {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-main ul li {
-    text-align: center;
+section ul li {
     background-color: #4C4D7B;
-    padding: 3vw 1vw 3vw 1vw;
-    margin: 4vw 5vw 4vw 5vw;
-    border-radius: 45px;
+    margin: 3vw 0 3vw 0;
+    border-radius: 10px;
+    padding: 2vw 5vw 2vw 5vw;
+}
+section ul li details summary{
+    font-size: 1.3rem;
+}
+section ul li details p {
+    margin: 1vw 3vw 1vw 3vw;
+}
+section ul li details p span {
+    font-weight: bold;
+    font-size: 1.2rem;
 }
