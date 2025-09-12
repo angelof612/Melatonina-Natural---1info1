@@ -1,0 +1,124 @@
+/*
+==========================================================
+Geral
+==========================================================
+*/
+
+html {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: calc(15px + 0.390625vw);
+    background-color: #2A2B5B;
+    color: #E8D257;
+    padding: 2vw 3vw 2vw 3vw;
+}
+p a {
+    color: #E8D257;
+    text-decoration: none;
+}
+header nav ul li.atual p a {
+    font-weight: bold;
+    background-color: rgb(12, 16, 61);
+    padding: 10px 20px 10px 20px;
+    border-radius: 30px;
+}
+hr {
+    margin: 3vw 0 3vw 0;
+}
+
+
+/*
+==========================================================
+Cabeçalho
+==========================================================
+*/
+header nav ul div.direita {
+    background-color: #5B5D96 ;
+    padding: 2vw 1vw 2vw 1vw;
+    border-radius: 5px;
+}
+header nav ul div {
+    display: flex;
+    margin: 1vw 2vw 1vw 2vw;
+    align-items: center;
+    justify-content: space-between;
+}
+header nav ul li h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/*
+==========================================================
+Introdução
+==========================================================
+*/
+
+section.introducao h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+section.introducao p {
+    margin: 1vw 2vw 1vw 2vw;
+    font-size: 1.2rem;
+}
+section.introducao p span {
+    font-weight: bold;
+}
+
+
+/*
+==========================================================
+Comparação
+==========================================================
+*/
+section.comparacao {
+    text-align: center;
+    margin: 2vw 0 2vw 0;
+}
+section.comparacao h2 {
+    font-size: 1.5rem;
+    margin: 3vw 0 1vw 0;
+}
+section.comparacao ul.externa {
+    justify-content: center;
+}
+section.comparacao ul li {
+    background-color: #5B5D96;
+    margin: 3vw 3vw 3vw 3vw;
+    border-radius: 20px;
+    
+}
+section.comparacao ul li.beneficios {
+    padding: 2vw 0 2vw 0;
+}
+section.comparacao ul li.semSono {
+    padding: 2vw 0 2vw 0;
+}
+section.comparacao ul li.beneficios h3 {
+    color: #21ce21;
+    font-weight: bold;
+    font-size: 1.7rem;
+    
+}
+section.comparacao ul li.semSono h3 {
+    color: #a11313;
+    font-weight: bold;
+    font-size: 1.7rem;
+}
+
+section.redirecionar h2 {
+    font-size: 1.3rem;
+}
+section.redirecionar p {
+    margin: 1vw 1vw 1vw 1vw;
+}
+section.redirecionar p a {
+    text-decoration: underline;
+    color: #745fdc;
+    margin: 1vw 1vw 1vw 1vw;
+}
+
+section.conclusao p {
+    font-size: 1.2rem;
+    margin: 1vw 2vw 1vw 2vw; 
+}
