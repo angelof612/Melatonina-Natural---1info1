@@ -46,23 +46,18 @@ header nav ul li h1 {
     font-size: 2rem;
     font-weight: bold;
 }
-
 /*
 ==========================================================
 Introdução
 ==========================================================
 */
-
 section.introducao h2 {
-    text-align: center;
-    font-size: 2rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 1vw 3vw 1vw 3vw;
 }
 section.introducao p {
-    margin: 1vw 2vw 1vw 2vw;
-    font-size: 1.2rem;
-}
-section.introducao p span {
-    font-weight: bold;
+    margin: 1vw 1vw 1vw 1vw;
 }
 
 
@@ -88,8 +83,13 @@ section.comparacao ul li {
     border-radius: 20px;
     
 }
+
 section.comparacao ul li.beneficios {
     padding: 2vw 0 2vw 0;
+}
+section.comparacao ul li ul.interna li {
+    font-size: 1.3rem;
+    font-weight: bold;
 }
 section.comparacao ul li.semSono {
     padding: 2vw 0 2vw 0;
@@ -117,8 +117,15 @@ section.redirecionar p a {
     color: #745fdc;
     margin: 1vw 1vw 1vw 1vw;
 }
+/*
+=====================================================================
+Conclusão
+=====================================================================
+*/
+
 
 section.conclusao p {
     font-size: 1.2rem;
     margin: 1vw 2vw 1vw 2vw; 
+    font-weight: bold;
 }
