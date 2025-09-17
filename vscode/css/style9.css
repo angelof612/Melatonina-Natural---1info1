@@ -59,3 +59,43 @@ section.introducao p {
     margin: 1vw 3vw 1vv 3vw;
     
 }
+
+/*
+=============================================================
+Dicas
+=============================================================
+*/
+section.rotina {
+    padding: 1vw 10vw 1vw 10vw;
+}
+section.rotina ul div {
+    display: flex;
+
+}
+section.rotina ul li {
+    background-color: #4C4D7B;
+    padding: 2vw 3vw 2vw 3vw;
+    text-align: center;
+    border-radius: 20px;
+    margin: 3vw 2vw 3vw 2vw;
+}
+section.rotina ul li h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1vw 0 2vw 0;
+    color: #E8D257;
+}
+section.rotina ul li p {
+    font-size: 1.2rem;
+    margin: 1vw 2vw 1vw 2vw;
+}
+section.rotina ul li p span {
+    font-weight: bold;
+}
+section.rotina ul li img {
+    width: 40%;
+    border-radius: 30px;
+}
+section.rotina ul div li img {
+    width: 60%;
+}
