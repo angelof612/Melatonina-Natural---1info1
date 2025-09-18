@@ -10,6 +10,9 @@ html {
     background-color: #2A2B5B;
     color: white;
 }
+section {
+    margin: 2vw 3vw 2vw 3vw;
+}
 
 /*
 ==========================================================
@@ -98,4 +101,26 @@ section.rotina ul li img {
 }
 section.rotina ul div li img {
     width: 60%;
+}
+
+
+
+/*
+===================================================
+Footer
+===================================================
+*/
+
+footer {
+    margin: 10vw 0 0 0;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 6vw 20vw 6vw 20vw;
+    align-items: center;
+    color: aquamarine;
+    font-size: 0.9rem;
+}
+footer img {
+    width: 20%;
 }

@@ -9,7 +9,7 @@ html {
     font-size: calc(15px + 0.390625vw);
     background-color: #2A2B5B;
     color: #E8D257;
-    padding: 2vw 3vw 2vw 3vw;
+    
 }
 p a {
     color: #E8D257;
@@ -24,7 +24,9 @@ header nav ul li.atual p a {
 hr {
     margin: 3vw 0 3vw 0;
 }
-
+section {
+    margin: 3vw 3vw 3vw 3vw;
+}
 
 /*
 ==========================================================
@@ -51,9 +53,7 @@ header nav ul li h1 {
 Serviços de Monitoramento
 =============================================================
 */
-section {
-    margin: 1vw 0 1vw 0;
-}
+
 
 section h2 {
     font-size: 1.6rem;
@@ -95,7 +95,7 @@ section.formulario {
     background-color: #3f4074;
     border: 3px black ;
     border-radius: 20px;
-    margin: 2vw 0 2vw 0;
+    margin: 2vw 3vw 2vw 3vw;
     padding: 3vw 3vw 3vw 3vw;
 }
 
@@ -175,4 +175,26 @@ section.calculadora button {
     border-radius: 18px;
     font-size: 1.2rem;
     font-weight: bold;
+}
+
+
+
+/*
+===================================================
+Footer
+===================================================
+*/
+
+footer {
+    margin: 10vw 0 0 0;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 6vw 20vw 6vw 20vw;
+    align-items: center;
+    color: aquamarine;
+    font-size: 0.9rem;
+}
+footer img {
+    width: 20%;
 }

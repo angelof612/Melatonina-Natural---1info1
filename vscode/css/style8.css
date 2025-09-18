@@ -13,6 +13,9 @@ html {
 p {
     font-size: 1.1rem;
 }
+section {
+    margin: 2vw 3vw 2vw 3vw;
+}
 
 /*
 ==========================================================
@@ -96,4 +99,27 @@ section ul li details p span {
 section p {
     font-size: 1.2rem;
     margin: 1vw 0 1vw 0;
+}
+
+
+
+
+/*
+===================================================
+Footer
+===================================================
+*/
+
+footer {
+    margin: 10vw 0 0 0;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 6vw 20vw 6vw 20vw;
+    align-items: center;
+    color: aquamarine;
+    font-size: 0.9rem;
+}
+footer img {
+    width: 20%;
 }

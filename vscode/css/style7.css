@@ -9,7 +9,7 @@ html {
     font-size: calc(15px + 0.390625vw);
     background-color: #2A2B5B;
     color: #E8D257;
-    padding: 2vw 3vw 2vw 3vw;
+    
 }
 p a {
     color: #E8D257;
@@ -26,6 +26,9 @@ hr {
 }
 p {
     color: white;
+}
+section {
+    margin: 2vw 3vw 2vw 3vw;
 }
 
 
@@ -150,4 +153,27 @@ section.conclusao p {
     font-size: 1.2rem;
     margin: 1vw 2vw 1vw 2vw; 
     font-weight: bold;
+}
+
+
+
+
+/*
+===================================================
+Footer
+===================================================
+*/
+
+footer {
+    margin: 10vw 0 0 0;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 6vw 20vw 6vw 20vw;
+    align-items: center;
+    color: aquamarine;
+    font-size: 0.9rem;
+}
+footer img {
+    width: 20%;
 }

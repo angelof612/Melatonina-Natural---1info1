@@ -10,6 +10,9 @@ html {
     background-color: #2A2B5B;
     color: white;
 }
+section {
+    margin: 2vw 3vw 2vw 3vw;
+}
 
 /*
 ==========================================================
@@ -73,4 +76,25 @@ main ul li img {
     width: 40%;
     border-radius: 20px;
     margin: 2vw 0 3vw 0;
+}
+
+
+/*
+===================================================
+Footer
+===================================================
+*/
+
+footer {
+    margin: 10vw 0 0 0;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 6vw 20vw 6vw 20vw;
+    align-items: center;
+    color: aquamarine;
+    font-size: 0.9rem;
+}
+footer img {
+    width: 20%;
 }

@@ -9,7 +9,7 @@ html {
     font-size: calc(15px + 0.390625vw);
     background-color: #2A2B5B;
     color: #E8D257;
-    padding: 2vw 3vw 2vw 3vw;
+    
 }
 p a {
     color: #E8D257;
@@ -23,6 +23,9 @@ header nav ul li.atual p a {
 }
 hr {
     margin: 3vw 0 3vw 0;
+}
+section {
+    margin: 2vw 3vw 2vw 3vw;
 }
 
 
@@ -45,4 +48,26 @@ header nav ul div {
 header nav ul li h1 {
     font-size: 2rem;
     font-weight: bold;
+}
+
+
+
+/*
+===================================================
+Footer
+===================================================
+*/
+
+footer {
+    margin: 10vw 0 0 0;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 6vw 20vw 6vw 20vw;
+    align-items: center;
+    color: aquamarine;
+    font-size: 0.9rem;
+}
+footer img {
+    width: 20%;
 }
