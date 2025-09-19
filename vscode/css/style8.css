@@ -90,7 +90,7 @@ section ul li details summary{
 }
 section ul li details p {
     margin: 1vw 3vw 1vw 3vw;
-    color: rgb(0, 212, 212);
+    color: #E8D257;
 }
 section ul li details p span {
     font-weight: bold;
@@ -115,13 +115,13 @@ footer {
     background-color: black;
     display: flex;
     justify-content: space-between;
-    padding: 6vw 20vw 6vw 20vw;
+    padding: 3vw 10vw 3vw 10vw;
     align-items: center;
     color: aquamarine;
     font-size: 0.9rem;
 }
 footer img {
-    width: 20%;
+    width: 15%;
 }
 footer nav ul li {
     display: flex;

@@ -90,13 +90,13 @@ footer {
     background-color: black;
     display: flex;
     justify-content: space-between;
-    padding: 6vw 20vw 6vw 20vw;
+    padding: 3vw 10vw 3vw 10vw;
     align-items: center;
     color: aquamarine;
     font-size: 0.9rem;
 }
 footer img {
-    width: 20%;
+    width: 15%;
 }
 footer nav ul li {
     display: flex;
