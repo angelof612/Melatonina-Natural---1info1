@@ -198,3 +198,12 @@ footer {
 footer img {
     width: 20%;
 }
+footer nav ul li {
+    display: flex;
+    align-items: center;
+    margin: 2vw 0 2vw 0;
+}
+footer nav ul li img{
+    width: 10%;
+    margin: 0 10px 0 10px;
+}
