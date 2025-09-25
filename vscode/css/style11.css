@@ -13,10 +13,6 @@ html {
 p {
     font-size: 1.1rem;
 }
-a {
-    color: #B4CCFF;
-    font-weight: bold;
-}
 section {
     margin: 2vw 3vw 2vw 3vw;
 }
@@ -29,7 +25,7 @@ header
 ==========================================================
 */
 header {
-    background: url(../imagens/Cronometro3\ \(1\).png);
+    background: url(../imagens/image\ 28.png);
     
     padding: 2vw 0 5vw 0;
     background-repeat: no-repeat;
@@ -56,54 +52,38 @@ header h1 {
 hr {
     margin: 2vw 5vw 2vw 5vw;
 }
+
 /*
-==========================================================
+=======================================================
 Introdução
-==========================================================
+=======================================================
 */
-
-section.introducao {
-    text-align: center;
-    margin: 3vw 0 3vw 0;
-}
-section.introducao h2 {
-    margin: 5vw 0 5vw 0;
-    font-size: 1.3rem;
+section.introducao h2{
+    font-size: 1.5rem;
     font-weight: bold;
-    color: #E8D257;;
+    margin: 2vw 3vw 2vw 3vw;
+    text-decoration: underline;
 }
-section h3 {
-    font-size: 1.3rem;
+section.introducao p {
+    font-size: 1.1rem;
+    margin: 1vw 1vw 1vw 1vw;
 }
 
 /*
 ==========================================================
-Horários e Fases do Sono
+Conteúdo
 ==========================================================
 */
-section {
-    margin: 3vw 0 3vw 0;
-    padding: 0 10vw 0 10vw;
-}
-section ul li {
-    background-color: #4C4D7B;
-    margin: 3vw 0 3vw 0;
-    border-radius: 10px;
-    padding: 2vw 5vw 2vw 5vw;
-}
-section ul li details summary{
-    font-size: 1.3rem;
-    color: #E8D257;;
-}
-section ul li details p {
-    margin: 1vw 3vw 1vw 3vw;
-}
-section ul li details p span {
-    font-weight: bold;
+section.conteudo p {
     font-size: 1.2rem;
-    color: #E8D257;
-    text-decoration: underline;
-    
+    margin: 1vw 2vw 1vw 2vw;
+}
+
+section.conteudo ul li {
+    background-color: #5B5D96;
+    padding: 3vw 3vw 3vw 3vw;
+    border-radius: 25px;
+    margin: 3vw 0 3vw 0;
 }
 
 

@@ -24,8 +24,9 @@ header nav ul li.atual p a {
 hr {
     margin: 3vw 0 3vw 0;
 }
+
 a {
-    color: #B4CCFF;
+    color: rgb(123, 213, 255);
 }
 
 
@@ -68,6 +69,37 @@ section.introducao p {
     font-size: 1.2rem;
     margin: 3vw 6vw 3vw 6vw;
 }
+
+/*
+==========================================================
+Texto
+==========================================================
+*/
+section h2 {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin: 5vw 0 3vw 0;
+    text-decoration: underline;
+}
+section.texto h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin: 5vw 0 3vw 0;
+    text-decoration: underline;
+}
+section.texto p {
+    font-size: 1.2rem;
+    margin: 1vw 3vw 1vw 3vw;
+    text-align: center;
+}
+section.texto p span {
+    font-weight: bold;
+}
+
 /*
 ==========================================================
 Outras Coisas (nome provisório)
@@ -82,7 +114,7 @@ main section ul li{
     border-radius: 62px;
 }
 
-main section ul li h2 {
+main section ul li h3 {
     font-size: 1.2rem;
     font-weight: bold;
     margin: 0px 10px 20px 0px;
@@ -91,17 +123,16 @@ main section ul li h2 {
 main section ul li p {
     color: #C7BAFF;
     font-weight: bold;
+    margin: 1vw 0 1vw 0;
 }
 
-main section ul li a p {
-    margin: 4vw 0px 0 0;
-    color: #B4CCFF;
-    font-size: 0.8rem;
+main section ul li p a {
+    color: #E8D257;
+    text-decoration: underline;
 }
 section {
     margin: 2vw 3vw 2vw 3vw;
 }
-
 
 /*
 ===================================================
@@ -111,16 +142,19 @@ Footer
 
 footer {
     margin: 10vw 0 0 0;
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
-    padding: 3vw 10vw 3vw 10vw;
+    background-color: black;  
+    padding: 3vw 7vw 3vw 7vw;
     align-items: center;
     color: aquamarine;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+}
+footer nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 footer img {
-    width: 15%;
+    width: 40%;
 }
 footer nav ul li {
     display: flex;
@@ -128,7 +162,7 @@ footer nav ul li {
     margin: 2vw 0 2vw 0;
 }
 footer nav ul li img{
-    width: 10%;
+    width: 5%;
     margin: 0 10px 0 10px;
     border-radius: 100px;
 }

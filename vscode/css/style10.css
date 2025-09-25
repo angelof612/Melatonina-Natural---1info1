@@ -27,6 +27,9 @@ hr {
 section {
     margin: 2vw 3vw 2vw 3vw;
 }
+a {
+    color: rgb(123, 213, 255);
+}
 
 
 /*
@@ -138,16 +141,19 @@ Footer
 
 footer {
     margin: 10vw 0 0 0;
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
-    padding: 3vw 10vw 3vw 10vw;
+    background-color: black;  
+    padding: 3vw 7vw 3vw 7vw;
     align-items: center;
     color: aquamarine;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+}
+footer nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 footer img {
-    width: 15%;
+    width: 40%;
 }
 footer nav ul li {
     display: flex;
@@ -155,7 +161,7 @@ footer nav ul li {
     margin: 2vw 0 2vw 0;
 }
 footer nav ul li img{
-    width: 10%;
+    width: 5%;
     margin: 0 10px 0 10px;
     border-radius: 100px;
 }
