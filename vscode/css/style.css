@@ -91,6 +91,11 @@ section.texto h3 {
     margin: 5vw 0 3vw 0;
     text-decoration: underline;
 }
+section h4 {
+    color: white;
+    margin: 2vw 3vw 2vw 3vw;
+    font-size: 1.2rem;
+}
 section.texto p {
     font-size: 1.2rem;
     margin: 1vw 3vw 1vw 3vw;
@@ -99,6 +104,12 @@ section.texto p {
 section.texto p span {
     font-weight: bold;
 }
+section.texto img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+
 
 /*
 ==========================================================
@@ -119,6 +130,7 @@ main section ul li h3 {
     font-weight: bold;
     margin: 0px 10px 20px 0px;
 }
+
 
 main section ul li p {
     color: #C7BAFF;
