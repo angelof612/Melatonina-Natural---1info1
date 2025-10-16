@@ -54,6 +54,17 @@ header nav ul div {
 header nav ul li h1 {
     font-size: 2rem;
     font-weight: bold;
+    
+}
+
+/*
+==========================================================
+Por quê?
+==========================================================
+*/
+section.dormirBem p {
+    margin: 3vw 0 1vw 0;
+    font-size: 1.2rem;
 }
 /*
 ==========================================================
@@ -65,15 +76,18 @@ main p span {
 }
 
 
-main section.qualidadeSono h1 {
+main section h2 {
     font-size: 5vw;
     text-align: center;
     color: white;
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 main section.qualidadeSono p {
     text-align: center;
     margin: 20px 20px 20px 20px;
+    font-size: 1.2rem;
 }
 
 
@@ -96,6 +110,11 @@ main section.qualidadeSono ul li img {
 }
 section.qualidadeSono ul li div.esquerda {
     text-align: center;
+}
+
+section.qualidadeSono ul li p span {
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 /*

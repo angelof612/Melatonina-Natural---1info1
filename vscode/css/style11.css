@@ -85,6 +85,9 @@ section.conteudo ul li {
     border-radius: 25px;
     margin: 3vw 0 3vw 0;
 }
+section.conteudo ul li details {
+    font-size: 1.3rem;
+}
 
 
 
