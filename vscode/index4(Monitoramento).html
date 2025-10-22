@@ -10,59 +10,59 @@
 </head>
 
 <body>
-    
+
     <header>
         <nav>
             <ul>
                 <li>
-                <div class="esquerda">
-                    
-                    <a href="index.html">
-                        <img src="imagens/Melatonina_Natural__.png" alt="logo" width="250">
-                    </a>
-                    <h1>Seja Bem-Vindo!</h1>
-                
-                </div>
-            </li>
+                    <div class="esquerda">
+
+                        <a href="index.html">
+                            <img src="imagens/Melatonina_Natural__.png" alt="logo" width="250">
+                        </a>
+                        <h1>Seja Bem-Vindo!</h1>
+
+                    </div>
+                </li>
                 <div class="direita">
                     <li>
-                    <p>
-                        <a href="index.html">
-                            Ínicio
-                        </a>
-                    </p>
-                </li>
-                <li  class="atual">
-                    <p>
-                        <a href="index4(Monitoramento).html">
-                            Monitoramento do Sono
-                        </a>
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        <a href="index2(QualidadeSono).html">
-                            Qualidade de Sono
-                        </a>
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        <a href="index7(SaudeESono).html">
-                            Saúde e Sono
-                        </a>
-                    </p>
-                </li>
-                
-                <li>
-                    <p>
-                        <a href="index10(Sobre).html">
-                            Sobre
-                        </a>
-                    </p>
-                </li>
+                        <p>
+                            <a href="index.html">
+                                Ínicio
+                            </a>
+                        </p>
+                    </li>
+                    <li class="atual">
+                        <p>
+                            <a href="index4(Monitoramento).html">
+                                Monitoramento do Sono
+                            </a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <a href="index2(QualidadeSono).html">
+                                Qualidade de Sono
+                            </a>
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <a href="index7(SaudeESono).html">
+                                Saúde e Sono
+                            </a>
+                        </p>
+                    </li>
+
+                    <li>
+                        <p>
+                            <a href="index10(Sobre).html">
+                                Sobre
+                            </a>
+                        </p>
+                    </li>
                 </div>
-                                
+
             </ul>
 
         </nav>
@@ -74,39 +74,39 @@
             <nav>
                 <ul>
                     <li>
-                        
-                            <a href="#">
-                                <img src="imagens/calendario.png" alt="Calendaerio">
-                            </a>
 
-                            <h3>Calendário</h3>
-                        
+                        <a href="#">
+                            <img src="imagens/calendario.png" alt="Calendaerio">
+                        </a>
+
+                        <h3>Calendário</h3>
+
 
 
                         <p>Use o nosso calendário para monitorar como foi seu sono durante o mês</p>
 
                     </li>
                     <li>
-                        
-                            <a href="#calculadora">
-                                <img src="imagens/calculadora (1).png" alt="Calendaerio">
-                            </a>
 
-                            <h3>Calculadora</h3>
-                        
+                        <a href="#calculadora">
+                            <img src="imagens/calculadora (1).png" alt="Calendaerio">
+                        </a>
+
+                        <h3>Calculadora</h3>
+
 
 
                         <p>Calcule qunatas horas você precisa para ter um sono saudável por noite</p>
 
                     </li>
                     <li>
-                        
-                            <a href="#formulario">
-                                <img src="imagens/formulário(2).png" alt="Formulário">
-                            </a>
 
-                            <h3>Formulário</h3>
-                        
+                        <a href="#formulario">
+                            <img src="imagens/formulário(2).png" alt="Formulário">
+                        </a>
+
+                        <h3>Formulário</h3>
+
 
 
                         <p>Responda nosso formulário para podermos te ajudar melhor</p>
@@ -149,12 +149,28 @@
                     <label for="qualidade">Você considera sua qualidade de sono com uma boa qualidade?</label>
                     <input type="text" id="qualidade" placeholder=". . . ">
                 </p>
-                <button>Enviar</button>
-                <button>Limpar</button>
+                <button id="enviar" type="submit">Enviar</button>
+                <button id="reset" type="reset">Limpar</button>
 
             </form>
             <script>
-                //Principal parte de programação
+                function validarFormulario() {
+                    var nome = document.getElementById("dormir").value;
+                    if (nome === "") {
+                        return true;
+                    } else {
+                        
+                        alert("O nome não pode estar vazio!");
+                        return false; 
+                    }
+                    
+                    
+                }
+                if (validarFormulario()) {
+                    alert(`Formulário enviado`);
+                }else {
+                    alert(`Responda Tudo`);
+                }
             </script>
 
 
@@ -163,29 +179,30 @@
         <section class="calculadora" id="calculadora">
 
 
+
+
             <h3>Calculadora de Sono</h3>
-            <div>
-                <img src="imagens/Lua.png" alt="Lua">
-                <form action="">
-                    <p>
-                        <label for="idade">
-                            Quantos anos você tem?
-                        </label> <br>
-                        <input type="number" id="idade" placeholder=". . . ">
-                    </p>
-                    <p>
-                        <label for="idade">
-                            Que horas pretende dormir?
-                        </label> <br>
-                        <input type="number" id="horaSono" placeholder=". . . ">
-                    </p>
+            <img src="imagens/Lua.png" alt="Lua">
+            <form action="">
+                <p>
+                    <label for="idade">
+                        Quantos anos você tem?
+                    </label> <br>
+                    <input type="number" id="idade" placeholder=". . . ">
+                </p>
+                <p>
+                    <label for="idade">
+                        Quantas horas você costuma dormir?
+                    </label> <br>
+                    <input type="number" id="horaSono" placeholder=". . . ">
+                </p>
+                <button>
+                    Calcular
+                </button>
+            </form>
 
-                </form>
 
-            </div>
-            <button>
-                Calcular
-            </button>
+
 
 
 
@@ -200,39 +217,39 @@
             </div>
             <div>
                 <ul>
-                <li>
-                    <img src="imagens/youtuba.jpg" alt="Ícone Youtube" class="youtube">
-                    <p>
-                        Youtube:
-                        <a href="https://www.youtube.com/@MelatoninaNatural">
-                            @MelatoninaNatural
-                        </a>
-                    </p>
+                    <li>
+                        <img src="imagens/youtuba.jpg" alt="Ícone Youtube" class="youtube">
+                        <p>
+                            Youtube:
+                            <a href="https://www.youtube.com/@MelatoninaNatural">
+                                @MelatoninaNatural
+                            </a>
+                        </p>
 
-                </li>
-                <li>
-                    <img src="imagens/instagram.jpeg" alt="Ícone Instagram" class="insta">
-                    <p>
-                        Instagram: <a href="https://www.instagram.com/melatonina_natural/">@melatonina_natural</a>
-                    </p>
-                </li>
-                <li>
-                    <img src="imagens/Trwitter.png" alt="Ícone Twitter" class="twitter">
-                    <p>
-                        X (Twitter): <a href="https://x.com/MelatoninaOFC">@MelatoninaOFC</a>
-                    </p>
-                </li>
-                <li>
-                    <img src="imagens/gmail.webp" alt="Ícone Gmail" class="gmail">
-                    <p>
-                        Email: melatoninanatural@gmail.com
-                    </p>
-                </li>
-            </ul>
+                    </li>
+                    <li>
+                        <img src="imagens/instagram.jpeg" alt="Ícone Instagram" class="insta">
+                        <p>
+                            Instagram: <a href="https://www.instagram.com/melatonina_natural/">@melatonina_natural</a>
+                        </p>
+                    </li>
+                    <li>
+                        <img src="imagens/Trwitter.png" alt="Ícone Twitter" class="twitter">
+                        <p>
+                            X (Twitter): <a href="https://x.com/MelatoninaOFC">@MelatoninaOFC</a>
+                        </p>
+                    </li>
+                    <li>
+                        <img src="imagens/gmail.webp" alt="Ícone Gmail" class="gmail">
+                        <p>
+                            Email: melatoninanatural@gmail.com
+                        </p>
+                    </li>
+                </ul>
             </div>
-        
-        
-            
+
+
+
         </nav>
 
     </footer>

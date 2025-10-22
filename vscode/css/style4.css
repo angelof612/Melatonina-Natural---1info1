@@ -62,6 +62,11 @@ section h2 {
     font-size: 1.6rem;
     text-align: center;
     font-weight: bold;
+    
+}
+section nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 section nav ul li  {
@@ -85,9 +90,7 @@ section nav ul li p {
     color: #C4B1FF;
     font-size: 1.1rem;
 }
-section nav ul {
-    display: flex;
-}
+
 
 /*
 =============================================================
@@ -104,7 +107,7 @@ section.formulario {
 
 section.formulario h3 {
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 section.formulario div {
     display: flex;
@@ -118,6 +121,7 @@ section.formulario form label {
     color: #D0A5F2;
     font-size: 1.3rem;
     font-weight: bold;
+    margin: 5px 0 10px 0;
 }
 section.formulario form p {
     margin: 20px 10px 20px 10px;
@@ -144,23 +148,23 @@ section.formulario form button {
 Calculadora de Sono
 =============================================================
 */
+
+
 section.calculadora {
     text-align: center;
-}
-
-section.calculadora div {
+    width: 50%;
+    margin: 0 auto 0 auto;
     background-color: #3f4074;
     border: 3px black ;
     border-radius: 20px;
-    margin: 2vw 0 2vw 0;
     padding: 3vw 3vw 3vw 3vw;
 }
 section.calculadora h3 {
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 section.calculadora div img {
-    width: 12%;
+    width: 30%;
 }
 section.calculadora form label {
     color: #D0A5F2;
