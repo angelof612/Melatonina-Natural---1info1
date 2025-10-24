@@ -3,9 +3,10 @@
 Geral
 ==========================================================
 */
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
 
 html {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Mukta", sans-serif;  
     font-size: calc(15px + 0.390625vw);
     background-color: #2A2B5B;
     color: #E8D257;
@@ -29,6 +30,13 @@ section {
 }
 a {
     color: rgb(123, 213, 255);
+      font-family: "Mukta", sans-serif;  
+
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+      font-family: "Leckerli One", cursive;
 }
 
 
@@ -60,13 +68,11 @@ Sobre o Projeto
 */
 section h2{
     text-align: center;
-    font-weight: bold;
     font-size: 2rem;
     margin: 0 0 1vw 0;
-    text-decoration: underline;
 }
 section.projeto p {
-    color: antiquewhite;
+    color: #C7BAFF;
 }
 section.projeto h3 {
     font-size: 1.5rem;
@@ -83,6 +89,7 @@ section.projeto ul li p {
 }
 section.projeto ul li p span {
     font-weight: bold;
+    color: #E8D257;
 }
 
 /*
@@ -91,7 +98,7 @@ Sobre Nós
 ==================================================
 */
 section.nos ul li {
-    background-color: #5B5D96;
+    background-color: #16173d;
     text-align: center;
     padding: 3vw 2vw 3vw 2vw;
     margin: 4vw 3vw 4vw 3vw;
@@ -102,30 +109,22 @@ section.nos ul li img {
     width: 50%;
     border-radius: 20px;
     margin: 1vw 0 2vw 0;
-    border: 5px solid #2A2B5B;
 }
 section.nos ul li h3 {
     font-size: 1.7rem;
     font-weight: bold;
-    color: white;
+    color: #E8D257;
     margin:  1vw 0 1vw 0;
-    text-decoration: underline;
-    border: 3px solid rgb(209, 209, 209);
-    border-radius: 20px;
-    padding: 5px 5px 5px 5px;
 }
 section.nos ul li h4 {
     font-size: 1.3rem;
     margin: 0 0 1vw 0;
-    text-decoration: underline;
+    color: #C7BAFF;
 }
 section.nos ul li details {
-    color: white;
+    color: #C7BAFF;
     font-size: 1.2rem;
     margin: 0 4vw 0 4vw;
-    border: 3px solid rgb(209, 209, 209);
-    border-radius: 20px;
-    padding: 5px 5px 5px 5px;
 }
 section.nos ul {
     display: flex;
@@ -177,3 +176,6 @@ footer nav ul li img{
     border-radius: 100px;
 }
 
+footer span {
+    color: #E8D257;
+}
