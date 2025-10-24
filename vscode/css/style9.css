@@ -4,8 +4,11 @@ Geral
 ==========================================================
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+
 html {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Mukta", sans-serif;  
     font-size: calc(15px + 0.390625vw);
     background-color: #2A2B5B;
     color: white;
@@ -15,6 +18,14 @@ section {
 }
 a {
     color: rgb(123, 213, 255);
+    text-decoration: none;
+      font-family: "Mukta", sans-serif;  
+
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+      font-family: "Leckerli One", cursive;
 }
 
 /*
@@ -41,7 +52,7 @@ header nav a img {
 header h1 {
     text-align: center;
     font-size: 2rem;
-    color: #ffffff;
+    color: #E8D257;
     font-weight: bold;
     margin: 10px 0;
 }
@@ -58,11 +69,13 @@ section.introducao p.forte {
     font-size: 1.4rem;
     font-weight: bold;
     margin: 4vw 0 4vw 0;
+    color: #E8D257;
 }
 section.introducao p {
     text-align: center;
     font-size: 1.2rem;
     margin: 1vw 3vw 1vv 3vw;
+    color: #C7BAFF;
     
 }
 
@@ -79,7 +92,7 @@ section.rotina ul div {
 
 }
 section.rotina ul li {
-    background-color: #4C4D7B;
+    background-color: #16173d;
     padding: 2vw 3vw 2vw 3vw;
     text-align: center;
     border-radius: 20px;
@@ -94,9 +107,11 @@ section.rotina ul li h3 {
 section.rotina ul li p {
     font-size: 1.2rem;
     margin: 1vw 2vw 1vw 2vw;
+    color: #C7BAFF;
 }
 section.rotina ul li p span {
     font-weight: bold;
+    color: #E8D257;
 }
 section.rotina ul li img {
     width: 40%;
@@ -138,4 +153,8 @@ footer nav ul li img{
     width: 5%;
     margin: 0 10px 0 10px;
     border-radius: 100px;
+}
+
+footer span {
+    color: #E8D257;
 }
