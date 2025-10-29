@@ -3,9 +3,11 @@
 Geral
 ==========================================================
 */
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
 
 html {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Mukta", sans-serif;  
     font-size: calc(15px + 0.390625vw);
     background-color: #2A2B5B;
     color: white;
@@ -14,8 +16,16 @@ section {
     margin: 2vw 3vw 2vw 3vw;
 }
 a {
-    color: rgb(123, 213, 255);
+    color: #E8D257;
+      font-family: "Mukta", sans-serif;  
+
 }
+
+
+h1, h2, h3, h4, h5, h6 {
+      font-family: "Leckerli One", cursive;
+}
+
 
 /*
 ==========================================================
@@ -41,7 +51,7 @@ header nav a img {
 header h1 {
     text-align: center;
     font-size: 2rem;
-    color: #F2F2F2;
+    color: #E8D257;
     font-weight: bold;
     margin: 10px 0;
 }
@@ -57,20 +67,24 @@ main {
 }
 main p {
     margin: 10px 0;
+    color: #C7BAFF ;
 }
 main p span {
     font-weight: bold;
     font-size: 1.3rem;
     margin: 1vw 0 2vw 0;
+    color: #E8D257;
+
 }
 
 main ul li h3 {
     font-size: 1.5rem;
     font-weight: bold;
+    color: #E8D257;
 }
 main ul li {
     text-align: center;
-    background-color: #4C4D7B;
+    background-color: #16173d;
     padding: 3vw 1vw 3vw 1vw;
     margin: 5vw 5vw 5vw 5vw;
     border-radius: 45px;
@@ -96,6 +110,10 @@ footer {
     color: aquamarine;
     font-size: 0.8rem;
 }
+footer span {
+    color: #E8D257;
+}
+
 footer nav {
     display: flex;
     justify-content: space-between;

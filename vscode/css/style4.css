@@ -4,8 +4,11 @@ Geral
 ==========================================================
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+
 html {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Mukta", sans-serif;  
     font-size: calc(15px + 0.390625vw);
     background-color: #2A2B5B;
     color: #E8D257;
@@ -29,7 +32,15 @@ section {
 }
 a {
     color: rgb(123, 213, 255);
+      font-family: "Mukta", sans-serif;  
+
 }
+
+
+h1, h2, h3, h4, h5, h6 {
+      font-family: "Leckerli One", cursive;
+}
+
 
 /*
 ==========================================================
@@ -62,11 +73,6 @@ section h2 {
     font-size: 1.6rem;
     text-align: center;
     font-weight: bold;
-    
-}
-section nav ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
 }
 
 section nav ul li  {
@@ -90,7 +96,9 @@ section nav ul li p {
     color: #C4B1FF;
     font-size: 1.1rem;
 }
-
+section nav ul {
+    display: flex;
+}
 
 /*
 =============================================================
@@ -107,7 +115,7 @@ section.formulario {
 
 section.formulario h3 {
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 section.formulario div {
     display: flex;
@@ -121,7 +129,6 @@ section.formulario form label {
     color: #D0A5F2;
     font-size: 1.3rem;
     font-weight: bold;
-    margin: 5px 0 10px 0;
 }
 section.formulario form p {
     margin: 20px 10px 20px 10px;
@@ -153,23 +160,23 @@ section p span.spanForm {
 Calculadora de Sono
 =============================================================
 */
-
-
 section.calculadora {
     text-align: center;
-    width: 50%;
-    margin: 0 auto 0 auto;
+}
+
+section.calculadora div {
     background-color: #3f4074;
     border: 3px black ;
     border-radius: 20px;
+    margin: 2vw 0 2vw 0;
     padding: 3vw 3vw 3vw 3vw;
 }
 section.calculadora h3 {
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 section.calculadora div img {
-    width: 30%;
+    width: 12%;
 }
 section.calculadora form label {
     color: #D0A5F2;
@@ -213,6 +220,10 @@ footer {
     color: aquamarine;
     font-size: 0.8rem;
 }
+footer span {
+    color: #E8D257;
+}
+
 footer nav {
     display: flex;
     justify-content: space-between;

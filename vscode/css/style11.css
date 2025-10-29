@@ -4,8 +4,11 @@ Geral
 ==========================================================
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+
 html {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Mukta", sans-serif;  
     font-size: calc(15px + 0.390625vw);
     background-color: #2A2B5B;
     color: white;
@@ -18,7 +21,15 @@ section {
 }
 a {
     color: rgb(123, 213, 255);
+      font-family: "Mukta", sans-serif;  
+
 }
+
+
+h1, h2, h3, h4, h5, h6 {
+      font-family: "Leckerli One", cursive;
+}
+
 /*
 ==========================================================
 header
@@ -85,9 +96,6 @@ section.conteudo ul li {
     border-radius: 25px;
     margin: 3vw 0 3vw 0;
 }
-section.conteudo ul li details {
-    font-size: 1.3rem;
-}
 
 
 
@@ -122,4 +130,8 @@ footer nav ul li img{
     width: 5%;
     margin: 0 10px 0 10px;
     border-radius: 100px;
+}
+
+footer span {
+    color: #E8D257;
 }

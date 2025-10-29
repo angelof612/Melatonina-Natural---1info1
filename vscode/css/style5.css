@@ -3,15 +3,17 @@
 Geral
 ==========================================================
 */
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
 
 html {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Mukta", sans-serif;  
     font-size: calc(15px + 0.390625vw);
     background-color: #2A2B5B;
     color: white;
 }
 p {
     font-size: 1.1rem;
+    color: #C7BAFF;
 }
 a {
     color: #B4CCFF;
@@ -22,7 +24,15 @@ section {
 }
 a {
     color: rgb(123, 213, 255);
+      font-family: "Mukta", sans-serif;  
+
 }
+
+
+h1, h2, h3, h4, h5, h6 {
+      font-family: "Leckerli One", cursive;
+}
+
 /*
 ==========================================================
 header
@@ -49,7 +59,7 @@ header nav a img {
 header h1 {
     text-align: center;
     font-size: 2rem;
-    color: #ffffff;
+    color: #E8D257;
     font-weight: bold;
     margin: 10px 0;
 }
@@ -74,6 +84,9 @@ section.introducao h2 {
 }
 section h3 {
     font-size: 1.3rem;
+    color: #E8D257;
+    font-weight: bold;
+    margin: 0 0 0.9vw 0;
 }
 
 /*
@@ -93,7 +106,7 @@ section ul li {
 }
 section ul li details summary{
     font-size: 1.3rem;
-    color: white;
+    color: #E8D257;;
 }
 section ul li details p {
     margin: 1vw 3vw 1vw 3vw;
@@ -122,6 +135,12 @@ footer {
     color: aquamarine;
     font-size: 0.8rem;
 }
+
+footer span {
+    color: #E8D257;
+    text-decoration: none;
+}
+
 footer nav {
     display: flex;
     justify-content: space-between;
