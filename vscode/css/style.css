@@ -17,6 +17,10 @@ p a {
     color: #E8D257;
     text-decoration: none;
 }
+
+p {
+color: #C7BAFF;
+}
 header nav ul li.atual p a {
     font-weight: bold;
     background-color: rgb(12, 16, 61);
