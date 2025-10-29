@@ -143,6 +143,11 @@ section.formulario form button {
     padding: 0.5vw 1.5vw 0.5vw 1.5vw;
     margin: 1vw 1vw 1vw 1vw;
 }
+section p span.spanForm {
+    color: rgb(255, 238, 238);
+    font-weight: bold;
+    margin: 5px 0 5px 0;
+}
 /*
 =============================================================
 Calculadora de Sono

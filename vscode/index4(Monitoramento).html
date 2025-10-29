@@ -127,42 +127,82 @@
             </div>
 
 
-            <form>
+            <form onsubmit="return validarFormulario()">
                 <p>
                     <label for="dormir">Horário de Dormir: </label>
                     <input type="text" placeholder=". . ." name="nome" id="dormir">
+                    <span id="erroDormir" class="spanForm"></span>
                 </p>
                 <p>
                     <label for="telas">Horário que deixa de usar as telas:</label>
                     <input type="text" id="telas" placeholder=". . .">
+                    <span id="erroTelas" class="spanForm"></span>
                 </p>
                 <p>
                     <label for="tecnicas">Você utiliza alguma técnica de meditação, reflexão, leitura ou alguma
                         outra técnica antes de dormir?</label>
                     <input type="text" id="tecnicas" placeholder=". . . ">
+                    <span id="erroTecncias" class="spanForm"></span>
                 </p>
                 <p>
                     <label for="medicamentos">Você utiliza algum medicamento ou toma algum chá para dormir?</label>
                     <input type="text" id="medicamentos" placeholder=". . . ">
+                    <span id="erroMedicamentos" class="spanForm"></span>
                 </p>
                 <p>
                     <label for="qualidade">Você considera sua qualidade de sono com uma boa qualidade?</label>
                     <input type="text" id="qualidade" placeholder=". . . ">
+                    <span id="erroQualidade" class="spanForm"></span>
                 </p>
                 <button id="enviar" type="submit">Enviar</button>
-                <button id="reset" type="reset">Limpar</button>
+                <button id="reset" type="reset" class="spanForm">Limpar</button>
 
             </form>
             <script>
                 function validarFormulario() {
-                    var nome = document.getElementById("dormir").value;
-                    if (nome === "") {
-                        return true;
-                    } else {
-                        
-                        alert("O nome não pode estar vazio!");
-                        return false; 
-                    }     
+                    let dormir = document.getElementById('dormir');
+                    let telas = document.getElementById('telas');
+                    let tecnicas = document.getElementById('tecnicas')
+                    let medicamentos = document.getElementById('medicamentos');
+                    let qualidade = document.getElementById('qualidade');
+                    
+
+                    let erroDormir = document.getElementById('erroDormir');
+                    let erroTelas = document.getElementById('erroTelas');
+                    let erroTecnicas = document.getElementById('erroTecncias');
+                    let erroMedicamentos = document.getElementById('erroMedicamentos');
+                    let erroQualidade = document.getElementById('erroQualidade');
+
+                    let formValido = true;
+
+                    erroDormir.textContent = '';
+                    erroTelas.textContent = '';
+                    erroTecnicas.textContent = '';
+                    erroMedicamentos.textContent = '';
+                    erroQualidade.textContent = '';
+
+                    if (dormir.value === '') {
+                        erroDormir.textContent = `Preencha o campo!`;
+                        formValido = false;
+                    }
+                    if (telas.value === '') {
+                        erroTelas.textContent = `Preencha o campo!`;
+                        formValido = false;
+                    }
+                    if (tecnicas.value === '') {
+                        erroTecnicas.textContent = `Preencha o campo!`;
+                        formValido = false;
+                    }
+                    if (medicamentos.value === '') {
+                        erroMedicamentos.textContent = `Preencha o campo!`;
+                        formValido = false;
+                    }
+                    if (qualidade.value === '') {
+                        erroQualidade.textContent = `Preencha o campo!`;
+                        formValido = false;
+                    }
+
+                    return formValido;
                 }
             </script>
 
@@ -176,23 +216,52 @@
 
             <h3>Calculadora de Sono</h3>
             <img src="imagens/Lua.png" alt="Lua">
-            <form action="">
+            <form onsubmit="return validarCalculdaroa()">
                 <p>
                     <label for="idade">
                         Quantos anos você tem?
                     </label> <br>
                     <input type="number" id="idade" placeholder=". . . ">
+                    <span id="erroIdade" class="spanForm"></span>
                 </p>
                 <p>
-                    <label for="idade">
+                    <label for="horaSono">
                         Quantas horas você costuma dormir?
                     </label> <br>
                     <input type="number" id="horaSono" placeholder=". . . ">
+                    <span id="erroHoraSono" class="spanForm"></span>
                 </p>
-                <button>
+                <button type="submit">
                     Calcular
                 </button>
             </form>
+            <script>
+                function validarCalculdaroa() {
+                    event.preventDefault();
+
+                    let idade = document.getElementById('idade');
+                    let horaSono = document.getElementById('horaSono');
+
+                    let erroIdade = document.getElementById('erroIdade');
+                    let erroHoraSono = document.getElementById('erroHoraSono');
+
+                    let calcValido = true;
+
+                    erroIdade.textContent = '';
+                    erroHoraSono.textContent = '';
+
+                    if (idade.value === '') {
+                        erroIdade.textContent = 'Preencha o campo!';
+                        calcValido = false;
+                    }
+                    if (horaSono.value === '') {
+                        erroHoraSono.textContent = 'Preencha o campo!';
+                        calcValido = false;
+                    }
+                    return calcValido
+                }
+
+            </script>
 
 
 
