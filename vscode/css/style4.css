@@ -47,18 +47,22 @@ h1, h2, h3, h4, h5, h6 {
 Cabeçalho
 ==========================================================
 */
-header nav ul div.direita {
-    background-color: #5B5D96 ;
+header nav div.direita ul.nav {
+    background-color: #5B5D96;
     padding: 2vw 3vw 2vw 3vw;
     border-radius: 100px;
-}
-header nav ul div {
     display: flex;
-    margin: 1vw 2vw 1vw 2vw;
+    justify-content: space-between;         
     align-items: center;
-    justify-content: space-between;
+    margin-top: 2vw;
 }
-header nav ul li h1 {
+header nav div.esquerda  {
+    margin: 1vw 2vw 0 2vw;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+header nav div.esquerda  h1 {
     font-size: 2rem;
     font-weight: bold;
 }
