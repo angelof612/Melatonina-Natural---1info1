@@ -280,28 +280,38 @@
 
                     if (idadeUs <= 1 && hrDeSono < 11 ) {
                         horasMaisMenos = 11 - hrDeSono;
-                        mensagem = `Pessoas dessa idade deveriam dormir pelo menos 11 horas, para isso, você precisa dormir mais ${horasMaisMenos} hora${(horasMaisMenos == 1)? `` : `s`}`;
+                        mensagem = `Pessoas dessa idade deveriam dormir pelo menos 11 horas, para isso, você precisa dormir mais ${horasMaisMenos} hora${(horasMaisMenos == 1)? `` : `s`} do que você costuma dormir.`;
                     } else if (idadeUs <= 1 && hrDeSono > 14) {
                         horasMaisMenos = hrDeSono - 14;
-                        mensagem = `Pessoas dessa idade não devem dormir tanto, o ideal é dormir ${horasMaisMenos} hora${(horasMaisMenos == 1)? `` : `s`} a menos`;
+                        mensagem = `Pessoas dessa idade não devem dormir tanto, o ideal é dormir ${horasMaisMenos} hora${(horasMaisMenos == 1)? `` : `s`} a menos do que de costume.`;
                     } else if (idadeUs <= 1 && hrDeSono >= 11 && hrDeSono <=14) {
-                        mensagem = `Você está dormindo por um tempo bom`;
+                        mensagem = `Você está dormindo por um tempo bom!`;
                     } else if (idadeUs <= 12 && hrDeSono < 9) {
                         horasMaisMenos = 9 - hrDeSono;
-                        mensagem = `Tome cuidado! Crianças até 12 anos devem dormir pelo menos nove horas por noite, para isso, você precisaria dormir ${horasMaisMenos} hora${(horasMaisMenos == 1)? `` : `s`} a mais`;
+                        mensagem = `Tome cuidado! Crianças até 12 anos devem dormir pelo menos nove horas por noite, para isso, você precisaria dormir ${horasMaisMenos} hora${(horasMaisMenos == 1)? `` : `s`} a mais do que você costuma dormir.`;
                     } else if (idadeUs <= 12 && hrDeSono > 13) {
                         horasMaisMenos = hrDeSono - 13
-                        mensagem = `É melhor dormir menos! Crianças dessa idade devem dormir até, no máximo, 13 horas, para isso, recomendamos que durma ${horasMaisMenos} hora${(horasMaisMenos == 1)? `` : `s`} a menos`;
+                        mensagem = `É melhor dormir menos! Crianças dessa idade devem dormir até, no máximo, 13 horas, para isso, recomendamos que durma ${horasMaisMenos} hora${(horasMaisMenos == 1)? `` : `s`} a menos do que o seu costume.`;
                     } else if (idadeUs <=12 && hrDeSono >= 9 && hrDeSono <= 13) {
                         mensagem = `Esta é uma boa quantidade de sono!`;
                     } else if (idadeUs < 18 && hrDeSono < 8) {
                         horasMaisMenos = 8 - hrDeSono;
-                        mensagem = `Você está na fase de crescimento, para crescer bem, é bom dormir por pelo menos 8 horas, para isso, você deve dormir ${horasMaisMenos} hora${(horasMaisMenos == 1)? `` : `s`} a mais`;
+                        mensagem = `Você está na fase de crescimento, para crescer bem, é bom dormir por pelo menos 8 horas, para isso, você deve dormir ${horasMaisMenos} hora${(horasMaisMenos == 1)? `` : `s`} a mais do que você está dormino.`;
                     } else if (idadeUs < 18 && hrDeSono > 10) {
                         horasMaisMenos = hrDeSono - 10;
-                        mensagem = `Você está dormindo demais! Apesar de precisar dormir bastante, nãio é bom passar de 10 horas de sono, para dormir por um tempo adequado, é bom dormi ${horasMaisMenos} hora${(horasMaisMenos == 1)? `` : `s`} a menos`;
+                        mensagem = `Você está dormindo demais! Apesar de precisar dormir bastante, nãio é bom passar de 10 horas de sono, para dormir por um tempo adequado, é bom dormi ${horasMaisMenos} hora${(horasMaisMenos == 1)? `` : `s`} a menos do que você está dormindo.`;
                     } else if ( idadeUs < 18 && hrDeSono >= 8 && hrDeSono <= 10) {
                         mensagem = `Você está dormindo por um tempo bom!`;
+                    } else if (idadeUs < 65 && hrDeSono < 7) {
+                        horasMaisMenos = 7 - hrDeSono;
+                        mensagem = `Para pessoas adultas que têm até 65 anos, o ideal é dormir cerca de 7 horas por dia, por isso, é bom que você durma ${horasMaisMenos} hora${(horasMaisMenos == 1)? `` : `s`} a mais do que você costuma dormir.`;
+                    } else if (idadeUs < 65 && hrDeSono > 8) {
+                        horasMaisMenos = hrDeSono - 8;
+                        mensagem = `Para pessoas adultas até 65 anos de idade, é bom evitar de dormir por mais de 8 horas por dia, por isso, é bom dormir ${horasMaisMenos} hora${(horasMaisMenos == 1)? `` : `s`} a menos do que você costuma dormir.`
+                    } else if (idadeUs < 65 && hrDeSono > 7 && hrDeSono < 8) {
+                        mensagem = `Você está com um tempo bom de sono!`;
+                    } else if (idadeUs >= 65 && hrDeSono < 7) {
+                        horasMaisMenos = ``;
                     }
                     
                     
