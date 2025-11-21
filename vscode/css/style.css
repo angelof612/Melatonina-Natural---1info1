@@ -1,3 +1,4 @@
+
 /*
 ==========================================================
 Geral
@@ -65,6 +66,11 @@ header nav div.esquerda  {
 header nav div.esquerda  h1 {
     font-size: 2rem;
     font-weight: bold;
+}
+
+header nav div.direita svg.menu {
+    height: 50px;
+    display: none;
 }
 /*
 ==========================================================
@@ -205,11 +211,9 @@ footer nav ul li img{
                 RESPONSIVIDE
 ==================================================*/
 
-@media (min-width: 900px) {
+@media (max-width: 600px) {
 
-      header {
-        padding: 2vw 2vw 10vw 2vw;
-    }
+ 
 
 
 

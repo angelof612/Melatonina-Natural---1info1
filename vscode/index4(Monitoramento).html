@@ -1,28 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Monitoramento</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style4.css">
+
 </head>
-
 <body>
-
     <header>
         <nav>
             <div class="esquerda">
-
-
-
                 <a href="index.html">
                     <img src="imagens/Melatonina_Natural__.png" alt="logo" width="250">
                 </a>
                 <h1>Seja Bem-Vindo!</h1>
-
-
             </div>
             <div class="direita">
 
@@ -62,14 +55,8 @@
                             </a>
                         </p>
                     </li>
-
-
-
                 </ul>
             </div>
-
-
-
         </nav>
     </header>
     <hr>
@@ -79,46 +66,26 @@
             <nav>
                 <ul>
                     <li>
-
                         <a href="#">
                             <img src="imagens/calendario.png" alt="Calendaerio">
                         </a>
-
                         <h3>Calendário</h3>
-
-
-
                         <p>Use o nosso calendário para monitorar como foi seu sono durante o mês</p>
-
                     </li>
                     <li>
-
                         <a href="#calculadora">
                             <img src="imagens/calculadora (1).png" alt="calculadora">
                         </a>
-
                         <h3>Calculadora</h3>
-
-
-
                         <p>Calcule qunatas horas você precisa para ter um sono saudável por noite</p>
-
                     </li>
                     <li>
-
                         <a href="#formulario">
                             <img src="imagens/formulário(2).png" alt="Formulário">
                         </a>
-
                         <h3>Formulário</h3>
-
-
-
                         <p>Responda nosso formulário para podermos te ajudar melhor</p>
-
                     </li>
-
-
                 </ul>
             </nav>
         </section>
@@ -130,8 +97,6 @@
                 <h3>Formulário...</h3>
 
             </div>
-
-
             <form onsubmit="return validarFormulario()">
                 <p>
                     <label for="dormir">Horário de Dormir: </label>
@@ -161,7 +126,6 @@
                 </p>
                 <button id="enviar" type="submit">Enviar</button>
                 <button id="reset" type="reset" class="spanForm">Limpar</button>
-
             </form>
             <script>
                 function validarFormulario() {
@@ -210,18 +174,12 @@
                     return formValido;
                 }
             </script>
-
-
         </section>
         <hr>
         <section class="calculadora" id="calculadora">
-
-
-
-
             <h3>Calculadora de Sono</h3>
             <img src="imagens/Lua.png" alt="Lua">
-            <form onsubmit="return validarCalculdaroa()">
+            <form onsubmit="return validarCalculdaroa(event)">
                 <p>
                     <label for="idade">
                         Quantos anos você tem?
@@ -239,28 +197,25 @@
                 <button type="submit">
                     Calcular
                 </button>
-                <div class="resposta">
+                <div class="resposta" style="display: none;">
                     <span class="spanResposta" id="resposta">
 
                     </span>
-
                 </div>
             </form>
             <script>
                 function validarCalculdaroa() {
                     event.preventDefault();
-
                     let idade = document.getElementById('idade');
                     let horaSono = document.getElementById('horaSono');
-
                     let erroIdade = document.getElementById('erroIdade');
                     let erroHoraSono = document.getElementById('erroHoraSono');
-
+                    let respostaDiv = document.querySelector('.resposta');
+                    respostaDiv.style.display = `none`;
                     let calcValido = true;
-
                     erroIdade.textContent = '';
                     erroHoraSono.textContent = '';
-
+                    respostaDiv.style.display = 'none';
                     if (idade.value === '') {
                         erroIdade.textContent = 'Preencha o campo!';
                         calcValido = false;
@@ -269,16 +224,16 @@
                         erroHoraSono.textContent = 'Preencha o campo!';
                         calcValido = false;
                     }
-
-
                     if (calcValido) {
                         let respostaCalc = document.getElementById(`horaSono`);
                         let idadeUs = parseInt(idade.value);
                         let hrDeSono = parseInt(horaSono.value);
                         let mensagem = ``;
                         let horasMaisMenos = 0;
-
-                        if (idadeUs <= 1) {
+                        if (idadeUs <= 0) {
+                            mensagem = `Tente preencher o campo da idade com uma idade válida!`
+                        }
+                        else if (idadeUs <= 1) {
                             if (hrDeSono < 11) {
                                 horasMaisMenos = 11 - hrDeSono;
                                 mensagem = `Pessoas dessa idade deveriam dormir pelo menos 11 horas, para isso, você precisa dormir mais ${horasMaisMenos} hora${(horasMaisMenos == 1) ? `` : `s`} do que você costuma dormir.`;
@@ -293,70 +248,54 @@
                                 horasMaisMenos = hrDeSono - 12
                                 mensagem = `É melhor dormir menos! Crianças dessa idade devem dormir até, no máximo, 12 horas, para isso, recomendamos que durma ${horasMaisMenos} hora${(horasMaisMenos == 1) ? `` : `s`} a menos do que o seu costume.`;
                             } else if (hrDeSono >= 9 && hrDeSono <= 12) {
-                            mensagem = `Esta é uma boa quantidade de sono!`;
+                                mensagem = `Esta é uma boa quantidade de sono!`;
                             } else if (hrDeSono < 9) {
-                           horasMaisMenos = 9 - hrDeSono
-                           mensagem = `Pessoas dessa idade deveriam dormir pelo menos 9 horas, para isso, você precisa dormir mais ${horasMaisMenos} hora${(horasMaisMenos == 1) ? `` : `s`} do que você costuma dormir.`;
+                                horasMaisMenos = 9 - hrDeSono
+                                mensagem = `Pessoas dessa idade deveriam dormir pelo menos 9 horas, para isso, você precisa dormir mais ${horasMaisMenos} hora${(horasMaisMenos == 1) ? `` : `s`} do que você costuma dormir.`;
                             }
-                     } else if (idadeUs < 18) {
+                        } else if (idadeUs < 18) {
                             if (hrDeSono < 8) {
                                 horasMaisMenos = 8 - hrDeSono;
-                            mensagem = `Você está na fase de crescimento, para crescer bem, é bom dormir por pelo menos 8 horas, para isso, você deve dormir ${horasMaisMenos} hora${(horasMaisMenos == 1) ? `` : `s`} a mais do que você está dormino.`;
-                        } else if (hrDeSono > 10) {
-                            horasMaisMenos = hrDeSono - 10;
-                            mensagem = `Você está dormindo demais! Apesar de precisar dormir bastante, nãio é bom passar de 10 horas de sono, para dormir por um tempo adequado, é bom dormi ${horasMaisMenos} hora${(horasMaisMenos == 1) ? `` : `s`} a menos do que você está dormindo.`;
-                        } else if (hrDeSono >= 8 && hrDeSono <= 10) {
-                            mensagem =
-                             `Você está dormindo por um tempo bom!`;
-                        } 
-                    } else if (idadeUs <= 65) {
-                        if ( hrDeSono < 7) {
-                            horasMaisMenos = 7 - hrDeSono;
-                            mensagem = `Para pessoas adultas que têm até 65 anos, o ideal é dormir cerca de 7 horas por dia, por isso, é bom que você durma ${horasMaisMenos} hora${(horasMaisMenos == 1) ? `` : `s`} a mais do que você costuma dormir.`;
-                        } else if (hrDeSono > 9) {
-                            horasMaisMenos = hrDeSono - 9;
-                            mensagem = `Para pessoas adultas até 65 anos de idade, é bom evitar de dormir por mais de 9 horas por dia, por isso, é bom dormir ${horasMaisMenos} hora${(horasMaisMenos == 1) ? `` : `s`} a menos do que você costuma dormir.`
-                        } else if (hrDeSono > 7 && hrDeSono < 9) {
-                            mensagem = `Você está com um tempo bom de sono!`;
-                        } 
-                    } else if (idadeUs > 65 && idadeUs <= 130) {
-                               if ( hrDeSono < 7) {
-                            horasMaisMenos = 7 - hrDeSono;
-                            mensagem = `Para pessoas adultas que têm mais de 65, o ideal é dormir cerca de 7 horas por dia, por isso, é bom que você durma ${horasMaisMenos} hora${(horasMaisMenos == 1) ? `` : `s`} a mais do que você costuma dormir.`;
-                        } else if (hrDeSono > 8) {
-                            horasMaisMenos = hrDeSono - 8;
-                            mensagem = `Para pessoas adultas com mais de 65 anos de idade, é bom evitar de dormir por mais de 9 horas por dia, por isso, é bom dormir ${horasMaisMenos} hora${(horasMaisMenos == 1) ? `` : `s`} a menos do que você costuma dormir.`
-                        } else if (hrDeSono > 7 && hrDeSono < 8) {
-                            mensagem = `Você está com um tempo bom de sono!`;
-                        } 
+                                mensagem = `Você está na fase de crescimento, para crescer bem, é bom dormir por pelo menos 8 horas, para isso, você deve dormir ${horasMaisMenos} hora${(horasMaisMenos == 1) ? `` : `s`} a mais do que você está dormino.`;
+                            } else if (hrDeSono > 10) {
+                                horasMaisMenos = hrDeSono - 10;
+                                mensagem = `Você está dormindo demais! Apesar de precisar dormir bastante, nãio é bom passar de 10 horas de sono, para dormir por um tempo adequado, é bom dormi ${horasMaisMenos} hora${(horasMaisMenos == 1) ? `` : `s`} a menos do que você está dormindo.`;
+                            } else if (hrDeSono >= 8 && hrDeSono <= 10) {
+                                mensagem =
+                                    `Você está dormindo por um tempo bom!`;
+                            }
+                        } else if (idadeUs <= 65) {
+                            if (hrDeSono < 7) {
+                                horasMaisMenos = 7 - hrDeSono;
+                                mensagem = `Para pessoas adultas que têm até 65 anos, o ideal é dormir cerca de 7 horas por dia, por isso, é bom que você durma ${horasMaisMenos} hora${(horasMaisMenos == 1) ? `` : `s`} a mais do que você costuma dormir.`;
+                            } else if (hrDeSono > 9) {
+                                horasMaisMenos = hrDeSono - 9;
+                                mensagem = `Para pessoas adultas até 65 anos de idade, é bom evitar de dormir por mais de 9 horas por dia, por isso, é bom dormir ${horasMaisMenos} hora${(horasMaisMenos == 1) ? `` : `s`} a menos do que você costuma dormir.`
+                            } else if (hrDeSono > 7 && hrDeSono < 9) {
+                                mensagem = `Você está com um tempo bom de sono!`;
+                            }
+                        } else if (idadeUs > 65 && idadeUs <= 130) {
+                            if (hrDeSono < 7) {
+                                horasMaisMenos = 7 - hrDeSono;
+                                mensagem = `Para pessoas adultas que têm mais de 65, o ideal é dormir cerca de 7 horas por dia, por isso, é bom que você durma ${horasMaisMenos} hora${(horasMaisMenos == 1) ? `` : `s`} a mais do que você costuma dormir.`;
+                            } else if (hrDeSono > 8) {
+                                horasMaisMenos = hrDeSono - 8;
+                                mensagem = `Para pessoas adultas com mais de 65 anos de idade, é bom evitar de dormir por mais de 9 horas por dia, por isso, é bom dormir ${horasMaisMenos} hora${(horasMaisMenos == 1) ? `` : `s`} a menos do que você costuma dormir.`
+                            } else if (hrDeSono > 7 && hrDeSono < 8) {
+                                mensagem = `Você está com um tempo bom de sono!`;
+                            }
                         } else if (idadeUs > 130) {
                             mensagem = `Não temos dado de horas de sono necessárias para uma pessoa maior do que 130 anos, tendo em mente que a pessoa mais velha registrada de forma comprovada alcançou 122 anos!`;
 
                         }
-
-
                         resposta.textContent = mensagem;
-                        resultado.style4.display = "block"
-
+                        respostaDiv.style.display = `block`;
                         return calcValido;
                     }
                 }
-
-
-
-
-
             </script>
-
-
-
-
-
-
         </section>
-
     </main>
-
     <footer>
         <nav>
             <div>
@@ -394,11 +333,7 @@
                     </li>
                 </ul>
             </div>
-
-
-
         </nav>
-
     </footer>
 </body>
 

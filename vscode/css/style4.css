@@ -170,7 +170,7 @@ section.calculadora {
 
 section.calculadora div {
     background-color: #3f4074;
-    border: 3px black ;
+    border: solid, 3px, black ;
     border-radius: 20px;
     margin: 2vw 0 2vw 0;
     padding: 3vw 3vw 3vw 3vw;
@@ -207,7 +207,10 @@ section.calculadora button {
     font-size: 1.2rem;
     font-weight: bold;
 }
-
+section.calculadora div.resposta {
+    background-color: #2A2B5B;
+    display: none;
+}
 
 
 /*
