@@ -12,23 +12,32 @@
 <body>
     <header>
         <nav>
-              <div class="esquerda">
-            
-                  
+            <div class="esquerda">
 
-                        <a href="index.html">
-                            <img src="imagens/Melatonina_Natural__.png" alt="logo" width="250">
-                        </a>
-                        <h1>Seja Bem-Vindo!</h1>
-        
-                
-                       </div>
-                <div class="direita">
-                    
-          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#E8D257" ><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M5 6H19M5 10H19M5 14H19M5 18H19" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
-        
-                    <ul class="nav">
- <li class="atual">
+
+
+                <a href="index.html">
+                    <img src="imagens/Melatonina_Natural__.png" alt="logo" width="250">
+                </a>
+                <h1>Seja Bem-Vindo!</h1>
+
+
+            </div>
+            <div class="direita">
+
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#E8D257" class="menu"
+                    aria-label="menu" onclick="mostrarMenu()">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path d="M5 6H19M5 10H19M5 14H19M5 18H19" stroke="" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                    </g>
+                </svg>
+
+
+                <ul class="nav">
+                    <li class="atual">
                         <p>
                             <a href="index.html">
                                 Ínicio
@@ -63,20 +72,20 @@
                             </a>
                         </p>
                     </li>
-                
 
 
-                    </ul>
-                    </div>
-                   
-    
+
+                </ul>
+            </div>
+
+
 
         </nav>
     </header>
     <hr>
     <main>
         <section class="introducao">
-            <h2>Bem-Vindo ao Melatonina Natural!</h2>
+
             <p>
                 Aqui vamos te ajudar a melhorar a qualidade do seu sono, te ajudando a como controlá-lo, como ele está
                 ligado à sua saúde e como você pode ficar melhor ao regulá-lo corretamente!
@@ -118,14 +127,28 @@
                 dormindo.
             </p>
             <hr>
+
+        </section>
+
+        <section class="anatomia">
+
+
+
             <h3>
                 Anatomia do Cérebro Durante o Sono
             </h3>
-            <p>
-                Quando falamos de anatomia do sono, queremos falar sobre todas as estruturas cerebrais e fisiológicas
-                que controlam e fazem o sono acontecer.
-            </p>
-            <img src="imagens/cérbro.png" alt="Anatomia do Sono">
+
+            <div class="explicando">
+                <p>
+                    Quando falamos de anatomia do sono, queremos falar sobre todas as estruturas cerebrais e
+                    fisiológicas
+                    que controlam e fazem o sono acontecer.
+                </p>
+
+
+                <img src="imagens/cérbro.png" alt="Anatomia do Sono">
+            </div>
+
             <h4>Hipotálamo</h4>
             <p>
                 É o centro regulador do sono vigília. Nele contém os neurônios responsáveis por produzir a próxima
@@ -269,7 +292,7 @@
                         </li>
                     </ul>
                 </li>
-                
+
                 <li>
                     <h3>
                         Menos comuns:
@@ -297,7 +320,7 @@
                         </li>
                         <li>
                             <p>
-                                Bruximso (7%)
+                                Bruxismo (7%)
                             </p>
                         </li>
                     </ul>
@@ -320,81 +343,133 @@
             </p>
         </section>
         <hr>
-        <section>
+        <section class="recursos">
             <h2>Aprenda Mais Sobre com...</h2>
             <ul>
-                <li>
+                <li id="modal1">
+
                     <img src="imagens/BonecoDormindo.png" alt="Boneco dormindo">
+                    <div id="conteudoModal1">
+                        <div>
 
-                    <h3>Qualidade de Sono</h3>
-                    <p>
+                            <h3>Qualidade de Sono</h3>
+                            <p>
 
-                        O sono é parte fundamental de nossas vidas, tanto que passamos cerca de um terço dela dormindo.
-                        Por isso, é importante manter um sono de qualidade, assim, nosso cérebro pode funcionar da forma
-                        que deve, nos mantendo descansados, ajudando no nosso crescimento e muitas outras coisas.
-                    </p>
-                    <p>
-                        Por isso, manter um sono no ambiente certo, com o tempo ideal e mantendo uma rotina saudável,
-                        que (acredite se quiser) influencia muito no nosso sono.
-                    </p>
-                    <p>
-                        Aprenda a como ter hábitos saudáveis para melhorar a qualidade de seu sono com nossa página <a
-                            href="index2(QualidadeSono).html">Qualidade de Sono</a>
-                    </p>
-                </li>
-                <li>
-                    <img src="imagens/Remédio.png" alt="remedio">
+                                O sono é parte fundamental de nossas vidas, tanto que passamos cerca de um terço dela
+                                dormindo.
+                                Por isso, é importante manter um sono de qualidade, assim, nosso cérebro pode funcionar
+                                da
+                                forma
+                                que deve, nos mantendo descansados, ajudando no nosso crescimento e muitas outras
+                                coisas.
+                            </p>
+                            <p>
+                                Por isso, manter um sono no ambiente certo, com o tempo ideal e mantendo uma rotina
+                                saudável,
+                                que (acredite se quiser) influencia muito no nosso sono.
+                            </p>
+                            <p>
+                                Aprenda a como ter hábitos saudáveis para melhorar a qualidade de seu sono com nossa
+                                página
+                                <a href="index2(QualidadeSono).html">Qualidade de Sono</a>
+                            </p>
+                        </div>
 
-                    <h3>Saúde e Sono</h3>
-                    <p>
-                        Quando dormimos, nosso cérebro realiza diversas funções, liberando hormônios do sono, realizando
-                        funções para o relaxamento e descanso do corpo e que vão nos ajudar a nos mantermos acordados
-                        durante o dia e a nos mantermos bem no geral também.
-                    </p>
-                    <p>
-                        Ao aprendermos sobre a <a href="index7(SaudeESono).html">saúde relacionada ao sono</a>,
-                        aprendemos sobre os <a href="index8(hormoniosdoSono).html">hormônios do sono</a> e como eles nos
-                        afetam e como o uso de remédios para dormir pode nos afetar. outras coisas que podemos aprender
-                        são sobre os <a href="index11(disturbiosSono).html">distúrbios do sono</a>, como eles nos
-                        afetam, o que são e como podemos entendê-los
-                    </p>
+                    </div>
 
                 </li>
                 <li>
-                    <img src="imagens/ComputadorNoite.png" alt="computador e noite">
+                    <img src="imagens/Remédio.png" alt="remedio" id="modal2">
 
-                    <h3>Monitore sua rotina de sono</h3>
-                    <p>
-                        Nós oferecemos serviços que podem te ajudar a monitorar seu sono, através de sistemas que te
-                        ajudam com o cálculo de quando é bom para você dormir, monitorar como está sendo o seu sono com
-                        o nosso calendário e pode responder à um questionário para te ajudar a entender sua situação com
-                        relação ao seu sono.
+                    <div id="conteudoModal2">
+                        <div>
 
-                    </p>
-                    <p>
-                        Você pode usar nosso <a href="index4(Monitoramento).html">Serviços de monitoramento</a> na nossa
-                        página, lá você encontra a calculadora de sono, que te mostra o quanto e quando você deve
-                        dormir, o nosso formulário, para te ajudar a entender como você está em relação à qualidade de
-                        seu sono e também pode usar nosso calendário de sono, onde você mesmo pode marcar como andam
-                        suas noites e o calendário te ajudará a avaliar seu progresso em relação às suas noites de sono.
-                    </p>
+                            <h3>Saúde e Sono</h3>
+                            <p>
+                                Quando dormimos, nosso cérebro realiza diversas funções, liberando hormônios do sono,
+                                realizando
+                                funções para o relaxamento e descanso do corpo e que vão nos ajudar a nos mantermos
+                                acordados
+                                durante o dia e a nos mantermos bem no geral também.
+                            </p>
+                            <p>
+                                Ao aprendermos sobre a <a href="index7(SaudeESono).html">saúde relacionada ao sono</a>,
+                                aprendemos sobre os <a href="index8(hormoniosdoSono).html">hormônios do sono</a> e como
+                                eles
+                                nos
+                                afetam e como o uso de remédios para dormir pode nos afetar. outras coisas que podemos
+                                aprender
+                                são sobre os <a href="index11(disturbiosSono).html">distúrbios do sono</a>, como eles
+                                nos
+                                afetam, o que são e como podemos entendê-los
+                            </p>
+
+                        </div>
+
+                    </div>
+                </li>
+                <li>
+                    <img src="imagens/ComputadorNoite.png" alt="computador e noite" id="modal3">
+
+                    <div id="conteudoModal3">
+                        <div>
+                            <h3>Monitore sua rotina de sono</h3>
+                            <p>
+                                Nós oferecemos serviços que podem te ajudar a monitorar seu sono, através de sistemas
+                                que te
+                                ajudam com o cálculo de quando é bom para você dormir, monitorar como está sendo o seu
+                                sono
+                                com
+                                o nosso calendário e pode responder à um questionário para te ajudar a entender sua
+                                situação
+                                com
+                                relação ao seu sono.
+
+                            </p>
+                            <p>
+                                Você pode usar nosso <a href="index4(Monitoramento).html">Serviços de monitoramento</a>
+                                na
+                                nossa
+                                página, lá você encontra a calculadora de sono, que te mostra o quanto e quando você
+                                deve
+                                dormir, o nosso formulário, para te ajudar a entender como você está em relação à
+                                qualidade
+                                de
+                                seu sono e também pode usar nosso calendário de sono, onde você mesmo pode marcar como
+                                andam
+                                suas noites e o calendário te ajudará a avaliar seu progresso em relação às suas noites
+                                de
+                                sono.
+                            </p>
+                        </div>
+                    </div>
+
 
                 </li>
 
                 <li>
 
+                    <img src="imagens/sheep-166136-the-noun-project-2-icon-sm.png" alt="Ovelha" id="modal4">
+                    <div id="conteudoModal4">
 
-                    <h3>Sobre</h3>
-                    <p>
-                        Conheça a página <a href="index10(Sobre).html">Sobre</a>!
-                    </p>
-                    <p>
-                        Aqui você pode ver como foi o progresso de criação do site, através das ATAS de reunião.
-                    </p>
-                    <p>
-                        Você também pode conhecer um pouco da nossa equipe, como as funções de cada um e um pouco da
-                        relação deles com o projeto.
-                    </p>
+                        <div>
+                            <h3>Sobre</h3>
+                            <p>
+                                Conheça a página <a href="index10(Sobre).html">Sobre</a>!
+                            </p>
+                            <p>
+                                Aqui você pode ver como foi o progresso de criação do site, através das ATAS de reunião.
+                            </p>
+                            <p>
+                                Você também pode conhecer um pouco da nossa equipe, como as funções de cada um e um
+                                pouco da
+                                relação deles com o projeto.
+                            </p>
+                        </div>
+
+
+                    </div>
+
 
 
                 </li>
@@ -449,16 +524,33 @@
     <script>
 
         function mostrarMenu() {
-      const menu = document.querySelector("header nav div.direita ul.nav "); 
-      
-        if (menu.style.height == menu.scrollHeight + "px") {
-          menu.style.height = "0px"
-        } else {
-          menu.style.height = menu.scrollHeight + "px"
+            const menu = document.querySelector("header nav div.direita ul.nav ");
+
+            if (menu.style.height == menu.scrollHeight + "px") {
+                menu.style.height = "0px"
+            } else {
+                menu.style.height = menu.scrollHeight + "px"
+            }
         }
-    }
-        
- 
+
+
+
+         let modal1 = document.getElementById("modal1");
+
+        let conteudoModal1 = document.getElementById("conteudoModal1");
+
+        modal1.addEventListener("click",function(){
+            console.log("foi");
+            conteudoModal1.style.display = "block";
+           
+        });
+
+        conteudoModal1.addEventListener("click", function(){
+            modal1.style.display = "none";
+        })
+
+
+
     </script>
 </body>
 

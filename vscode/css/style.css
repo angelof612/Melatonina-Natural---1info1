@@ -1,4 +1,3 @@
-
 /*
 ==========================================================
 Geral
@@ -8,38 +7,39 @@ Geral
 @import url('https://fonts.googleapis.com/css2?family=Leckerli+One&family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
 
 html {
-  font-family: "Mukta", sans-serif;  
+    font-family: "Mukta", sans-serif;
     font-size: calc(15px + 0.390625vw);
     background-color: #2A2B5B;
-    color:#E8D257;
-    
+    color: #E8D257;
+
 }
+
 p a {
     color: #E8D257;
     text-decoration: none;
 }
 
 p {
-color: #C7BAFF;
+    color: #C7BAFF;
 }
-header nav ul li.atual p a {
-    font-weight: bold;
-    background-color: rgb(12, 16, 61);
-    padding: 10px 20px 10px 20px;
-    border-radius: 30px;
-}
+
 hr {
     margin: 3vw 0 3vw 0;
 }
 
 a {
     color: rgb(123, 213, 255);
-      font-family: "Mukta", sans-serif;  
+    font-family: "Mukta", sans-serif;
 
 }
 
-h1, h2, h3, h4, h5, h6 {
-      font-family: "Leckerli One", cursive;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Leckerli One", cursive;
 }
 
 
@@ -53,17 +53,19 @@ header nav div.direita ul.nav {
     padding: 2vw 3vw 2vw 3vw;
     border-radius: 100px;
     display: flex;
-    justify-content: space-between;         
+    justify-content: space-between;
     align-items: center;
     margin-top: 2vw;
 }
-header nav div.esquerda  {
+
+header nav div.esquerda {
     margin: 1vw 2vw 0 2vw;
     justify-content: space-between;
     display: flex;
     align-items: center;
 }
-header nav div.esquerda  h1 {
+
+header nav div.esquerda h1 {
     font-size: 2rem;
     font-weight: bold;
 }
@@ -72,6 +74,15 @@ header nav div.direita svg.menu {
     height: 50px;
     display: none;
 }
+
+
+header nav ul li.atual p a {
+    font-weight: bold;
+    background-color: rgb(12, 16, 61);
+    padding: 10px 20px 10px 20px;
+    border-radius: 30px;
+}
+
 /*
 ==========================================================
 Introdução
@@ -81,12 +92,14 @@ section.introducao {
     text-align: center;
     color: #C7BAFF;
 }
+
 section.introducao h2 {
     font-size: 2rem;
     font-weight: bold;
     margin: 1.5vw 0 5vw 0;
     color: #E8D257;
 }
+
 section.introducao p {
     font-size: 1.2rem;
     margin: 3vw 6vw 3vw 6vw;
@@ -105,6 +118,7 @@ section h2 {
     margin: 5vw 0 3vw 0;
     text-decoration: underline;
 }
+
 section.texto h3 {
     font-size: 1.5rem;
     font-weight: bold;
@@ -113,20 +127,24 @@ section.texto h3 {
     margin: 5vw 0 3vw 0;
     text-decoration: underline;
 }
+
 section h4 {
     color: #E8D257;
     margin: 2vw 3vw 2vw 3vw;
     font-size: 1.2rem;
 }
+
 section.texto p {
     font-size: 1.2rem;
     margin: 1vw 3vw 1vw 3vw;
     text-align: center;
     color: #C7BAFF;
 }
+
 section.texto p span {
     font-weight: bold;
 }
+
 section.texto img {
     width: 100%;
     border-radius: 20px;
@@ -141,7 +159,7 @@ Outras Coisas (nome provisório)
 */
 
 
-main section ul li{
+main section ul li {
     margin: 2vw 3vw 3vw 3vw;
     background: #5B5D96;
     padding: 20px 30px 30px 30px;
@@ -165,8 +183,14 @@ main section ul li p a {
     color: #E8D257;
     text-decoration: underline;
 }
+
 section {
     margin: 2vw 3vw 2vw 3vw;
+}
+
+section ul li img {
+    height: 100px;
+    width: 100px;
 }
 
 /*
@@ -177,7 +201,7 @@ Footer
 
 footer {
     margin: 10vw 0 0 0;
-    background-color: black;  
+    background: linear-gradient(#2A2B5B, #12122c);
     padding: 3vw 7vw 3vw 7vw;
     align-items: center;
     color: aquamarine;
@@ -187,20 +211,24 @@ footer {
 footer span {
     color: #E8D257;
 }
+
 footer nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 footer img {
     width: 40%;
 }
+
 footer nav ul li {
     display: flex;
     align-items: center;
     margin: 2vw 0 2vw 0;
 }
-footer nav ul li img{
+
+footer nav ul li img {
     width: 5%;
     margin: 0 10px 0 10px;
     border-radius: 100px;
@@ -213,7 +241,190 @@ footer nav ul li img{
 
 @media (max-width: 600px) {
 
- 
+
+
+    * hr {
+        display: none;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    h1 {
+        font-size: 1rem;
+    }
+
+
+
+    header nav {
+        background: linear-gradient(#12122c, #2A2B5B);
+        width: 100%;
+        display: flex;
+
+        flex-direction: column-reverse;
+
+    }
+
+
+
+    header nav div.direita ul.nav {
+        display: block;
+        border-radius: 0px;
+        padding: 0 0 0 0;
+        justify-content: center;
+        align-items: center;
+        background-color: #12122c00;
+        height: 0px;
+        transition: 0.6s height;
+        overflow: hidden;
+    }
+
+
+
+    header nav ul li.atual p a {
+        background-color: auto;
+    }
+
+    header nav a img {
+        height: 150px;
+        width: 140px;
+        margin: 5vw 0 0 0;
+        position: relative;
+    }
+
+    header nav div.esquerda {
+        margin: 1vw 2vw 0 2vw;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav div.direita svg.menu {
+        display: block;
+        width: 8vw;
+        margin: 5vw;
+    }
+
+    header nav div.direita {
+        overflow: auto;
+    }
+
+    header nav div.direita svg,
+    header nav div.direita ul {
+        float: right;
+        clear: both;
+    }
+
+    header nav div.direita ul li p a {
+        margin: 0 20px 0 0;
+    }
+
+    header nav div.esquerda {
+        margin: 1vw 2vw 0 2vw;
+        justify-content: center;
+        display: flex
+    }
+
+    header nav div.esquerda h1 {
+        font-size: 2rem;
+        margin-bottom: 10vw;
+    }
+
+    header nav div.esquerda h1 {
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+
+    section.anatomia div.explicando {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 6vw;
+    }
+
+    section.anatomia div.explicando img {
+        width: 250px;
+        height: 150px;
+    }
+
+    section.recursos>ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    section.recursos>li {
+        justify-content: center;
+    }
+
+    section.recursos ul li p {
+        display: none;
+    }
+
+    div#conteudoModal1 {
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #00000081;
+        display: none;
+    }
+
+    div#conteudoModal2{
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #00000081;
+        display: none;
+
+    }
+
+    div#conteudoModal3 {
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #00000081;
+        display: none;
+
+    }
+
+    div#conteudoModal4{
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+        background: #00000081;
+        display: none;
+
+    }
+
+    div#conteudoModal1 div {
+        background-color: white;
+        margin: 25vh 25vw;
+    }
+
+
+    div#conteudoModal2 div {
+        background-color: white;
+        margin: 25vh 25vw;
+    }
+
+
+    div#conteudoModal3 div {
+        background-color: white;
+        margin: 25vh 25vw;
+    }
+
+
+    div#conteudoModal4 div {
+        background-color: white;
+        margin: 25vh 25vw;
+    }
+
+
+
 
 
 
