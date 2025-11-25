@@ -48,6 +48,7 @@ h6 {
 Cabeçalho
 ==========================================================
 */
+
 header nav div.direita ul.nav {
     background-color: #5B5D96;
     padding: 2vw 3vw 2vw 3vw;
@@ -251,9 +252,9 @@ footer nav ul li img {
         font-size: 0.9rem;
     }
 
-    h1 {
+    h1, h2, h3, h4, h5, h6 {
         font-size: 1rem;
-    }
+    } 
 
 
 
