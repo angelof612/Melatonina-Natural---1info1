@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="css/style4.css">
 
 </head>
+
 <body>
     <header>
         <nav>
@@ -18,6 +20,17 @@
                 <h1>Seja Bem-Vindo!</h1>
             </div>
             <div class="direita">
+
+
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#E8D257" class="menu"
+                    aria-label="menu" onclick="mostrarMenu()">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path d="M5 6H19M5 10H19M5 14H19M5 18H19" stroke="" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                    </g>
+                </svg>
 
                 <ul class="nav">
                     <li>
@@ -61,7 +74,7 @@
     </header>
     <hr>
     <main>
-        <section>
+        <section class="servicos">
             <h2>Serviços de Monitoramento</h2>
             <nav>
                 <ul>
@@ -90,7 +103,7 @@
             </nav>
         </section>
         <hr>
-        <section class="formulario" id="formulario">
+        <section class="formulario" id="formulario" style="display: block;">
 
             <div>
                 <img src="imagens/formulario.png" alt="formulario">
@@ -100,7 +113,13 @@
             <form onsubmit="return validarFormulario()">
                 <p>
                     <label for="dormir">Horário de Dormir: </label>
-                    <input type="text" placeholder=". . ." name="nome" id="dormir">
+                    <select name="dormir" id="">
+                        <option value="1">4- Horas</option>
+                        <option value="2">4-6 Horas</option>
+                        <option value="3">7-9 Horas</option>
+                        <option value="4">10+ Horas</option>
+                        <option value="5"></option>
+                    </select>
                     <span id="erroDormir" class="spanForm"></span>
                 </p>
                 <p>
@@ -110,23 +129,43 @@
                 </p>
                 <p>
                     <label for="tecnicas">Você utiliza alguma técnica de meditação, reflexão, leitura ou alguma
-                        outra técnica antes de dormir?</label>
-                    <input type="text" id="tecnicas" placeholder=". . . ">
+                        outra técnica antes de dormir?
+                        <input type="radio" id="tecnicas" value="1" name="tecnicas"> Sim
+                    </label>
+                    <label for="tecnicas">
+                        <input type="radio" id="tecnicas" value="0" name="tecnicas"> Não
+                    </label>
+
+
                     <span id="erroTecncias" class="spanForm"></span>
                 </p>
                 <p>
-                    <label for="medicamentos">Você utiliza algum medicamento ou toma algum chá para dormir?</label>
-                    <input type="text" id="medicamentos" placeholder=". . . ">
+                    <label for="medicamentos">Você utiliza algum medicamento ou toma algum chá para dormir?
+                        <input type="radio" id="medicamentos" value="1" name="medicamentos"> Sim
+                    </label>
+                    <label for="medicamentos">
+                        <input type="radio" id="medicamentos" value="0" name="medicamentos"> Não
+                    </label>
+
+
                     <span id="erroMedicamentos" class="spanForm"></span>
                 </p>
                 <p>
-                    <label for="qualidade">Você considera sua qualidade de sono com uma boa qualidade?</label>
-                    <input type="text" id="qualidade" placeholder=". . . ">
+                    <label for="qualidade">Como você classificaria o seu sono?
+                        <input type="radio" id="qualidade" for="qualidade" value="1" name="qualidade">Sim
+                    </label>
+                    <label for="qualidade">
+                        <input type="radio" id="qualidade" for="qualidade" value="0" name="qualidade">Não
+                    </label>
                     <span id="erroQualidade" class="spanForm"></span>
                 </p>
                 <button id="enviar" type="submit">Enviar</button>
                 <button id="reset" type="reset" class="spanForm">Limpar</button>
             </form>
+            <section class="resultado" style="display: none;">
+
+            </section>
+
             <script>
                 function validarFormulario() {
                     let dormir = document.getElementById('dormir');
@@ -172,7 +211,15 @@
                     }
 
                     return formValido;
+                    const form = document.querySelector(`section.formulario`);
+                    const resposta = document.querySelector(`section.resultado`);
+                    if (formValido) {
+                            form.style.display = `none`;
+                            resposta.style.display = `block`;    
+                    }
                 }
+
+
             </script>
         </section>
         <hr>
@@ -271,7 +318,7 @@
                             } else if (hrDeSono > 9) {
                                 horasMaisMenos = hrDeSono - 9;
                                 mensagem = `Para pessoas adultas até 65 anos de idade, é bom evitar de dormir por mais de 9 horas por dia, por isso, é bom dormir ${horasMaisMenos} hora${(horasMaisMenos == 1) ? `` : `s`} a menos do que você costuma dormir.`
-                            } else if (hrDeSono > 7 && hrDeSono < 9) {
+                            } else if (hrDeSono >= 7 && hrDeSono <= 9) {
                                 mensagem = `Você está com um tempo bom de sono!`;
                             }
                         } else if (idadeUs > 65 && idadeUs <= 130) {
@@ -281,7 +328,7 @@
                             } else if (hrDeSono > 8) {
                                 horasMaisMenos = hrDeSono - 8;
                                 mensagem = `Para pessoas adultas com mais de 65 anos de idade, é bom evitar de dormir por mais de 9 horas por dia, por isso, é bom dormir ${horasMaisMenos} hora${(horasMaisMenos == 1) ? `` : `s`} a menos do que você costuma dormir.`
-                            } else if (hrDeSono > 7 && hrDeSono < 8) {
+                            } else if (hrDeSono >= 7 && hrDeSono <= 8) {
                                 mensagem = `Você está com um tempo bom de sono!`;
                             }
                         } else if (idadeUs > 130) {
@@ -293,6 +340,19 @@
                         return calcValido;
                     }
                 }
+
+
+                function mostrarMenu() {
+                    const menu = document.querySelector("header nav div.direita ul.nav ");
+
+                    if (menu.style.height == menu.scrollHeight + "px") {
+                        menu.style.height = "0px"
+                    } else {
+                        menu.style.height = menu.scrollHeight + "px"
+                    }
+                }
+
+
             </script>
         </section>
     </main>
@@ -335,6 +395,8 @@
             </div>
         </nav>
     </footer>
+
+
 </body>
 
 </html>

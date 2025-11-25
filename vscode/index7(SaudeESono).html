@@ -25,6 +25,17 @@
                        </div>
                 <div class="direita">
 
+
+                      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#E8D257" class="menu"
+                    aria-label="menu" onclick="mostrarMenu()">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path d="M5 6H19M5 10H19M5 14H19M5 18H19" stroke="" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                    </g>
+                </svg>
+
                     <ul class="nav">
  <li>
                         <p>
@@ -207,6 +218,8 @@
             <p>
                 Por isso, dormir bem é essencial, porque, se tivermos o sono muito desregulado, podemos enfrentar problemas, tanto a curto prazo, como o cansaço durante o dia, a mudança de humor, indisposição para tarefas, quanto a longo prazo, como podem gerar problemas cardiovasculares, problemas com pressão alta, diabetes, além de problemas psicológicos relacionados ao cansaço mental, como depressão, ansiedade e mudanças de humor.
             </p>
+
+             
         </section>
 
     </main>
@@ -254,5 +267,17 @@
         </nav>
 
     </footer>
+
+    <script>
+           function mostrarMenu() {
+            const menu = document.querySelector("header nav div.direita ul.nav ");
+
+            if (menu.style.height == menu.scrollHeight + "px") {
+                menu.style.height = "0px"
+            } else {
+                menu.style.height = menu.scrollHeight + "px"
+            }
+        }
+    </script>
 </body>
 </html>

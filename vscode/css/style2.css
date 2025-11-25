@@ -42,6 +42,13 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
       font-family: "Leckerli One", cursive;
+          color: #E8D257;
+
+}
+
+p {
+        color: #C7BAFF;
+ 
 }
 
 /*
@@ -68,6 +75,14 @@ header nav div.esquerda  h1 {
     font-size: 2rem;
     font-weight: bold;
 }
+
+
+header nav div.direita svg.menu {
+    height: 50px;
+    display: none;
+}
+
+
 /*
 ==========================================================
 Qualidade de Sono
@@ -113,6 +128,8 @@ section.qualidadeSono ul li div.esquerda {
     text-align: center;
 }
 
+
+
 /*
 ===================================================
 Footer
@@ -121,7 +138,7 @@ Footer
 
 footer {
     margin: 10vw 0 0 0;
-    background-color: black;  
+    background: linear-gradient(#2A2B5B, #12122c);
     padding: 3vw 7vw 3vw 7vw;
     align-items: center;
     color: aquamarine;
@@ -159,12 +176,20 @@ footer nav ul li img{
     }
 
     p {
-        font-size: 0.9rem;
+    
     }
 
     h1, h2, h3, h4, h5, h6 {
-        font-size: 1rem;
+        font-size: 1.5rem;
     } 
+
+    main section.dormirBem p {
+            font-size: 1rem;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
 
 
 
@@ -192,9 +217,9 @@ footer nav ul li img{
     }
 
 
-
-    header nav ul li.atual p a {
-        background-color: auto;
+   header nav ul li.atual p a {
+        background-color: transparent;
+        border-radius: 0%;
     }
 
     header nav a img {
@@ -222,12 +247,12 @@ footer nav ul li img{
 
     header nav div.direita svg,
     header nav div.direita ul {
-        float: right;
+        float: left;
         clear: both;
     }
 
     header nav div.direita ul li p a {
-        margin: 0 20px 0 0;
+        margin: 0 0px 0 30px;
     }
 
     header nav div.esquerda {

@@ -65,6 +65,8 @@ header h1 {
 hr {
     margin: 2vw 5vw 2vw 5vw;
 }
+
+
 /*
 ==========================================================
 Introdução
@@ -127,7 +129,7 @@ Footer
 
 footer {
     margin: 10vw 0 0 0;
-    background-color: black;  
+    background: linear-gradient(#2A2B5B, #12122c);
     padding: 3vw 7vw 3vw 7vw;
     align-items: center;
     color: aquamarine;

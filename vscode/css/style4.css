@@ -66,6 +66,14 @@ header nav div.esquerda  h1 {
     font-size: 2rem;
     font-weight: bold;
 }
+
+
+header nav div.direita svg.menu {
+    height: 50px;
+    display: none;
+}
+
+
 /*
 =============================================================
 Serviços de Monitoramento
@@ -145,6 +153,7 @@ section.formulario form p input {
     padding: 10px 10px 10px 10px;
     display: flex;
     flex-wrap: wrap;
+    margin: 10px 10px 10px 10px;
 }
 section.formulario form button {
     background-color: #5A5BA1;
@@ -221,7 +230,7 @@ Footer
 
 footer {
     margin: 10vw 0 0 0;
-    background-color: black;  
+    background: linear-gradient(#2A2B5B, #12122c);
     padding: 3vw 7vw 3vw 7vw;
     align-items: center;
     color: aquamarine;
@@ -293,11 +302,12 @@ footer nav ul li img{
     }
 
 
-
-    header nav ul li.atual p a {
-        background-color: auto;
+   header nav ul li.atual p a {
+        background-color: transparent;
+        border-radius: 0%;
     }
 
+    
     header nav a img {
         height: 150px;
         width: 140px;
@@ -323,12 +333,12 @@ footer nav ul li img{
 
     header nav div.direita svg,
     header nav div.direita ul {
-        float: right;
+        float: left;
         clear: both;
     }
 
     header nav div.direita ul li p a {
-        margin: 0 20px 0 0;
+        margin: 0 20px 0 30px;
     }
 
     header nav div.esquerda {
@@ -346,5 +356,34 @@ footer nav ul li img{
         font-size: 1.6rem;
         font-weight: bold;
     }
+
+    /*serviçoss*/
+
+
+section nav ul li  {
+    background-color: #5B5D96;
+    margin: 3vw 5vw 3vw 5vw;
+    padding: 2vw 2vw 2vw 2vw;
+    border-radius: 56px; 
+}
+
+section nav ul li  h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin: 0 0 1vw 0;
+    text-align: center;
+}
+section nav ul li img {
+    width: 60%;
+}
+section nav ul li p {
+    display: none;
+}
+section nav ul {
+    display: flex;
+    width: 300px;
+}
+
 
 }

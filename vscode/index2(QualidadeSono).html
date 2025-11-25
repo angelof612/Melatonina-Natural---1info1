@@ -25,6 +25,16 @@
                        </div>
                 <div class="direita">
 
+                      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#E8D257" class="menu"
+                    aria-label="menu" onclick="mostrarMenu()">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <path d="M5 6H19M5 10H19M5 14H19M5 18H19" stroke="" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                    </g>
+                </svg>
+
                     <ul class="nav">
  <li>
                         <p>
@@ -71,7 +81,7 @@
     <hr>
     <main>
         <section class="dormirBem">
-            <h2>Por que ter um bom sono?</h2>
+            <h1>Por que ter um bom sono?</h1>
             <p>
                 O sono é um dos <span>principais fatores para termos uma vida mais saudável.</span> Quando dormimos, nosso cérebro
                 consegue regular o corpo, liberando hormônios que ajudam no bom funcionamento do corpo, ajudam no
@@ -88,25 +98,26 @@
                 além disso, quando dormimos mal, há muito mais propensão ao desenvolvimento de doenças cardiovasculares,
                 por exemplo, diabetes e pressão alta.
             </p>
+                
+    <h2>Como ter um sono de qualidade?</h2>
+                <p>
+                    Um sono de qualidade é essencial para uma vida saudável. <span>Mas como podemos ter uma noite de sono
+                        boa?</span>
+                </p>
+                <p>
+                    É uma ótima pergunta, sabemos que um sono foi bom quando acordamos de manhã bem descansados, nos
+                    sentindo bem, não quando ficamos acordando no meio da noite e acordamos ainda cansados, de mau humor e
+                    sem vontade de levantar da cama, por isso, um sono de qualidade é importante, além de todos os
+                    benefícios para sua saúde mental e física.
+                </p>
 
+                <p>
+                    <span>Para conseguirmos um sono de qualidade quando temos que ter...</span>
+            </p>
         </section>
         <hr>
         <section class="qualidadeSono">
-            <h2>Como ter um sono de qualidade?</h2>
-            <p>
-                Um sono de qualidade é essencial para uma vida saudável. <span>Mas como podemos ter uma noite de sono
-                    boa?</span>
-            </p>
-            <p>
-                É uma ótima pergunta, sabemos que um sono foi bom quando acordamos de manhã bem descansados, nos
-                sentindo bem, não quando ficamos acordando no meio da noite e acordamos ainda cansados, de mau humor e
-                sem vontade de levantar da cama, por isso, um sono de qualidade é importante, além de todos os
-                benefícios para sua saúde mental e física.
-            </p>
-
-            <p>
-                <span>Para conseguirmos um sono de qualidade quando temos que ter...</span>
-            </p>
+          
             <nav>
                 <ul>
                     <li>
@@ -209,6 +220,23 @@
         </nav>
 
     </footer>
+
+    <script>
+
+             function mostrarMenu() {
+            const menu = document.querySelector("header nav div.direita ul.nav ");
+
+            if (menu.style.height == menu.scrollHeight + "px") {
+                menu.style.height = "0px"
+            } else {
+                menu.style.height = menu.scrollHeight + "px"
+            }
+        }
+
+        
+    </script>
+
+    
 </body>
 
 </html>

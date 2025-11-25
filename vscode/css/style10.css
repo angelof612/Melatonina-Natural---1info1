@@ -64,6 +64,14 @@ header nav div.esquerda  h1 {
     font-size: 2rem;
     font-weight: bold;
 }
+
+
+header nav div.direita svg.menu {
+    height: 50px;
+    display: none;
+}
+
+
 /*
 ==================================================
 Sobre o Projeto
@@ -157,7 +165,7 @@ Footer
 
 footer {
     margin: 10vw 0 0 0;
-    background-color: black;  
+    background: linear-gradient(#2A2B5B, #12122c);
     padding: 3vw 7vw 3vw 7vw;
     align-items: center;
     color: aquamarine;
@@ -228,12 +236,10 @@ footer span {
         overflow: hidden;
     }
 
-
-
-    header nav ul li.atual p a {
-        background-color: auto;
+   header nav ul li.atual p a {
+        background-color: transparent;
+        border-radius: 0%;
     }
-
     header nav a img {
         height: 150px;
         width: 140px;
@@ -259,12 +265,12 @@ footer span {
 
     header nav div.direita svg,
     header nav div.direita ul {
-        float: right;
+        float: left;
         clear: both;
     }
 
     header nav div.direita ul li p a {
-        margin: 0 20px 0 0;
+        margin: 0 0 0 30px;
     }
 
     header nav div.esquerda {
