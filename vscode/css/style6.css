@@ -47,6 +47,12 @@ h1, h2, h3, h4, h5, h6 {
 Cabeçalho
 ==========================================================
 */
+
+
+body header {
+        background:linear-gradient( #12122c ,#2A2B5B);
+}
+
 header nav ul div.direita {
     background-color: #5B5D96 ;
     padding: 2vw 3vw 2vw 3vw;

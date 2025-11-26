@@ -56,6 +56,12 @@ p {
 Cabeçalho
 ==========================================================
 */
+
+
+body header {
+        background:linear-gradient( #12122c ,#2A2B5B);
+}
+
 header nav div.direita ul.nav {
     background-color: #5B5D96;
     padding: 2vw 3vw 2vw 3vw;
