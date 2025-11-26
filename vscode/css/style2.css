@@ -111,6 +111,15 @@ main section.qualidadeSono p {
     color: #C7BAFF;
 }
 
+main section.dormirBem p {
+    font-size: 1.3rem;
+}
+
+main section.dormirBem h1, h2 {
+    
+
+}
+
 
 main section.qualidadeSono ul li h2 {
     text-align: center;

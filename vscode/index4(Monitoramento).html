@@ -303,10 +303,10 @@
                         } else if (idadeUs < 18) {
                             if (hrDeSono < 8) {
                                 horasMaisMenos = 8 - hrDeSono;
-                                mensagem = `Você está na fase de crescimento, para crescer bem, é bom dormir por pelo menos 8 horas, para isso, você deve dormir ${horasMaisMenos} hora${(horasMaisMenos == 1) ? `` : `s`} a mais do que você está dormino.`;
+                                mensagem = `Você está na fase de crescimento, para crescer bem, é bom dormir por pelo menos 8 horas, para isso, você deve dormir ${horasMaisMenos} hora${(horasMaisMenos == 1) ? `` : `s`} a mais do que você está dormindo.`;
                             } else if (hrDeSono > 10) {
                                 horasMaisMenos = hrDeSono - 10;
-                                mensagem = `Você está dormindo demais! Apesar de precisar dormir bastante, nãio é bom passar de 10 horas de sono, para dormir por um tempo adequado, é bom dormi ${horasMaisMenos} hora${(horasMaisMenos == 1) ? `` : `s`} a menos do que você está dormindo.`;
+                                mensagem = `Você está dormindo demais! Apesar de precisar dormir bastante, nãio é bom passar de 10 horas de sono, para dormir por um tempo adequado, é bom dormir ${horasMaisMenos} hora${(horasMaisMenos == 1) ? `` : `s`} a menos do que você está dormindo.`;
                             } else if (hrDeSono >= 8 && hrDeSono <= 10) {
                                 mensagem =
                                     `Você está dormindo por um tempo bom!`;
