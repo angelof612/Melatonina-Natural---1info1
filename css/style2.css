@@ -11,7 +11,7 @@ html {
     font-size: calc(15px + 0.390625vw);
     background-color: #2A2B5B;
     color: #ffffff;
-    line-height: 15px;
+    line-height: 10px;
     
 }
 p a {
@@ -74,7 +74,8 @@ header nav div.direita ul.nav {
     margin-top: 2vw;
 }
 header nav div.esquerda  {
-    margin: 1vw 2vw 0 2vw;
+    padding: 25px 0 0 0;
+    margin: 0 2vw 0 2vw;
     justify-content: space-between;
     display: flex;
     align-items: center;
@@ -111,7 +112,7 @@ main section.qualidadeSono h1 {
 
 main section.qualidadeSono p {
     text-align: center;
-    margin: 20px 20px 20px 20px;
+    margin: 20px 10px 10px 20px;
     color: #C7BAFF;
 }
 
@@ -159,6 +160,9 @@ main section.qualidadeSono ul li p {
     margin: 0 30px 0 30px;
 }
 
+main section.qualidadeSono ul li p span {
+    font-size: 1rem;
+}
 
 /*
 ===================================================
@@ -223,7 +227,7 @@ footer nav ul li img {
     } 
 
     main section.dormirBem p {
-            font-size: 1rem;
+        font-size: 1rem;
         text-align: center;
         margin-top: 30px;
         margin-bottom: 30px;
@@ -309,6 +313,39 @@ footer nav ul li img {
         font-size: 1.6rem;
         font-weight: bold;
     }
+
+    
+
+main section.qualidadeSono ul li {
+    background-color: #16173da6;
+    padding: 3vw 10vw 3vw 10vw;
+    border-radius: 35px;
+    display: block;
+    align-items: center;
+}
+
+main section.qualidadeSono ul li p {
+    font-size: 1rem;
+    margin: 10px 0 20px 0;
+}
+
+main section.qualidadeSono ul li p span {
+    margin-top: 10px;
+    font-size: 0.8rem;
+
+}
+
+footer img {
+    display: none;
+}
+
+
+footer nav ul  {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    margin: 0 auto;
+}
 
 }
 

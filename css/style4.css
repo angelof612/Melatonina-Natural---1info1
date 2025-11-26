@@ -63,7 +63,8 @@ header nav div.direita ul.nav {
     margin-top: 2vw;
 }
 header nav div.esquerda  {
-    margin: 1vw 2vw 0 2vw;
+    padding: 25px 0 0 0;
+    margin: 0 2vw 0 2vw;
     justify-content: space-between;
     display: flex;
     align-items: center;
@@ -405,6 +406,28 @@ section nav ul li p {
 section nav ul {
     display: flex;
     width: 300px;
+}
+
+section h2 {
+    margin: 0 0 30px 0;
+}
+
+section.calculadora h3 {
+     margin: 30px 0 30px 0;
+
+}
+
+section nav ul  {
+    width: 100%;
+    align-items: center;
+}
+
+section nav ul li {
+    padding: 9vw 4vw 9vw 4vw;
+}
+
+section nav ul li h3{
+    color: #E8D257;
 }
 
 

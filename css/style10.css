@@ -59,8 +59,9 @@ header nav div.direita ul.nav {
     align-items: center;
     margin-top: 2vw;
 }
-header nav div.esquerda  {
-    margin: 1vw 2vw 0 2vw;
+header nav div.esquerda  {    
+    padding: 25px 0 0 0;
+    margin: 0 2vw 0 2vw;    
     justify-content: space-between;
     display: flex;
     align-items: center;
