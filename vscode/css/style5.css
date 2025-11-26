@@ -142,16 +142,15 @@ Footer
 
 footer {
     margin: 10vw 0 0 0;
-    background: linear-gradient(#2A2B5B, #12122c);
+    background: linear-gradient(#2A2B5B, #12122c); /*bizarro*/
     padding: 3vw 7vw 3vw 7vw;
     align-items: center;
     color: aquamarine;
     font-size: 0.8rem;
 }
 
-footer span {
+footer a, span {
     color: #E8D257;
-    text-decoration: none;
 }
 
 footer nav {
@@ -159,15 +158,24 @@ footer nav {
     justify-content: space-between;
     align-items: center;
 }
-footer img {
+
+footer div.imagemFooter img {
     width: 40%;
 }
+
+footer div.links p {
+     color: #C7BAFF;
+
+}
+
 footer nav ul li {
+    width: 50%;
     display: flex;
     align-items: center;
     margin: 2vw 0 2vw 0;
 }
-footer nav ul li img{
+
+footer nav ul li img {
     width: 5%;
     margin: 0 10px 0 10px;
     border-radius: 100px;

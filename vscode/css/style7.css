@@ -97,6 +97,7 @@ section.introducao h2 {
 section.introducao p {
     margin: 1vw 1vw 1vw 1vw;
     color: #d9d1ff;
+    font-size: 1.2rem;
 }
 /*
 ==========================================================
@@ -121,7 +122,7 @@ section.conteudo details summary {
     font-weight: bold;
 }
 section.conteudo details p{
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     margin: 2vw 3vw 1vw 3vw;
     color: #d9d1ff;
 }
@@ -151,6 +152,8 @@ section.comparacao h2 {
 }
 section.comparacao ul.externa {
     justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 section.comparacao ul li {
     background-color: #16173d;
@@ -173,12 +176,14 @@ section.comparacao ul li.beneficios h3 {
     color: #21ce21;
     font-weight: bold;
     font-size: 1.7rem;
+    text-decoration: underline;
     
 }
 section.comparacao ul li.semSono h3 {
     color: #a11313;
     font-weight: bold;
     font-size: 1.7rem;
+    text-decoration: underline;
 }
 
 section.redirecionar h2 {
@@ -208,7 +213,6 @@ section.conclusao p {
 
 
 
-
 /*
 ===================================================
 Footer
@@ -217,37 +221,45 @@ Footer
 
 footer {
     margin: 10vw 0 0 0;
-    background: linear-gradient(#2A2B5B, #12122c);
+    background: linear-gradient(#2A2B5B, #12122c); /*bizarro*/
     padding: 3vw 7vw 3vw 7vw;
     align-items: center;
     color: aquamarine;
     font-size: 0.8rem;
 }
+
+footer a, span {
+    color: #E8D257;
+}
+
 footer nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-footer img {
+
+footer div.imagemFooter img {
     width: 40%;
 }
+
+footer div.links p {
+     color: #C7BAFF;
+
+}
+
 footer nav ul li {
+    width: 50%;
     display: flex;
     align-items: center;
     margin: 2vw 0 2vw 0;
 }
-footer nav ul li img{
+
+footer nav ul li img {
     width: 5%;
     margin: 0 10px 0 10px;
     border-radius: 100px;
-} 
-footer span {
-    color: #E8D257;
 }
 
-footer p {
-    color: aquamarine;
-}
 
 
 @media (max-width: 600px) {

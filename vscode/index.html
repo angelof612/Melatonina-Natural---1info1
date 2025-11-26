@@ -19,7 +19,7 @@
                 <a href="index.html">
                     <img src="imagens/Melatonina_Natural__.png" alt="logo" width="250">
                 </a>
-                
+
                 <h1>Seja Bem-Vindo!</h1>
 
 
@@ -149,6 +149,7 @@
 
                 <img src="imagens/cérbro.png" alt="Anatomia do Sono">
             </div>
+            <div class="outros">
 
             <h4>Hipotálamo</h4>
             <p>
@@ -193,6 +194,10 @@
                 Grupo de neurônios localizados na frente e abaixo do nosso cérebro e que liberam a adenosina, que induz
                 sonolência e inibe a vigília do corpo, além de liberar a acetilcolina.
             </p>
+
+
+
+            </div>
         </section>
         <hr>
         <section class="qualidadeSonoBrasil">
@@ -211,7 +216,7 @@
                 <span>De maneira geral, é possível retirar da pesquisa os seguintes causadores de má qualidade do sono
                     no Brasil:</span>
             </p>
-            
+
             <ul>
                 <li>
                     <p>
@@ -259,77 +264,77 @@
                 </span>
             </p>
             <div>
-            <ul>
-                <li>
-                    <h3>
-                        Mais comuns:
-                    </h3>
-                    <ul>
-                        <li>
-                            <p>
-                                Sono leve (27%)
+                <ul>
+                    <li>
+                        <h3>
+                            Mais comuns:
+                        </h3>
+                        <ul>
+                            <li>
+                                <p>
+                                    Sono leve (27%)
 
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                Roncar (25%)
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Roncar (25%)
 
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                Quantidade de sono insuficiente (23%)
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Quantidade de sono insuficiente (23%)
 
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                Movimentado excessivos durante o sono (22%)
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                Insônia (21%)
-                            </p>
-                        </li>
-                    </ul>
-                </li>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Movimentado excessivos durante o sono (22%)
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Insônia (21%)
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
 
-                <li>
-                    <h3>
-                        Menos comuns:
-                    </h3>
-                    <ul>
-                        <li>
-                            <p>
-                                Sonambulismo (1%)
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                Pausas respiratórias testemunhadas (3%)
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                Urgência urinária (5%)
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                Chutes nas pernas (6%)
-                            </p>
-                        </li>
-                        <li>
-                            <p>
-                                Bruxismo (7%)
-                            </p>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
+                    <li>
+                        <h3>
+                            Menos comuns:
+                        </h3>
+                        <ul>
+                            <li>
+                                <p>
+                                    Sonambulismo (1%)
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Pausas respiratórias testemunhadas (3%)
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Urgência urinária (5%)
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Chutes nas pernas (6%)
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Bruxismo (7%)
+                                </p>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
             <p>
                 Com a liberação da melatonina como suplemento alimentar pela Anvisa em 2021, somada ao alto índice de
                 brasileiros que relatam dificuldades para dormir ou baixa qualidade de sono, é natural que o consumo
@@ -483,10 +488,10 @@
     </main>
     <footer>
         <nav>
-            <div>
+            <div class="imagemFooter ">
                 <img src="imagens/Melatonina_Natural__.png" alt="Logo Footer">
             </div>
-            <div>
+            <div class="links">
                 <ul>
                     <li>
                         <img src="imagens/youtuba.jpg" alt="Ícone Youtube" class="youtube">
@@ -513,13 +518,13 @@
                     <li>
                         <img src="imagens/gmail.webp" alt="Ícone Gmail" class="gmail">
                         <p>
-                            Email: melatoninanatural@gmail.com
+                            Email: <span>
+                                melatoninanatural@gmail.com
+                            </span>
                         </p>
                     </li>
                 </ul>
             </div>
-
-
 
         </nav>
 
@@ -539,17 +544,17 @@
 
 
 
-         let modal1 = document.getElementById("modal1");
+        let modal1 = document.getElementById("modal1");
 
         let conteudoModal1 = document.getElementById("conteudoModal1");
 
-        modal1.addEventListener("click",function(){
+        modal1.addEventListener("click", function () {
             console.log("foi");
             conteudoModal1.style.display = "block";
-           
+
         });
 
-        conteudoModal1.addEventListener("click", function(){
+        conteudoModal1.addEventListener("click", function () {
             modal1.style.display = "none";
         })
 
