@@ -277,10 +277,10 @@
                         let hrDeSono = parseInt(horaSono.value);
                         let mensagem = ``;
                         let horasMaisMenos = 0;
+
                         if (idadeUs <= 0) {
-                            mensagem = `Tente preencher o campo da idade com uma idade válida!`
-                        }
-                        else if (idadeUs <= 1) {
+                              mensagem = `Tente preencher o campo da idade com uma idade válida!`
+                        } else if (idadeUs <= 1) {
                             if (hrDeSono < 11) {
                                 horasMaisMenos = 11 - hrDeSono;
                                 mensagem = `Pessoas dessa idade deveriam dormir pelo menos 11 horas, para isso, você precisa dormir mais ${horasMaisMenos} hora${(horasMaisMenos == 1) ? `` : `s`} do que você costuma dormir.`;
