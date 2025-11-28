@@ -358,5 +358,10 @@ footer nav ul li img {
         font-size: 1.6rem;
         font-weight: bold;
     }
+    
+    section.comparacao ul.externa {
+        display: block;
+    }
+
 
 }

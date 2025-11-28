@@ -51,7 +51,7 @@ Cabeçalho
 
 
 body header {
-        background:linear-gradient( #12122c ,#2A2B5B);
+    background: linear-gradient(#12122c, #2A2B5B);
 }
 
 
@@ -113,6 +113,7 @@ section.introducao p {
     font-size: 1.2rem;
     margin: 3vw 6vw 3vw 6vw;
 }
+
 section.introducao p.introducaoTexto {
     color: white;
     font-size: 2rem;
@@ -163,36 +164,51 @@ section.texto img {
     width: 100%;
     border-radius: 20px;
 }
+
 section.anatomia h3 {
     font-size: 1.5rem;
     margin: 0 0 1vw 0;
 }
+
 section.anatomia h4 {
     font-size: 1.4rem;
 }
+
 section.anatomia p {
     font-size: 1.2rem;
-    margin:  1vw 0 1vw 1vw; /*BRUTAL*/
+    margin: 1vw 0 1vw 1vw;
+    /*BRUTAL*/
     text-align: left;
 }
 
 section.anatomia img {
-    width: 50%;
+    width: 80%;
     border-radius: 20px;
     border: solid 10px black;
-    
+
 }
 
-section.qualidadeSonoBrasil div ul{
+section.anatomia div.explicando {
+    width: 80%;
+    margin: 0 auto 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+section.qualidadeSonoBrasil div ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-section.qualidadeSonoBrasil ul li ul  {
+
+section.qualidadeSonoBrasil ul li ul {
     display: block;
 }
+
 section.qualidadeSonoBrasil ul li ul li {
     margin: 0 0 0 0;
 }
+
 section.qualidadeSonoBrasil ul li ul li p {
     font-size: 1.5rem;
     text-decoration: underline;
@@ -200,6 +216,7 @@ section.qualidadeSonoBrasil ul li ul li p {
     border-radius: 20px;
     padding: 5px 10px 5px 10px;
 }
+
 section.qualidadeSonoBrasil ul li h3 {
     font-size: 1.5rem;
     background-color: #2A2B5B;
@@ -217,9 +234,11 @@ Dados importantes (nome provisório)
 section.recursos h3 {
     text-align: left;
 }
+
 section.recursos p {
     text-align: left;
 }
+
 main section ul li {
     margin: 2vw 3vw 3vw 3vw;
     background: #5B5D96;
@@ -263,14 +282,16 @@ Footer
 
 footer {
     margin: 10vw 0 0 0;
-    background: linear-gradient(#2A2B5B, #12122c); /*bizarro*/
+    background: linear-gradient(#2A2B5B, #12122c);
+    /*bizarro*/
     padding: 3vw 7vw 3vw 7vw;
     align-items: center;
     color: aquamarine;
     font-size: 0.8rem;
 }
 
-footer a, span {
+footer a,
+span {
     color: #E8D257;
 }
 
@@ -285,7 +306,7 @@ footer div.imagemFooter img {
 }
 
 footer div.links p {
-     color: #C7BAFF;
+    color: #C7BAFF;
 
 }
 
@@ -310,20 +331,23 @@ footer nav ul li img {
 @media (max-width: 600px) {
 
 
- * hr {
-        display: none;
-    }
-
-    p {
+    * hr {
     
     }
 
-    h1, h2, h3, h4, h5, h6 {
+    p {}
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         font-size: 1.5rem;
-    } 
+    }
 
     main section.dormirBem p {
-            font-size: 1rem;
+        font-size: 1rem;
         text-align: center;
         margin-top: 30px;
         margin-bottom: 30px;
@@ -356,7 +380,7 @@ footer nav ul li img {
     }
 
 
-   header nav ul li.atual p a {
+    header nav ul li.atual p a {
         background-color: transparent;
         border-radius: 0%;
     }
@@ -409,17 +433,28 @@ footer nav ul li img {
         font-size: 1.6rem;
         font-weight: bold;
     }
+
     section.anatomia p {
-           font-size: 1rem;
+        font-size: 1rem;
         max-width: 80%;
-        
+
+    }
+
+    section.anatomia {
+        text-align: center;
     }
 
     section.anatomia div.explicando {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+        display: block;
         margin-top: 6vw;
+        width: 100%;
+        text-align: center;
+    }
+
+    section.anatomia div.explicando p {
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 4vw;
     }
 
     section.anatomia div.explicando img {
@@ -427,14 +462,21 @@ footer nav ul li img {
         height: 150px;
     }
 
-    section.anatomia div.outros{
-        text-align: center;
+    section.anatomia div.outros {
+        margin: 0 auto;
     }
 
-        section.anatomia div.outros h4, p {
-            text-align: center;
-        }
-        
+    section.anatomia div.outros p {
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 5vw;
+    }
+
+    section.qualidadeSonoBrasil div ul {
+        display: block;
+    }
+    
+
 
     section.recursos>ul {
         display: grid;
@@ -442,79 +484,45 @@ footer nav ul li img {
         gap: 20px;
     }
 
+    section.recursos ul {
+        display: block;
+    }
+
+
     section.recursos>li {
         justify-content: center;
     }
 
+    section.recursos ul li {
+        padding: 3vw 10vw 3vw 10vw;
+        border-radius: 35px;
+        display: block;
+        align-items: center;
+    }
+
     section.recursos ul li p {
-        display: none;
-    }
-
-    section.recursos ul>li{
-       align-items: center;
-    }
-
-    div#conteudoModal1 {
-        position: absolute;
-        top: 0;
-        width: 100vw;
-        height: 100vh;
-        background: #00000081;
-        display: none;
-    }
-
-    div#conteudoModal2{
-        position: absolute;
-        top: 0;
-        width: 100vw;
-        height: 100vh;
-        background: #00000081;
-        display: none;
+        font-size: 1rem;
+        margin: 10px 0 20px 0;
 
     }
 
-    div#conteudoModal3 {
-        position: absolute;
-        top: 0;
-        width: 100vw;
-        height: 100vh;
-        background: #00000081;
-        display: none;
 
-    }
 
-    div#conteudoModal4{
-        position: absolute;
-        top: 0;
-        width: 100vw;
-        height: 100vh;
-        background: #00000081;
-        display: none;
 
-    }
-
-    div#conteudoModal1 div {
-        background-color: white;
-        margin: 25vh 25vw;
+    section.recursos ul>li {
+        align-items: center;
     }
 
 
-    div#conteudoModal2 div {
-        background-color: white;
-        margin: 25vh 25vw;
+    section.introducao p.introducaoTexto {
+        color: white;
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin: 1vw 0 1vw 0;
     }
 
 
-    div#conteudoModal3 div {
-        background-color: white;
-        margin: 25vh 25vw;
-    }
 
-
-    div#conteudoModal4 div {
-        background-color: white;
-        margin: 25vh 25vw;
-    }
 
 
 
