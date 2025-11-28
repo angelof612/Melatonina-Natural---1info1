@@ -178,10 +178,16 @@ section.comparacao ul.externa {
     grid-template-columns: 1fr 1fr;
 }
 
+
+section.comparacao ul li:hover {
+    transform: scale(1.1)
+}
+
 section.comparacao ul li {
     background-color: #16173d;
     margin: 3vw 3vw 3vw 3vw;
     border-radius: 20px;
+    transition: transform 0.3s ease;
 
 }
 

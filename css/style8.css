@@ -17,6 +17,7 @@ html {
 
 p {
     font-size: 1.1rem;
+    color: #C7BAFF;
 }
 
 section {
@@ -37,6 +38,7 @@ h4,
 h5,
 h6 {
     font-family: "Leckerli One", cursive;
+    color: #E8D257;
 }
 
 
@@ -136,6 +138,20 @@ section p {
     margin: 1vw 0 1vw 0;
 }
 
+section.hormoniosSono p {
+    color: #C7BAFF;
+}
+
+section.hormoniosSono ul li details summary {
+    color:#E8D257 ;
+
+}
+
+    div.voltar p a svg {
+        width: 50px;
+        margin-top: 2vw;
+
+    }
 
 /*
 ===================================================

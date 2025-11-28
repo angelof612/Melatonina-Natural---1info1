@@ -100,6 +100,12 @@ main ul li img {
     width: 40%;
     border-radius: 20px;
     margin: 2vw 0 3vw 0;
+  transition: transform 0.3s ease;
+
+}
+
+main ul li img:hover {
+    transform: scale(1.1);
 }
 
 section div.voltar p a svg {

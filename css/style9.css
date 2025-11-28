@@ -134,7 +134,14 @@ section.rotina ul li p span {
 section.rotina ul li img {
     width: 40%;
     border-radius: 30px;
+    transition: transform 0.3s ease;
+
 }
+
+section.rotina ul li img:hover {
+    transform: scale(1.1);
+}
+
 
 section.rotina ul div li img {
     width: 60%;

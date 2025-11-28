@@ -147,9 +147,17 @@ main section.qualidadeSono ul li {
     margin: 10px 10px 40px 10px;
     display: flex;
     align-items: center;
+
 }
+
+main section.qualidadeSono ul li img:hover {
+    transform: scale(1.1);
+}
+
 main section.qualidadeSono ul li img {
     width: 100%;
+    transition: transform 0.3s ease;
+
 }
 section.qualidadeSono ul li div.esquerda {
     text-align: center;

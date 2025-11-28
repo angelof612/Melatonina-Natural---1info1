@@ -91,6 +91,8 @@ header nav ul li.atual p a {
     border-radius: 30px;
 }
 
+
+
 /*
 ==========================================================
 Introdução
@@ -163,7 +165,10 @@ section.texto p span {
 section.texto img {
     width: 100%;
     border-radius: 20px;
+
 }
+
+
 
 section.anatomia h3 {
     font-size: 1.5rem;
@@ -185,9 +190,14 @@ section.anatomia img {
     width: 80%;
     border-radius: 20px;
     border: solid 10px black;
+    transition: transform 0.3s ease;
+
 
 }
 
+section.anatomia img:hover {
+    transform: scale(1.1);
+}
 section.anatomia div.explicando {
     width: 80%;
     margin: 0 auto 0 auto;
@@ -196,9 +206,19 @@ section.anatomia div.explicando {
 
 }
 
+
 section.qualidadeSonoBrasil div ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
+
+}
+
+section.qualidadeSonoBrasil div ul {
+   transition: transform 0.3s ease;
+}
+
+section.qualidadeSonoBrasil div ul li ul li:hover {
+    transform: scale(1.1);
 }
 
 section.qualidadeSonoBrasil ul li ul {
@@ -244,6 +264,12 @@ main section ul li {
     background: #5B5D96;
     padding: 20px 30px 30px 30px;
     border-radius: 62px;
+     transition: transform 0.3s ease;
+
+}
+
+main section ul li:hover {
+    transform: scale(1.1);
 }
 
 main section ul li h3 {

@@ -16,6 +16,7 @@ html {
 
 p {
     font-size: 1.1rem;
+    color: #C7BAFF;
 }
 
 section {
@@ -36,6 +37,7 @@ h4,
 h5,
 h6 {
     font-family: "Leckerli One", cursive;
+    color: #E8D257;
 }
 
 /*
@@ -117,13 +119,17 @@ section.conteudo ul li details summary {
     font-size: 1.5rem;
     font-weight: bold;
     color: #E8D257;
-    text-decoration: underline;
 }
 
 section.conteudo ul li details p {
     font-size: 1.3rem;
-    color: white;
+    color: #C7BAFF
 }
+
+    div.voltar p a svg {
+        width: 50px;
+        margin-top: 5vw;
+    }
 
 /*
 ===================================================

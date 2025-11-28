@@ -120,6 +120,12 @@ section.nos ul li {
     padding: 3vw 2vw 3vw 2vw;
     margin: 4vw 3vw 4vw 3vw;
     border-radius: 30px;
+      transition: transform 0.3s ease;
+
+}
+
+section.nos ul li:hover {
+    transform: scale(1.1);
 }
 
 section.nos ul li img {

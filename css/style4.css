@@ -105,6 +105,12 @@ section nav ul li  {
     padding: 2vw 2vw 2vw 2vw;
     border-radius: 56px; 
     text-align: center;
+    transition: transform 0.3s ease;
+
+}
+
+section nav ul li:hover  {
+    transform: scale(1.1);
 }
 
 section nav ul li  h3 {

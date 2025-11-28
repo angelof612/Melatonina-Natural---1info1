@@ -111,6 +111,12 @@ section ul li {
     margin: 3vw 0 3vw 0;
     border-radius: 10px;
     padding: 2vw 5vw 2vw 5vw;
+    transition: transform 0.3s ease;
+
+}
+
+section ul li:hover {
+    transform: scale3(1.1);
 }
 section ul li details summary{
     font-size: 1.3rem;
