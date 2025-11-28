@@ -416,8 +416,33 @@ section nav ul li p {
     display: none;
 }
 section nav ul {
-    display: flex;
-    width: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+}
+header nav div.direita ul li {
+        margin: 10px 10px 10px 10px;
+        background-color: #5b5d968a;
+        border-radius: 10px;
+        padding: 5px 10px 5px 10px;
+        text-align: center;
+        
+    }
+
+section nav ul li {
+    width: 100px;
+    margin: 0 auto;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 5vw;
+}
+
+section nav ul li h3 {
+    font-size: 1rem;
+}
+
+section nav ul li a img {
+    width: 100px;
+    margin: 0 auto;
 }
 
 section h2 {
@@ -440,6 +465,10 @@ section nav ul li {
 
 section nav ul li h3{
     color: #E8D257;
+}
+
+section.calculadora div img {
+    width: 50px;
 }
 
 

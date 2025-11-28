@@ -225,5 +225,13 @@ footer nav ul li img {
         font-size: 1.6rem;
         font-weight: bold;
     }
+    header nav div.direita ul li {
+        margin: 10px 10px 10px 10px;
+        background-color: #5b5d968a;
+        border-radius: 10px;
+        padding: 5px 10px 5px 10px;
+        text-align: center;
+        
+    }
 
 }

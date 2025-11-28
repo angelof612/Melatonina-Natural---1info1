@@ -162,11 +162,27 @@ footer nav ul li img {
 @media (max-width: 600px) {
 
 
-main p a svg {
-    width: 20px;
+section.dicas div.voltar p a svg {
+    width: 30px;
+    margin: 0 auto;
+    margin-top: 6vw;
 }
-
-
-
+section.dicas ul li {
+    width: 100%;
+    margin: 20px auto 20px auto;
+    border-radius: 10px;
+    padding: 10px 5px;
+}
+section.dicas ul li img {
+    width: 80%;
+}
+header nav div.direita ul li {
+        margin: 10px 10px 10px 10px;
+        background-color: #5b5d968a;
+        border-radius: 10px;
+        padding: 5px 10px 5px 10px;
+        text-align: center;
+        
+    }
 
 }

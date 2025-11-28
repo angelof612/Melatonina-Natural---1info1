@@ -8,26 +8,34 @@ Geral
 
 
 html {
-  font-family: "Mukta", sans-serif;  
+    font-family: "Mukta", sans-serif;
     font-size: calc(15px + 0.390625vw);
     background-color: #2A2B5B;
     color: white;
 }
+
 p {
     font-size: 1.1rem;
 }
+
 section {
     margin: 2vw 3vw 2vw 3vw;
 }
+
 a {
     color: rgb(123, 213, 255);
-      font-family: "Mukta", sans-serif;  
+    font-family: "Mukta", sans-serif;
 
 }
 
 
-h1, h2, h3, h4, h5, h6 {
-      font-family: "Leckerli One", cursive;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Leckerli One", cursive;
 }
 
 /*
@@ -40,11 +48,13 @@ header {
     padding: 2vw 0 5vw 0;
     background-repeat: no-repeat;
     background-position: center;
-    
+
 }
+
 header nav ul {
     display: flex;
 }
+
 header nav a img {
     width: 10%;
     height: auto;
@@ -59,6 +69,7 @@ header h1 {
     font-weight: bold;
     margin: 10px 0;
 }
+
 hr {
     margin: 2vw 5vw 2vw 5vw;
 }
@@ -68,12 +79,13 @@ hr {
 Introdução
 =======================================================
 */
-section.introducao h2{
+section.introducao h2 {
     font-size: 2rem;
     font-weight: bold;
     margin: 2vw 3vw 2vw 3vw;
     text-decoration: underline;
 }
+
 section.introducao p {
     font-size: 1.1rem;
     margin: 1vw 1vw 1vw 1vw;
@@ -95,20 +107,24 @@ section.conteudo ul li {
     border-radius: 40px;
     margin: 3vw 0 3vw 0;
 }
+
 section.conteudo ul {
     width: 70%;
     margin: 0 auto 0 auto;
 }
+
 section.conteudo ul li details summary {
     font-size: 1.5rem;
     font-weight: bold;
     color: #E8D257;
     text-decoration: underline;
 }
+
 section.conteudo ul li details p {
     font-size: 1.3rem;
     color: white;
 }
+
 /*
 ===================================================
 Footer
@@ -117,14 +133,16 @@ Footer
 
 footer {
     margin: 10vw 0 0 0;
-    background: linear-gradient(#2A2B5B, #12122c); /*bizarro*/
+    background: linear-gradient(#2A2B5B, #12122c);
+    /*bizarro*/
     padding: 3vw 7vw 3vw 7vw;
     align-items: center;
     color: aquamarine;
     font-size: 0.8rem;
 }
 
-footer a, span {
+footer a,
+span {
     color: #E8D257;
 }
 
@@ -139,7 +157,7 @@ footer div.imagemFooter img {
 }
 
 footer div.links p {
-     color: #C7BAFF;
+    color: #C7BAFF;
 
 }
 
@@ -170,9 +188,14 @@ footer nav ul li img {
         font-size: 0.9rem;
     }
 
-    h1, h2, h3, h4, h5, h6 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         font-size: 1rem;
-    } 
+    }
 
 
 
@@ -218,6 +241,15 @@ footer nav ul li img {
         align-items: center;
     }
 
+    header nav div.direita ul li {
+        margin: 10px 10px 10px 10px;
+        background-color: #5b5d968a;
+        border-radius: 10px;
+        padding: 5px 10px 5px 10px;
+        text-align: center;
+
+    }
+
     header nav div.direita svg.menu {
         display: block;
         width: 8vw;
@@ -253,5 +285,13 @@ footer nav ul li img {
         font-size: 1.6rem;
         font-weight: bold;
     }
+
+
+    div.voltar p a svg {
+        width: 30px;
+        margin: 0 auto;
+        margin-top: 6vw;
+    }
+
 
 }

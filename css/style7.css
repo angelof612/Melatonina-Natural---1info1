@@ -8,41 +8,52 @@ Geral
 
 
 html {
-  font-family: "Mukta", sans-serif;  
+    font-family: "Mukta", sans-serif;
     font-size: calc(15px + 0.390625vw);
     background-color: #2A2B5B;
     color: #E8D257;
-    
+
 }
+
 p a {
     color: #E8D257;
     text-decoration: none;
 }
+
 header nav ul li.atual p a {
     font-weight: bold;
     background-color: rgb(12, 16, 61);
     padding: 10px 20px 10px 20px;
     border-radius: 30px;
 }
+
 hr {
     margin: 3vw 0 3vw 0;
 }
+
 p {
     color: white;
 }
+
 section {
     margin: 2vw 3vw 2vw 3vw;
 }
+
 a {
     color: rgb(123, 213, 255);
-      font-family: "Mukta", sans-serif;  
+    font-family: "Mukta", sans-serif;
 
 }
 
 
 
-h1, h2, h3, h4, h5, h6 {
-      font-family: "Leckerli One", cursive;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Leckerli One", cursive;
 }
 
 
@@ -54,7 +65,7 @@ Cabeçalho
 */
 
 body header {
-        background:linear-gradient( #12122c ,#2A2B5B);
+    background: linear-gradient(#12122c, #2A2B5B);
 }
 
 header nav div.direita ul.nav {
@@ -62,18 +73,20 @@ header nav div.direita ul.nav {
     padding: 2vw 3vw 2vw 3vw;
     border-radius: 100px;
     display: flex;
-    justify-content: space-between;         
+    justify-content: space-between;
     align-items: center;
     margin-top: 2vw;
 }
-header nav div.esquerda  {    
+
+header nav div.esquerda {
     padding: 25px 0 0 0;
     margin: 0 2vw 0 2vw;
     justify-content: space-between;
     display: flex;
     align-items: center;
 }
-header nav div.esquerda  h1 {
+
+header nav div.esquerda h1 {
     font-size: 2rem;
     font-weight: bold;
 }
@@ -95,11 +108,13 @@ section.introducao h2 {
     font-weight: bold;
     margin: 1vw 3vw 1vw 3vw;
 }
+
 section.introducao p {
     margin: 1vw 1vw 1vw 1vw;
     color: #d9d1ff;
     font-size: 1.2rem;
 }
+
 /*
 ==========================================================
 Conteúdo
@@ -112,21 +127,25 @@ section.conteudo h2 {
     margin: 2vw 0 2vw 0;
     color: #E8D257;
 }
+
 section.conteudo details {
     background-color: #5B5D96;
     padding: 3vw 5vw 3vw 5vw;
     border-radius: 10px;
 }
+
 section.conteudo details summary {
     color: #E8D257;
     font-size: 1.2rem;
     font-weight: bold;
 }
-section.conteudo details p{
+
+section.conteudo details p {
     font-size: 1.3rem;
     margin: 2vw 3vw 1vw 3vw;
     color: #d9d1ff;
 }
+
 section.conteudo details a {
     color: #E8D257;
     margin: 2vw 0 1vw 0;
@@ -147,39 +166,46 @@ section.comparacao {
     text-align: center;
     margin: 2vw 0 2vw 0;
 }
+
 section.comparacao h2 {
     font-size: 1.5rem;
     margin: 3vw 0 1vw 0;
 }
+
 section.comparacao ul.externa {
     justify-content: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+
 section.comparacao ul li {
     background-color: #16173d;
     margin: 3vw 3vw 3vw 3vw;
     border-radius: 20px;
-    
+
 }
 
 section.comparacao ul li.beneficios {
     padding: 2vw 0 2vw 0;
 }
+
 section.comparacao ul li ul.interna li {
     font-size: 1.3rem;
     font-weight: bold;
 }
+
 section.comparacao ul li.semSono {
     padding: 2vw 0 2vw 0;
 }
+
 section.comparacao ul li.beneficios h3 {
     color: #21ce21;
     font-weight: bold;
     font-size: 1.7rem;
     text-decoration: underline;
-    
+
 }
+
 section.comparacao ul li.semSono h3 {
     color: #a11313;
     font-weight: bold;
@@ -190,14 +216,17 @@ section.comparacao ul li.semSono h3 {
 section.redirecionar h2 {
     font-size: 1.3rem;
 }
+
 section.redirecionar p {
     margin: 1vw 1vw 1vw 1vw;
 }
+
 section.redirecionar p a {
     text-decoration: underline;
     color: #d9d1ff;
     margin: 1vw 1vw 1vw 1vw;
 }
+
 /*
 =====================================================================
 Conclusão
@@ -207,7 +236,7 @@ Conclusão
 
 section.conclusao p {
     font-size: 1.2rem;
-    margin: 1vw 2vw 1vw 2vw; 
+    margin: 1vw 2vw 1vw 2vw;
     font-weight: bold;
     color: #d9d1ff;
 }
@@ -222,14 +251,16 @@ Footer
 
 footer {
     margin: 10vw 0 0 0;
-    background: linear-gradient(#2A2B5B, #12122c); /*bizarro*/
+    background: linear-gradient(#2A2B5B, #12122c);
+    /*bizarro*/
     padding: 3vw 7vw 3vw 7vw;
     align-items: center;
     color: aquamarine;
     font-size: 0.8rem;
 }
 
-footer a, span {
+footer a,
+span {
     color: #E8D257;
 }
 
@@ -244,7 +275,7 @@ footer div.imagemFooter img {
 }
 
 footer div.links p {
-     color: #C7BAFF;
+    color: #C7BAFF;
 
 }
 
@@ -275,9 +306,14 @@ footer nav ul li img {
         font-size: 0.9rem;
     }
 
-    h1, h2, h3, h4, h5, h6 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         font-size: 1rem;
-    } 
+    }
 
 
 
@@ -290,7 +326,14 @@ footer nav ul li img {
 
     }
 
+    header nav div.direita ul li {
+        margin: 10px 10px 10px 10px;
+        background-color: #5b5d968a;
+        border-radius: 10px;
+        padding: 5px 10px 5px 10px;
+        text-align: center;
 
+    }
 
     header nav div.direita ul.nav {
         display: block;
@@ -305,7 +348,7 @@ footer nav ul li img {
     }
 
 
-   header nav ul li.atual p a {
+    header nav ul li.atual p a {
         background-color: transparent;
         border-radius: 0%;
     }
@@ -358,7 +401,7 @@ footer nav ul li img {
         font-size: 1.6rem;
         font-weight: bold;
     }
-    
+
     section.comparacao ul.externa {
         display: block;
     }
