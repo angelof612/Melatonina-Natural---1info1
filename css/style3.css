@@ -168,11 +168,10 @@ footer nav ul li img {
 @media (max-width: 600px) {
 
 
-section.dicas div.voltar p a svg {
-    width: 30px;
-    margin: 0 auto;
-    margin-top: 6vw;
-}
+    section.dicas div.voltar p a svg {
+        width: 30px;
+        margin-top: 6vw;
+    }
 section.dicas ul li {
     width: 100%;
     margin: 20px auto 20px auto;
@@ -190,5 +189,10 @@ header nav div.direita ul li {
         text-align: center;
         
     }
+
+    footer nav ul li img {
+        display: none;
+    }
+
 
 }

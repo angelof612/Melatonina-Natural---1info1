@@ -213,7 +213,7 @@ section.comparacao ul li.beneficios h3 {
 }
 
 section.comparacao ul li.semSono h3 {
-    color: #a11313;
+    color: #ff0000;
     font-weight: bold;
     font-size: 1.7rem;
     text-decoration: underline;
@@ -411,6 +411,11 @@ footer nav ul li img {
     section.comparacao ul.externa {
         display: block;
     }
+
+    footer nav ul li img {
+        display: none;
+    }
+
 
 
 }

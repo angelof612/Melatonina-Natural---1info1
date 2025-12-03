@@ -225,4 +225,9 @@ footer nav ul li img {
         text-align: center;
 
     }
+
+    footer nav ul li img {
+        display: none;
+    }
+
 }

@@ -554,12 +554,17 @@ footer nav ul li img {
         margin: 1vw 0 1vw 0;
     }
 
+    footer nav ul li img {
+        display: none;
+    }
 
+    main section ul li {
+        transition: none;
+    }
 
-
-
-
-
+    main section ul li:hover {
+        transform: none;
+    }
 
 
 }

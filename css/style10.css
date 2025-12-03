@@ -160,13 +160,17 @@ section.nos > ul {
 Referências
 =================================
 */
+
+section.referencias h2 {
+    margin-bottom: 5vw;
+}
 section.referencias p {
-    color: white;
+    color: #C7BAFF;
     margin: 2vw 0 2vw 0;
 }
 section.referencias a {
     text-decoration: underline;
-    color: rgb(155, 155, 255);
+    color: #E8D257;
 }
 /*
 ===================================================
@@ -325,5 +329,30 @@ footer nav ul li img {
     section.nos ul li p {
         font-size: 1.2rem;
     }
+
+    section.nos ul li:hover {
+        transform: none;
+    }
+
+    section.nos ul li {
+        transition: none;
+    }
+
+    section.referencias h2 {
+        margin-bottom: 5vw;
+    }
+    section.referencias p a {
+       margin: 0 5vw 0 5vw;
+    }
+
+
+section.projeto p {
+    text-align: center;
+}
+
+footer nav ul li img {
+    display: none;
+}
+
 
 }

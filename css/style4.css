@@ -230,7 +230,7 @@ section.calculadora form label {
 }
 section.calculadora form p {
     margin: 20px 10px 20px 10px;
-    
+    display: block;
 }
 section.calculadora form p input {
     color: black;
@@ -481,6 +481,11 @@ section nav ul li h3{
 section.calculadora div img {
     width: 50px;
 }
+
+footer nav ul li img {
+    display: none;
+}
+
 
 
 }

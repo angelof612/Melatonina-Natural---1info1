@@ -204,5 +204,10 @@ header nav div.direita ul li {
         
     }
 
+    footer nav ul li img {
+        display: none;
+    }
+
+
 }
 

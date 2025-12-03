@@ -234,4 +234,9 @@ footer nav ul li img {
         
     }
 
+    footer nav ul li img {
+        display: none;
+    }
+
+
 }

@@ -350,19 +350,10 @@ main section.qualidadeSono ul li p span {
     font-size: 0.8rem;
 
 }
-
-footer img {
+footer nav ul li img {
     display: none;
 }
 
 
-footer nav ul  {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: space-between;
-    margin: 0 auto;
-}
 
 }
-
-
