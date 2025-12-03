@@ -156,9 +156,10 @@ section.formulario div img {
     width: 12%;
 }
 section.formulario form label {
-    color: #D0A5F2;
-    font-size: 1.3rem;
+    color: #E8D257;
+    font-size: 1.5rem;
     font-weight: bold;
+    display: block;
 }
 section.formulario form p {
     margin: 20px 10px 20px 10px;
@@ -172,6 +173,10 @@ section.formulario form p input {
     display: flex;
     flex-wrap: wrap;
     margin: 10px 10px 10px 10px;
+}
+section.formulario form p label span {
+    color: #D0A5F2;
+    font-size: 1.3rem;
 }
 section.formulario form p select {
     font-size: 1.1rem;

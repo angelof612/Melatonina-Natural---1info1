@@ -110,22 +110,34 @@
                         <option value="2">4-6 Horas</option>
                         <option value="3">7-9 Horas</option>
                         <option value="4">10+ Horas</option>
-                        <option value="5"></option>
+
                     </select>
                     <span id="erroDormir" class="spanForm"></span>
                 </p>
                 <p>
-                    <label for="telas">Horário que deixa de usar as telas:</label>
-                    <input type="text" id="telas" placeholder=". . .">
+                    <label for="telas">Horário que deixa de usar as telas antes de ir dormir:</label>
+                    <select name="telas" id="telas" for="telas">
+                        <option value="1">19:00 ou antes</option>
+                        <option value="2">19:30</option>
+                        <option value="3">20:00</option>
+                        <option value="4">20:30</option>
+                        <option value="5">21:00</option>
+                        <option value="6">21:30</option>
+                        <option value="7">22:00</option>
+                        <option value="8">22:30</option>
+                        <option value="9">23:00</option>
+                        <option value="10">23:30</option>
+                        <option value="11">00:00 ou depois</option>
+                    </select>
                     <span id="erroTelas" class="spanForm"></span>
                 </p>
                 <p>
                     <label for="tecnicas">Você utiliza alguma técnica de meditação, reflexão, leitura ou alguma
                         outra técnica antes de dormir?
-                        <input type="radio" id="tecnicas" value="1" name="tecnicas"> Sim
+                        <input type="radio" id="tecnicas" value="1" name="tecnicas"> <span>Sim</span>
                     </label>
                     <label for="tecnicas">
-                        <input type="radio" id="tecnicas" value="0" name="tecnicas"> Não
+                        <input type="radio" id="tecnicas" value="0" name="tecnicas"> <span>Não</span>
                     </label>
 
 
@@ -133,27 +145,27 @@
                 </p>
                 <p>
                     <label for="medicamentos">Você utiliza algum medicamento ou toma algum chá para dormir?
-                        <input type="radio" id="medicamentos" value="0" name="medicamentos"> Ótima
+                        <input type="radio" id="medicamentos" value="0" name="medicamentos"> <span>Sim</span>
                     </label>
                     <label for="medicamentos">
-                        <input type="radio" id="medicamentos" value="1" name="medicamentos"> Boa
+                        <input type="radio" id="medicamentos" value="1" name="medicamentos"> <span>Não</span>
                     </label>
-                    <label for="medicamentos">
-                        <input type="radio" id="medicamentos" value="2" name="medicamentos"> Média
-                    </label>
-                    <label for="medicamentos">
-                        <input type="radio" id="medicamentos" value="3" name="medicamentos"> Ruim
-                    </label>
-
-
                     <span id="erroMedicamentos" class="spanForm"></span>
                 </p>
                 <p>
                     <label for="qualidade">Como você classificaria o seu sono?
-                        <input type="radio" id="qualidade" for="qualidade" value="1" name="qualidade">Sim
+                        <input type="radio" id="qualidade" for="qualidade" value="0" name="qualidade">
+                        <span>Ótimo</span>
                     </label>
                     <label for="qualidade">
-                        <input type="radio" id="qualidade" for="qualidade" value="0" name="qualidade">Não
+                        <input type="radio" id="qualidade" for="qualidade" value="1" name="qualidade"> <span>Bom</span>
+                    </label>
+                    <label for="qualidade">
+                        <input type="radio" id="qualidade" for="qualidade" value="2" name="qualidade">
+                        <span>Médio</span>
+                    </label>
+                    <label for="qualidade">
+                        <input type="radio" id="qualidade" for="qualidade" value="3" name="qualidade"> <span>Ruim</span>
                     </label>
                     <span id="erroQualidade" class="spanForm"></span>
                 </p>
@@ -166,6 +178,7 @@
 
             <script>
                 function validarFormulario() {
+                    event.preventDefault();
                     let dormir = document.getElementById('dormir');
                     let telas = document.getElementById('telas');
                     let tecnicas = document.getElementById('tecnicas')
@@ -187,14 +200,7 @@
                     erroMedicamentos.textContent = '';
                     erroQualidade.textContent = '';
 
-                    if (dormir.value === '') {
-                        erroDormir.textContent = `Preencha o campo!`;
-                        formValido = false;
-                    }
-                    if (telas.value === '') {
-                        erroTelas.textContent = `Preencha o campo!`;
-                        formValido = false;
-                    }
+
                     if (tecnicas.value === '') {
                         erroTecnicas.textContent = `Preencha o campo!`;
                         formValido = false;
@@ -212,8 +218,8 @@
                     const form = document.querySelector(`section.formulario`);
                     const resposta = document.querySelector(`section.resultado`);
                     if (formValido) {
-                            form.style.display = `none`;
-                            resposta.style.display = `block`;    
+                        form.style.display = `none`;
+                        resposta.style.display = `block`;
                     }
                 }
 
@@ -277,9 +283,11 @@
                         let horasMaisMenos = 0;
 
                         if (idadeUs <= 0) {
-                              mensagem = `Tente preencher o campo da idade com uma idade válida!`
+                            mensagem = `Tente preencher o campo da idade com uma idade válida!`
                         } else if (idadeUs <= 1) {
-                            if (hrDeSono < 11) {
+                            if (hrDeSono <= 0) {
+                                mensagem = `Insira uma quantidade de sono válida`
+                            } else if (hrDeSono < 11) {
                                 horasMaisMenos = 11 - hrDeSono;
                                 mensagem = `Pessoas dessa idade deveriam dormir pelo menos 11 horas, para isso, você precisa dormir mais ${horasMaisMenos} hora${(horasMaisMenos == 1) ? `` : `s`} do que você costuma dormir.`;
                             } else if (hrDeSono > 14) {
@@ -287,11 +295,11 @@
                                 mensagem = `Pessoas dessa idade não devem dormir tanto, o ideal é dormir ${horasMaisMenos} hora${(horasMaisMenos == 1) ? `` : `s`} a menos do que de costume.`;
                             } else if (hrDeSono >= 11 && hrDeSono <= 14) {
                                 mensagem = `Você está dormindo por um tempo bom!`;
-                            } else if (hrDeSono <= 0) {
-                                mensagem = `Insira uma quantidade de sono válida`
-                            } 
+                            }
                         } else if (idadeUs <= 12) {
-                            if (hrDeSono > 12) {
+                            if (hrDeSono < 0) {
+                                mensagem = `Insira uma quantidade de sono válida`
+                            } else if (hrDeSono > 12) {
                                 horasMaisMenos = hrDeSono - 12
                                 mensagem = `É melhor dormir menos! Crianças dessa idade devem dormir até, no máximo, 12 horas, para isso, recomendamos que durma ${horasMaisMenos} hora${(horasMaisMenos == 1) ? `` : `s`} a menos do que o seu costume.`;
                             } else if (hrDeSono >= 9 && hrDeSono <= 12) {
@@ -299,8 +307,6 @@
                             } else if (hrDeSono < 9) {
                                 horasMaisMenos = 9 - hrDeSono
                                 mensagem = `Pessoas dessa idade deveriam dormir pelo menos 9 horas, para isso, você precisa dormir mais ${horasMaisMenos} hora${(horasMaisMenos == 1) ? `` : `s`} do que você costuma dormir.`;
-                            } else if (hrDeSono < 0) {
-                                mensagem = `Insira uma quantidade de sono válida`
                             }
                         } else if (idadeUs < 18) {
                             if (hrDeSono < 8) {
@@ -364,7 +370,7 @@
             </script>
         </section>
     </main>
-  <footer>
+    <footer>
         <nav>
             <div class="imagemFooter ">
                 <img src="imagens/Melatonina_Natural__.png" alt="Logo Footer">
