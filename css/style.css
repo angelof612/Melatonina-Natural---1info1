@@ -13,7 +13,7 @@ html {
     color: #E8D257;
 }
 
-p a {
+nav a {
     color: #E8D257;
     text-decoration: none;
 }
@@ -84,7 +84,7 @@ header nav div.direita svg.menu {
 }
 
 
-header nav ul li.atual p a {
+header nav ul li.atual a {
     font-weight: bold;
     background-color: rgb(12, 16, 61);
     padding: 10px 20px 10px 20px;
@@ -133,7 +133,7 @@ section h2 {
     color: #E8D257;
     text-align: center;
     margin: 5vw 0 3vw 0;
-    text-decoration: underline;
+    
 }
 
 section h3 {
@@ -142,7 +142,7 @@ section h3 {
     color: #E8D257;
     text-align: center;
     margin: 5vw 0 3vw 0;
-    text-decoration: underline;
+    
 }
 
 section h4 {
@@ -264,7 +264,7 @@ main section ul li {
     background: #5B5D96;
     padding: 20px 30px 30px 30px;
     border-radius: 62px;
-     transition: transform 0.3s ease;
+    transition: transform 0.3s ease;
 
 }
 
