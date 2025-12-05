@@ -53,48 +53,35 @@ Cabeçalho
 
 
 body header {
-    background: linear-gradient(#12122c, #2A2B5B);
+        background:linear-gradient( #12122c ,#2A2B5B);
 }
 
-
 header nav div.direita ul.nav {
-    
-    padding: 2vw 3vw 2vw 3vw;
+    background-color: #5B5D96;
+    padding: 3vw 4vw 3vw 4vw;
     border-radius: 100px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;         
     align-items: center;
     margin-top: 2vw;
 }
-
-header nav div.esquerda {
+header nav div.esquerda  {
     padding: 25px 0 0 0;
     margin: 0 2vw 0 2vw;
     justify-content: space-between;
     display: flex;
     align-items: center;
 }
-
-header nav div.esquerda h1 {
+header nav div.esquerda  h1 {
     font-size: 2rem;
     font-weight: bold;
 }
+
 
 header nav div.direita svg.menu {
     height: 50px;
     display: none;
 }
-
-
-header nav ul li.atual a {
-    font-weight: bold;
-    background-color: rgb(12, 16, 61);
-    padding: 10px 20px 10px 20px;
-    border-radius: 30px;
-}
-
-
-
 /*
 ==========================================================
 Introdução
@@ -308,7 +295,8 @@ span {
 }
 
 footer nav {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
     justify-content: space-between;
     align-items: center;
 }
@@ -327,6 +315,7 @@ footer nav ul li {
     display: flex;
     align-items: center;
     margin: 2vw 0 2vw 0;
+    gap: 10px 20px;
 }
 
 footer nav ul li img {
@@ -420,6 +409,7 @@ footer nav ul li img {
     header nav div.direita {
         overflow: auto;
     }
+    
 
     header nav div.direita svg,
     header nav div.direita ul {
@@ -514,9 +504,7 @@ footer nav ul li img {
         gap: 20px;
     }
 
-    section.recursos ul {
-        
-    }
+    
 
 
     section.recursos>li {
@@ -557,4 +545,26 @@ footer nav ul li img {
     main section ul li {
         transition: none;
     }
+
+    footer nav {
+        display: block;
+        margin: 0 auto;
+    }
+
+        footer nav ul {
+            align-items: center;
+            margin: 0 auto;
+        }
+
+        footer nav ul li {
+            margin: 1vw 2vw 1vw 2vw;
+        }
+
+        footer ul li p {
+            margin: 2vw 3vw 2vw 3vw;
+        }
+
+        footer img {
+            display: none;
+        }
 }

@@ -12,6 +12,7 @@ html {
     font-size: calc(15px + 0.390625vw);
     background-color: #2A2B5B;
     color: #E8D257;
+    text-decoration: none;
 
 }
 
@@ -70,7 +71,7 @@ body header {
 
 header nav div.direita ul.nav {
     background-color: #5B5D96;
-    padding: 2vw 3vw 2vw 3vw;
+    padding: 3vw 4vw 3vw 4vw;
     border-radius: 100px;
     display: flex;
     justify-content: space-between;
@@ -178,16 +179,10 @@ section.comparacao ul.externa {
     grid-template-columns: 1fr 1fr;
 }
 
-
-section.comparacao ul li:hover {
-    transform: scale(1.1)
-}
-
 section.comparacao ul li {
     background-color: #16173d;
     margin: 3vw 3vw 3vw 3vw;
     border-radius: 20px;
-    transition: transform 0.3s ease;
 
 }
 
@@ -208,7 +203,7 @@ section.comparacao ul li.beneficios h3 {
     color: #21ce21;
     font-weight: bold;
     font-size: 1.7rem;
-    text-decoration: underline;
+    text-decoration: none;
 
 }
 
@@ -227,7 +222,6 @@ section.redirecionar p {
 }
 
 section.redirecionar p a {
-    text-decoration: underline;
     color: #d9d1ff;
     margin: 1vw 1vw 1vw 1vw;
 }
@@ -270,7 +264,8 @@ span {
 }
 
 footer nav {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
     justify-content: space-between;
     align-items: center;
 }
@@ -289,6 +284,7 @@ footer nav ul li {
     display: flex;
     align-items: center;
     margin: 2vw 0 2vw 0;
+    gap: 10px 20px;
 }
 
 footer nav ul li img {
@@ -302,6 +298,10 @@ footer nav ul li img {
 @media (max-width: 600px) {
 
 
+        html {
+
+        font-size: 1.4rem;
+        }
 
     * hr {
         display: none;
@@ -417,4 +417,25 @@ footer nav ul li img {
 
 
 
+    footer nav {
+        display: block;
+        margin: 0 auto;
+    }
+
+        footer nav ul {
+            align-items: center;
+            margin: 0 auto;
+        }
+
+        footer nav ul li {
+            margin: 1vw 2vw 1vw 2vw;
+        }
+
+        footer ul li p {
+            margin: 2vw 3vw 2vw 3vw;
+        }
+
+        footer img {
+            display: none;
+        }
 }

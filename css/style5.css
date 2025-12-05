@@ -10,6 +10,7 @@ html {
     font-size: calc(15px + 0.390625vw);
     background-color: #2A2B5B;
     color: white;
+    text-decoration: none;
 }
 p {
     font-size: 1.1rem;
@@ -114,10 +115,6 @@ section ul li {
     transition: transform 0.3s ease;
 
 }
-
-section ul li:hover {
-    transform: scale3(1.1);
-}
 section ul li details summary{
     font-size: 1.3rem;
     color: #E8D257;;
@@ -147,19 +144,22 @@ Footer
 
 footer {
     margin: 10vw 0 0 0;
-    background: linear-gradient(#2A2B5B, #12122c); /*bizarro*/
+    background: linear-gradient(#2A2B5B, #12122c);
+    /*bizarro*/
     padding: 3vw 7vw 3vw 7vw;
     align-items: center;
     color: aquamarine;
     font-size: 0.8rem;
 }
 
-footer a, span {
+footer a,
+span {
     color: #E8D257;
 }
 
 footer nav {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
     justify-content: space-between;
     align-items: center;
 }
@@ -169,7 +169,7 @@ footer div.imagemFooter img {
 }
 
 footer div.links p {
-     color: #C7BAFF;
+    color: #C7BAFF;
 
 }
 
@@ -178,6 +178,7 @@ footer nav ul li {
     display: flex;
     align-items: center;
     margin: 2vw 0 2vw 0;
+    gap: 10px 20px;
 }
 
 footer nav ul li img {
@@ -186,9 +187,13 @@ footer nav ul li img {
     border-radius: 100px;
 }
 
-
 @media (max-width: 600px) {
 
+
+        html {
+
+        font-size: 1.4rem;
+        }
 
 section.voltar p a svg {
     width: 30px;
@@ -208,5 +213,26 @@ header nav div.direita ul li {
     }
 
 
+    footer nav {
+        display: block;
+        margin: 0 auto;
+    }
+
+        footer nav ul {
+            align-items: center;
+            margin: 0 auto;
+        }
+
+        footer nav ul li {
+            margin: 1vw 2vw 1vw 2vw;
+        }
+
+        footer ul li p {
+            margin: 2vw 3vw 2vw 3vw;
+        }
+
+        footer img {
+            display: none;
+        }
 }
 
