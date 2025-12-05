@@ -104,10 +104,6 @@ main ul li img {
 
 }
 
-main ul li img:hover {
-    transform: scale(1.1);
-}
-
 section div.voltar p a svg {
     width: 50px;
     display: block;

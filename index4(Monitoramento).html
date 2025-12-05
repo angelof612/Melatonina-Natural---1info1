@@ -80,7 +80,7 @@
                 <ul>
                     <li>
                         <a href="#calculadora">
-                            <img src="imagens/calculadora (1).png" alt="calculadora">
+                            <img src="imagens/calculadora(2).png" alt="calculadora">
                         </a>
                         <h3>Calculadora</h3>
                         <p>Calcule qunatas horas você precisa para ter um sono saudável por noite</p>
@@ -105,7 +105,7 @@
             <form onsubmit="">
                 <p>
                     <label for="dormir">Horário de Dormir: </label>
-                    <select name="dormir" id="">
+                    <select name="dormir" id="dormir">
                         <option value="1">4- Horas</option>
                         <option value="2">4-6 Horas</option>
                         <option value="3">7-9 Horas</option>
@@ -116,7 +116,7 @@
                 </p>
                 <p>
                     <label for="telas">Horário que deixa de usar as telas antes de ir dormir:</label>
-                    <select name="telas" id="telas" for="telas">
+                    <select name="telas" id="telas">
                         <option value="1">19:00 ou antes</option>
                         <option value="2">19:30</option>
                         <option value="3">20:00</option>
@@ -134,10 +134,10 @@
                 <p>
                     <label for="tecnicas">Você utiliza alguma técnica de meditação, reflexão, leitura ou alguma
                         outra técnica antes de dormir?
-                        <input type="radio" id="tecnicas" value="1" name="tecnicas"> <span>Sim</span>
+                        <input type="radio" id="tecnicas1" for="tecnicas1" value="1" name="tecnicas"> <span>Sim</span>
                     </label>
                     <label for="tecnicas">
-                        <input type="radio" id="tecnicas" value="0" name="tecnicas"> <span>Não</span>
+                        <input type="radio" id="tecnicas2" for="qualidade2"value="0" name="tecnicas"> <span>Não</span>
                     </label>
 
 
@@ -145,23 +145,23 @@
                 </p>
                 <p>
                     <label for="medicamentos">Você utiliza algum medicamento ou toma algum chá para dormir?
-                        <input type="radio" id="medicamentos" value="0" name="medicamentos"> <span>Sim</span>
+                        <input type="radio" id="medicamentos1" for="" value="0" name="medicamentos"> <span>Sim</span>
                     </label>
                     <label for="medicamentos">
-                        <input type="radio" id="medicamentos" value="1" name="medicamentos"> <span>Não</span>
+                        <input type="radio" id="medicamentos2" value="1" name="medicamentos"> <span>Não</span>
                     </label>
                     <span id="erroMedicamentos" class="spanForm"></span>
                 </p>
                 <p>
                     <label for="qualidade">Como você classificaria o seu sono?
-                        <input type="radio" id="qualidade" for="qualidade" value="0" name="qualidade">
+                        <input type="radio" id="qualidade" value="0" name="qualidade">
                         <span>Ótimo</span>
                     </label>
                     <label for="qualidade">
-                        <input type="radio" id="qualidade" for="qualidade" value="1" name="qualidade"> <span>Bom</span>
+                        <input type="radio" id="qualidade1" value="1" name="qualidade"> <span>Bom</span>
                     </label>
                     <label for="qualidade">
-                        <input type="radio" id="qualidade" for="qualidade" value="2" name="qualidade">
+                        <input type="radio" id="qualidade2" value="2" name="qualidade">
                         <span>Médio</span>
                     </label>
                     <label for="qualidade">
