@@ -20,6 +20,7 @@ nav a {
 
 p {
     color: #C7BAFF;
+    text-decoration: none;
 }
 
 hr {
@@ -40,6 +41,7 @@ h4,
 h5,
 h6 {
     font-family: "Leckerli One", cursive;
+    text-decoration: none;
 }
 
 
@@ -220,7 +222,6 @@ section.qualidadeSonoBrasil ul li ul li {
 
 section.qualidadeSonoBrasil ul li ul li p {
     font-size: 1.5rem;
-    text-decoration: underline;
     border: solid 1px #12122c;
     border-radius: 20px;
     padding: 5px 10px 5px 10px;
@@ -460,6 +461,11 @@ footer nav ul li img {
 
     section.anatomia {
         text-align: center;
+        display: block;
+    }
+
+    main section.introducao p.indrotucaoTextos {
+        font-size: 1.5rem;
     }
 
     section.anatomia div.explicando {
@@ -493,17 +499,23 @@ footer nav ul li img {
     section.qualidadeSonoBrasil div ul {
         display: block;
     }
-    
+    section.qualidadeSonoBrasil div ul.doencas li{
+        margin: 0 auto 0 auto;
+        margin-bottom: 6vw;
+        width: auto;
+        word-wrap: break-word;
+    }
+
+
 
 
     section.recursos>ul {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: block;
         gap: 20px;
     }
 
     section.recursos ul {
-        display: block;
+        
     }
 
 
