@@ -320,7 +320,7 @@
                 let respostaCalc = document.getElementById(`horaSono`);
                 let idadeUs = parseInt(idade.value);
                 let hrDeSono = parseInt(horaSono.value);
-                let mensagem = `Segundo a OMS (Organização Mundial da Saúde) cada faixa etária deve dormir uma certa quantidade de horas por dia, isso para evitar problemas, ajudar no crescimento e manter a saúde em dia.`;
+                let mensagem = `Segundo a OMS (Organização Mundial da Saúde) cada faixa etária deve dormir uma certa quantidade de horas por dia, isso para evitar problemas, ajudar no crescimento e manter a saúde em dia. `;
                 let horasMaisMenos = 0;
 
                 if (idadeUs <= 0) {
@@ -331,10 +331,10 @@
                     } else if (hrDeSono < 11) {
                         horasMaisMenos = 11 - hrDeSono;
                         mensagem += `Por isso, a quantidade de sono ideal para uma criança de até 1 ano é de, no mínimo 12 horas assim o crescimento não é prejudicado. Para dormir melhor, é preciso dormir ${horasMaisMenos} hora${(horasMaisMenos == 1) ? `` : `s`} a mais.`;
-                    } else if (hrDeSono > 14) {
-                        horasMaisMenos = hrDeSono - 14;
+                    } else if (hrDeSono > 16) {
+                        horasMaisMenos = hrDeSono - 16;
                         mensagem += `Por isso, a faixa etária de crianças que têm até 1 ano devem dormir no máximo até 16 horas, para chegar nisso, você deve dormir ${horasMaisMenos} hora${(horasMaisMenos == 1) ? `` : `s`} a menos do que de costume.`;
-                    } else if (hrDeSono >= 11 && hrDeSono <= 14) {
+                    } else if (hrDeSono >= 11 && hrDeSono <= 16) {
                         mensagem += `Esse estudo da OMS mostra que crianças dessa faixa etária de até um ano devem dormir entre 12 e 16 horas, então isso significa que a criança está dormindo por uma boa quantidade de sono!`;
                     }
                 } else if (idadeUs <= 12) {
