@@ -89,6 +89,7 @@ header nav div.direita ul.nav li.atual {
     padding: 1vw 1.3vw;
     border-radius: 100px;
     display: block;
+    font-weight: bold;
 }
 
 header nav div.esquerda  h1 {
