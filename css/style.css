@@ -333,7 +333,6 @@ footer div.links p {
 
 footer nav ul li {
     width: 50%;
-    display: flex;
     align-items: center;
     margin: 2vw 0 2vw 0;
     gap: 10px 20px;
@@ -375,30 +374,34 @@ footer nav ul li img {
         margin-bottom: 30px;
     }
 
-
-
-
+    header {
+        display: flex;
+    }
+    
+    
     header nav {
         background: linear-gradient(#12122c, #2A2B5B);
-        width: 100%;
+        /*width: 100%;*/
         display: flex;
-
-        flex-direction: column-reverse;
+        flex-direction: column;
 
     }
 
 
 
     header nav div.direita ul.nav {
-        display: block;
+        /*display: block;*/
+        display: flex;
+        flex-direction: column;
         border-radius: 0px;
         padding: 0 0 0 0;
-        justify-content: center;
-        align-items: center;
+        /*justify-content: center;
+        align-items: center;*/
         background-color: #12122c00;
         height: 0px;
         transition: 0.6s height;
         overflow: hidden;
+        border: none;
     }
 
 
@@ -409,26 +412,31 @@ footer nav ul li img {
     }
 
     header nav a img {
-        height: 150px;
-        width: 140px;
+        /*height: 150px;
+        width: 140px;*/
+        height: auto;
+        max-width: 100%;
         margin: 5vw 0 0 0;
         position: relative;
     }
 
     header nav div.esquerda {
         margin: 1vw 2vw 0 2vw;
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
 
     header nav div.direita svg.menu {
         display: block;
-        width: 8vw;
+        width: 50px;
         margin: 5vw;
     }
 
     header nav div.direita {
         overflow: auto;
+        display: flex;
+        flex-direction: column;
     }
     
 
@@ -444,7 +452,7 @@ footer nav ul li img {
         border-radius: 10px;
         padding: 5px 10px 5px 10px;
         text-align: center;
-        
+        max-width: 100%;
     }
     header nav div.direita ul li p a {
         margin: 20px 30px 20px 30px;
@@ -464,6 +472,7 @@ footer nav ul li img {
         
         font-weight: bold;
     }
+    
 
     section.anatomia p {
         max-width: 80%;
@@ -583,9 +592,14 @@ footer nav ul li img {
 
         footer ul li p {
             margin: 2vw 3vw 2vw 3vw;
+            font-size: 1rem;
         }
 
         footer img {
             display: none;
+        }
+        footer div {
+            margin: 2vw 0 1vw 0;
+            padding: 0 auto 0 auto;
         }
 }
