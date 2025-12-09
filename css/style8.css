@@ -252,11 +252,6 @@ footer nav ul li img {
         margin-top: 6vw;
     }
 
-    footer nav ul li img {
-        display: none;
-    }
-
-
     footer nav {
         display: block;
         margin: 0 auto;
@@ -273,10 +268,15 @@ footer nav ul li img {
 
         footer ul li p {
             margin: 2vw 3vw 2vw 3vw;
+            font-size: 1rem;
         }
 
         footer img {
             display: none;
+        }
+        footer div {
+            margin: 2vw 0 1vw 0;
+            padding: 0 auto 0 auto;
         }
 
 }

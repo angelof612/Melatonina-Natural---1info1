@@ -180,9 +180,9 @@ footer nav ul li img {
     }
 
 
-
-    header nav ul li.atual p a {
-        background-color: auto;
+   header nav ul li.atual p a {
+        background-color: transparent;
+        border-radius: 0%;
     }
 
     header nav a img {
@@ -190,6 +190,14 @@ footer nav ul li img {
         width: 140px;
         margin: 5vw 0 0 0;
         position: relative;
+    }
+    header nav div.direita ul li {
+        margin: 10px 10px 10px 10px;
+        background-color: #5b5d968a;
+        border-radius: 10px;
+        padding: 5px 10px 5px 10px;
+        text-align: center;
+        
     }
 
     header nav div.esquerda {
@@ -210,12 +218,12 @@ footer nav ul li img {
 
     header nav div.direita svg,
     header nav div.direita ul {
-        float: right;
+        float: left;
         clear: both;
     }
 
     header nav div.direita ul li p a {
-        margin: 0 20px 0 0;
+        margin: 0 0px 0 30px;
     }
 
     header nav div.esquerda {
@@ -233,19 +241,6 @@ footer nav ul li img {
         font-size: 1.6rem;
         font-weight: bold;
     }
-    header nav div.direita ul li {
-        margin: 10px 10px 10px 10px;
-        background-color: #5b5d968a;
-        border-radius: 10px;
-        padding: 5px 10px 5px 10px;
-        text-align: center;
-        
-    }
-
-    footer nav ul li img {
-        display: none;
-    }
-
 
     footer nav {
         display: block;
@@ -263,10 +258,15 @@ footer nav ul li img {
 
         footer ul li p {
             margin: 2vw 3vw 2vw 3vw;
+            font-size: 1rem;
         }
 
         footer img {
             display: none;
+        }
+        footer div {
+            margin: 2vw 0 1vw 0;
+            padding: 0 auto 0 auto;
         }
 
 

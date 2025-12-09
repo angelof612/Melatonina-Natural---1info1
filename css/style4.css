@@ -321,7 +321,6 @@ footer div.links p {
 
 footer nav ul li {
     width: 50%;
-    display: flex;
     align-items: center;
     margin: 2vw 0 2vw 0;
     gap: 10px 20px;
@@ -383,15 +382,21 @@ footer nav ul li img {
    header nav ul li.atual p a {
         background-color: transparent;
         border-radius: 0%;
-        margin: 10px 0 0 0;
     }
 
-    
     header nav a img {
         height: 150px;
         width: 140px;
         margin: 5vw 0 0 0;
         position: relative;
+    }
+    header nav div.direita ul li {
+        margin: 10px 10px 10px 10px;
+        background-color: #5b5d968a;
+        border-radius: 10px;
+        padding: 5px 10px 5px 10px;
+        text-align: center;
+        
     }
 
     header nav div.esquerda {
@@ -417,7 +422,7 @@ footer nav ul li img {
     }
 
     header nav div.direita ul li p a {
-        margin: 0 20px 0 30px;
+        margin: 0 0px 0 30px;
     }
 
     header nav div.esquerda {
@@ -441,32 +446,31 @@ footer nav ul li img {
 
 section nav ul li  {
     background-color: #5B5D96;
-    margin: 3vw 5vw 3vw 5vw;
-    padding: 2vw 2vw 2vw 2vw;
+    margin: 3vw 3vw 3vw 3vw;
+    padding: 2vw auto 2vw auto;
     border-radius: 56px; 
-}
-section nav ul  {
-    display: block;
+    
+    margin: 0 auto;
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 5vw;
 }
 
+
 section nav ul li  h3 {
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: bold;
     color: #FFFFFF;
     margin: 0 0 1vw 0;
     text-align: center;
 }
-section nav ul li img {
-    width: 60%;
-}
 section nav ul li p {
     display: none;
 }
 section nav ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
+    display: block;
 }
-header nav div.direita ul li {
+    header nav div.direita ul li {
         margin: 10px 10px 10px 10px;
         background-color: #5b5d968a;
         border-radius: 10px;
@@ -475,17 +479,6 @@ header nav div.direita ul li {
         
     }
 
-section nav ul li {
-    width: 100px;
-    margin: 0 auto;
-    border-radius: 20px;
-    text-align: center;
-    margin-bottom: 5vw;
-}
-
-section nav ul li h3 {
-    font-size: 1rem;
-}
 
 section nav ul li a img {
     width: 100px;
@@ -518,12 +511,7 @@ section.calculadora div img {
     width: 50px;
 }
 
-footer nav ul li img {
-    display: none;
-}
-
-
-    footer nav {
+footer nav {
         display: block;
         margin: 0 auto;
     }
@@ -539,10 +527,15 @@ footer nav ul li img {
 
         footer ul li p {
             margin: 2vw 3vw 2vw 3vw;
+            font-size: 1rem;
         }
 
         footer img {
             display: none;
+        }
+        footer div {
+            margin: 2vw 0 1vw 0;
+            padding: 0 auto 0 auto;
         }
 
 

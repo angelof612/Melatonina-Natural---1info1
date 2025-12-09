@@ -208,11 +208,6 @@ header nav div.direita ul li {
         
     }
 
-    footer nav ul li img {
-        display: none;
-    }
-
-
     footer nav {
         display: block;
         margin: 0 auto;
@@ -229,10 +224,15 @@ header nav div.direita ul li {
 
         footer ul li p {
             margin: 2vw 3vw 2vw 3vw;
+            font-size: 1rem;
         }
 
         footer img {
             display: none;
+        }
+        footer div {
+            margin: 2vw 0 1vw 0;
+            padding: 0 auto 0 auto;
         }
 }
 
