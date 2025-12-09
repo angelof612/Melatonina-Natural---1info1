@@ -245,7 +245,7 @@ footer nav ul li img {
 
 
 @media (max-width: 600px) {
-
+    p
         html {
 
         font-size: 1.4rem;
@@ -262,7 +262,7 @@ footer nav ul li img {
     } 
 
     main section.dormirBem p {
-        font-size: 1rem;
+        font-size: 1.2rem;
         text-align: center;
         margin-top: 30px;
         margin-bottom: 30px;
@@ -368,15 +368,16 @@ main section.qualidadeSono ul li {
 }
 
 main section.qualidadeSono ul li p {
-    font-size: 1rem;
+    font-size: 1.3rem;
     margin: 10px 0 20px 0;
 }
 
 main section.qualidadeSono ul li p span {
     margin-top: 10px;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 
 }
+p
 
     footer nav {
         display: block;
@@ -394,7 +395,7 @@ main section.qualidadeSono ul li p span {
 
         footer ul li p {
             margin: 2vw 3vw 2vw 3vw;
-            font-size: 1rem;
+            font-size: 1.3rem;
         }
 
         footer img {

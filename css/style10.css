@@ -260,7 +260,7 @@ footer nav ul li img {
     }
 
     p {
-        font-size: 0.9rem;
+        font-size: 1.2rem;
     }
 
     h1, h2, h3, h4, h5, h6 {
@@ -360,6 +360,7 @@ footer nav ul li img {
     }
     section.nos ul li p {
         font-size: 1.2rem;
+        margin: 10px 0 10px 0
     }
 
     section.nos ul li:hover {
@@ -374,7 +375,8 @@ footer nav ul li img {
         margin-bottom: 5vw;
     }
     section.referencias p a {
-       margin: 0 5vw 0 5vw;
+       margin: 10px 5vw 10px 5vw;
+
     }
 
 

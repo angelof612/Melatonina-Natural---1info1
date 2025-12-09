@@ -16,6 +16,7 @@ html {
 
 }
 
+
 p a {
     color: #E8D257;
     text-decoration: none;
@@ -239,12 +240,14 @@ section.redirecionar h2 {
 }
 
 section.redirecionar p {
-    margin: 1vw 1vw 1vw 1vw;
+    margin: 2vw 1vw 2vw 1vw;
 }
 
 section.redirecionar p a {
     color: #d9d1ff;
     margin: 1vw 1vw 1vw 1vw;
+    text-decoration: underline;
+    font-size: 1.2rem;
 }
 
 /*
