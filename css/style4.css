@@ -8,43 +8,55 @@ Geral
 
 
 html {
-  font-family: "Mukta", sans-serif;  
+    font-family: "Mukta", sans-serif;
     font-size: calc(15px + 0.390625vw);
     background-color: #2A2B5B;
     color: #E8D257;
     text-decoration: none;
-    
+
 }
+
 p a {
     color: #E8D257;
     text-decoration: none;
 }
+
 nav a {
     color: #E8D257;
     text-decoration: none;
 }
+
 header nav ul li.atual p a {
     font-weight: bold;
     background-color: rgb(12, 16, 61);
     padding: 10px 20px 10px 20px;
     border-radius: 30px;
 }
+
 hr {
     margin: 3vw 0 3vw 0;
+    display: none;
 }
+
 section {
     margin: 3vw 3vw 3vw 3vw;
 }
+
 a {
     color: rgb(123, 213, 255);
-      font-family: "Mukta", sans-serif;  
+    font-family: "Mukta", sans-serif;
 
 }
 
 
-h1, h2, h3, h4, h5, h6 {
-      font-family: "Leckerli One", cursive;
-      text-decoration: none;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Leckerli One", cursive;
+    text-decoration: none;
 
 }
 
@@ -56,45 +68,51 @@ Cabeçalho
 */
 
 body header {
-    background:linear-gradient( #12122c ,#2A2B5B);
+    background: linear-gradient(#12122c, #2A2B5B);
     padding: 4vw 1.2vw 4vw 1.2vw;
 }
+
 body header nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
 }
-header nav div.esquerda  {
+
+header nav div.esquerda {
     padding: 25px 0 0 0;
     margin: 0 1vw 0 1vw;
     display: flex;
     align-items: center;
 }
+
 header nav img {
+    max-width: 30%;
     width: 40%;
     margin: 0 1vw 0 0;
     padding: 0 0 0 0;
 }
+
 header nav div.direita ul.nav {
-    border:solid, 1.5px,  #5B5D96;
-    padding: 5px 1.3vw 5px 1.3vw;
+    border: solid 2px #5B5D96;
+    padding: 5px 1.3vw 5px 5px;
     border-radius: 100px;
     display: flex;
-    justify-content: space-between;         
+    justify-content: space-between;
     align-items: center;
     margin-top: 2vw;
     gap: 30px;
-    
+
 }
+
 header nav div.direita ul.nav li.atual {
     background-color: black;
-    padding: 0.3vw 1vw 0.3vw 1vw;
+    padding: 1vw 1.3vw;
     border-radius: 100px;
     display: block;
     font-weight: bold;
 }
 
-header nav div.esquerda  h1 {
+header nav div.esquerda h1 {
     font-size: 2rem;
     font-weight: bold;
     margin: 0 1vw 0 1vw;
@@ -119,40 +137,44 @@ section h2 {
     font-weight: bold;
     text-decoration: underline;
 }
+
 section nav ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-section nav ul li  {
+section nav ul li {
     width: 80%;
     background-color: #5B5D96;
     margin: 3vw 5vw 3vw 5vw;
     padding: 2vw 2vw 2vw 2vw;
-    border-radius: 56px; 
+    border-radius: 56px;
     text-align: center;
     transition: transform 0.3s ease;
 
 
 }
 
-section nav ul li:hover  {
+section nav ul li:hover {
     transform: scale(1.1);
 }
 
-section nav ul li  h3 {
+section nav ul li h3 {
     font-size: 1.5rem;
     font-weight: bold;
     color: #E8D257;
     margin: 0 0 1vw 0;
 }
+
 section nav ul li img {
     width: 50%;
 }
+
 section nav ul li p {
     color: #C4B1FF;
     font-size: 1.3rem;
 }
+
 section nav ul {
     display: flex;
 }
@@ -164,7 +186,7 @@ Formulário
 */
 section.formulario {
     background-color: #3f4074;
-    border: 3px black ;
+    border: 3px black;
     border-radius: 20px;
     margin: 2vw 3vw 2vw 3vw;
     padding: 3vw 3vw 3vw 3vw;
@@ -174,6 +196,7 @@ section.formulario h3 {
     font-weight: bold;
     font-size: 1.3rem;
 }
+
 section.formulario div {
     display: flex;
     align-items: center;
@@ -182,15 +205,18 @@ section.formulario div {
 section.formulario div img {
     width: 12%;
 }
+
 section.formulario form label {
     color: #E8D257;
     font-size: 1.5rem;
     font-weight: bold;
     display: block;
 }
+
 section.formulario form p {
     margin: 20px 10px 20px 10px;
 }
+
 section.formulario form p input {
     color: black;
     font-weight: bold;
@@ -201,19 +227,23 @@ section.formulario form p input {
     flex-wrap: wrap;
     margin: 10px 10px 10px 10px;
 }
+
 section.formulario form p label span {
     color: #D0A5F2;
     font-size: 1.3rem;
 }
+
 section.formulario form p select {
     font-size: 1.1rem;
     border-radius: 10px;
     padding: 5px 10px 5px 10px;
 }
+
 section.formulario form p select option {
     font-size: 1.1rem;
     background-color: #12122c;
 }
+
 section.formulario form button {
     background-color: #5A5BA1;
     color: #C4B1FF;
@@ -222,11 +252,18 @@ section.formulario form button {
     padding: 0.5vw 1.5vw 0.5vw 1.5vw;
     margin: 1vw 1vw 1vw 1vw;
 }
+
 section p span.spanForm {
     color: rgb(255, 238, 238);
     font-weight: bold;
     margin: 5px 0 5px 0;
 }
+
+section.resultado p {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
 /*
 =============================================================
 Calculadora de Sono
@@ -238,35 +275,41 @@ section.calculadora {
 
 section.calculadora div {
     background-color: #3f4074;
-    border: solid, 3px, black ;
+    border: solid, 3px, black;
     border-radius: 20px;
     margin: 2vw 0 2vw 0;
     padding: 3vw 3vw 3vw 3vw;
 }
+
 section.calculadora h3 {
     font-weight: bold;
     font-size: 1.3rem;
 }
+
 section.calculadora div img {
     width: 12%;
 }
+
 section.calculadora form label {
     color: #D0A5F2;
     font-size: 1.3rem;
     font-weight: bold;
 }
+
 section.calculadora form p {
     margin: 20px 10px 20px 10px;
     display: block;
 }
+
 section.calculadora form p input {
     color: black;
     font-weight: bold;
     font-size: 1.1rem;
     border-radius: 200px;
-    padding: 10px 10px 10px 10px;  
+    padding: 10px 10px 10px 10px;
     margin: 20px 0 10px 0;
 }
+
 section.calculadora button {
     background-color: #5A5BA1;
     color: #D0A5F2;
@@ -275,9 +318,13 @@ section.calculadora button {
     font-size: 1.2rem;
     font-weight: bold;
 }
+
 section.calculadora div.resposta {
     background-color: #2A2B5B;
     display: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
 
 
@@ -305,18 +352,17 @@ span {
 
 footer nav {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-between;
     align-items: center;
 }
 
-footer div.imagemFooter img {
+footer img {
     width: 40%;
 }
 
-footer div.links p {
+footer p {
     color: #C7BAFF;
-
 }
 
 footer nav ul li {
@@ -332,14 +378,15 @@ footer nav ul li img {
     border-radius: 100px;
 }
 
+
 @media (max-width: 600px) {
 
 
 
-        html {
+    html {
 
         font-size: 1.4rem;
-        }
+    }
 
     * hr {
         display: none;
@@ -349,9 +396,14 @@ footer nav ul li img {
         font-size: 1.1rem;
     }
 
-    h1, h2, h3, h4, h5, h6 {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
         font-size: 1rem;
-    } 
+    }
 
 
 
@@ -379,24 +431,26 @@ footer nav ul li img {
     }
 
 
-   header nav ul li.atual p a {
+    header nav ul li.atual p a {
         background-color: transparent;
         border-radius: 0%;
     }
 
     header nav a img {
-        height: 150px;
-        width: 140px;
+        /*height: 150px;
+        width: 140px;*/
+        max-width: 70%;
         margin: 5vw 0 0 0;
         position: relative;
     }
+
     header nav div.direita ul li {
         margin: 10px 10px 10px 10px;
         background-color: #5b5d968a;
         border-radius: 10px;
         padding: 5px 10px 5px 10px;
         text-align: center;
-        
+
     }
 
     header nav div.esquerda {
@@ -421,6 +475,12 @@ footer nav ul li img {
         clear: both;
     }
 
+
+    header nav div.esquerda h1 {
+        display: none;
+    }
+
+
     header nav div.direita ul li p a {
         margin: 0 0px 0 30px;
     }
@@ -444,100 +504,109 @@ footer nav ul li img {
     /*serviçoss*/
 
 
-section nav ul li  {
-    background-color: #5B5D96;
-    margin: 3vw 3vw 3vw 3vw;
-    padding: 2vw auto 2vw auto;
-    border-radius: 56px; 
-    
-    margin: 0 auto;
-    border-radius: 20px;
-    text-align: center;
-    margin-bottom: 5vw;
-}
+    section nav ul li {
+        background-color: #5B5D96;
+        margin: 3vw 3vw 3vw 3vw;
+        padding: 2vw auto 2vw auto;
+        border-radius: 56px;
+
+        margin: 0 auto;
+        border-radius: 20px;
+        text-align: center;
+        margin-bottom: 5vw;
+    }
 
 
-section nav ul li  h3 {
-    font-size: 1rem;
-    font-weight: bold;
-    color: #FFFFFF;
-    margin: 0 0 1vw 0;
-    text-align: center;
-}
-section nav ul li p {
-    display: none;
-}
-section nav ul {
-    display: block;
-}
+    section nav ul li h3 {
+        font-size: 1rem;
+        font-weight: bold;
+        color: #FFFFFF;
+        margin: 0 0 1vw 0;
+        text-align: center;
+    }
+
+    section nav ul li p {
+        display: none;
+    }
+
+    section nav ul {
+        display: block;
+    }
+
     header nav div.direita ul li {
         margin: 10px 10px 10px 10px;
         background-color: #5b5d968a;
         border-radius: 10px;
         padding: 5px 10px 5px 10px;
         text-align: center;
-        
+
     }
 
 
-section nav ul li a img {
-    width: 100px;
-    margin: 0 auto;
-}
+    section nav ul li a img {
+        width: 100px;
+        margin: 0 auto;
+    }
 
-section h2 {
-    margin: 0 0 30px 0;
-}
+    section h2 {
+        margin: 0 0 30px 0;
+    }
 
-section.calculadora h3 {
-     margin: 30px 0 30px 0;
+    section.calculadora h3 {
+        margin: 30px 0 30px 0;
 
-}
+    }
 
-section nav ul  {
-    width: 100%;
-    align-items: center;
-}
+    section nav ul {
+        width: 100%;
+        align-items: center;
+    }
 
-section nav ul li {
-    padding: 9vw 4vw 9vw 4vw;
-}
+    section nav ul li {
+        padding: 9vw 4vw 9vw 4vw;
+    }
 
-section nav ul li h3{
-    color: #E8D257;
-}
+    section nav ul li h3 {
+        color: #E8D257;
+    }
 
-section.calculadora div img {
-    width: 50px;
-}
+    section.calculadora div img {
+        width: 50px;
+    }
 
-footer nav {
+    footer nav ul li img {
+        display: none;
+    }
+
+    main section ul li {
+        transition: none;
+    }
+
+    footer nav {
         display: block;
         margin: 0 auto;
     }
 
-        footer nav ul {
-            align-items: center;
-            margin: 0 auto;
-        }
+    footer nav ul {
+        align-items: center;
+        margin: 0 auto;
+    }
 
-        footer nav ul li {
-            margin: 1vw 2vw 1vw 2vw;
-        }
+    footer nav ul li {
+        margin: 1vw 2vw 1vw 2vw;
+    }
 
-        footer ul li p {
-            margin: 2vw 3vw 2vw 3vw;
-            font-size: 1rem;
-        }
+    footer ul li p {
+        margin: 2vw 3vw 2vw 3vw;
+        font-size: 1rem;
+    }
 
-        footer img {
-            display: none;
-        }
-        footer div {
-            margin: 2vw 0 1vw 0;
-            padding: 0 auto 0 auto;
-        }
+    footer img {
+        display: none;
+    }
 
-
-
+    footer div {
+        margin: 2vw 0 1vw 0;
+        padding: 0 0 0 0;
+    }
 }

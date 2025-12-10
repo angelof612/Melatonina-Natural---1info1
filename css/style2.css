@@ -27,6 +27,7 @@ header nav ul li.atual p a {
 }
 hr {
     margin: 3vw 0 3vw 0;
+    display: none;
 }
 
 h1 {
@@ -80,13 +81,14 @@ header nav div.esquerda  {
     align-items: center;
 }
 header nav img {
-    width: 40%;
+    max-width:30%;
+    width: 500px;
     margin: 0 1vw 0 0;
     padding: 0 0 0 0;
 }
 header nav div.direita ul.nav {
-    border:solid, 1.5px,  #5B5D96;
-    padding: 5px 1.3vw 5px 1.3vw;
+    border: solid 2px #5B5D96;
+    padding: 5px 1.3vw 5px 5px;
     border-radius: 100px;
     display: flex;
     justify-content: space-between;         
@@ -97,7 +99,7 @@ header nav div.direita ul.nav {
 }
 header nav div.direita ul.nav li.atual {
     background-color: black;
-    padding: 0.3vw 1vw 0.3vw 1vw;
+    padding: 1vw 1.3vw;
     border-radius: 100px;
     display: block;
     font-weight: bold;
@@ -221,13 +223,12 @@ footer nav {
     align-items: center;
 }
 
-footer div.imagemFooter img {
+footer img {
     width: 40%;
 }
 
-footer div.links p {
+footer p {
     color: #C7BAFF;
-
 }
 
 footer nav ul li {
@@ -244,8 +245,10 @@ footer nav ul li img {
 }
 
 
+
 @media (max-width: 600px) {
-    p
+
+
         html {
 
         font-size: 1.4rem;
@@ -255,19 +258,13 @@ footer nav ul li img {
         display: none;
     }
 
-    
-    
-    h1, h2, h3, h4, h5, h6 {
-        font-size: 1.5rem;
-    } 
-
-    main section.dormirBem p {
-        font-size: 1.2rem;
-        text-align: center;
-        margin-top: 30px;
-        margin-bottom: 30px;
+    p {
+        font-size: 1.1rem;
     }
 
+    h1, h2, h3, h4, h5, h6 {
+        font-size: 1.7rem;
+    } 
 
 
 
@@ -301,8 +298,9 @@ footer nav ul li img {
     }
 
     header nav a img {
-        height: 150px;
-        width: 140px;
+        /*height: 150px;
+        width: 140px;*/
+        max-width: 70%;
         margin: 5vw 0 0 0;
         position: relative;
     }
@@ -337,6 +335,12 @@ footer nav ul li img {
         clear: both;
     }
 
+
+header nav div.esquerda  h1 {
+    display: none;
+}
+
+
     header nav div.direita ul li p a {
         margin: 0 0px 0 30px;
     }
@@ -357,8 +361,6 @@ footer nav ul li img {
         font-weight: bold;
     }
 
-    
-
 main section.qualidadeSono ul li {
     background-color: #16173da6;
     padding: 3vw 10vw 3vw 10vw;
@@ -377,7 +379,14 @@ main section.qualidadeSono ul li p span {
     font-size: 0.9rem;
 
 }
-p
+
+    footer nav ul li img {
+        display: none;
+    }
+
+    main section ul li {
+        transition: none;
+    }
 
     footer nav {
         display: block;
@@ -395,7 +404,7 @@ p
 
         footer ul li p {
             margin: 2vw 3vw 2vw 3vw;
-            font-size: 1.3rem;
+            font-size: 1rem;
         }
 
         footer img {
@@ -403,7 +412,7 @@ p
         }
         footer div {
             margin: 2vw 0 1vw 0;
-            padding: 0 auto 0 auto;
+            padding: 0 0 0 0;
         }
 
 

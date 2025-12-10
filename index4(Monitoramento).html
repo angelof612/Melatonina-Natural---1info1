@@ -160,11 +160,11 @@
                     <span id="erroTecncias" class="spanForm"></span>
                 </p>
                 <p>
-                    <label for="medicamentos1">Você utiliza algum medicamento ou toma algum chá para dormir?
-                        <input type="radio" id="medicamentos1" value="0" name="medicamentos"> <span>Sim</span>
+                    <label for="medicamentos">Você utiliza algum medicamento ou toma algum chá para dormir?
+                        <input type="radio" id="medicamentos" value="0" name="medicamentos"> <span>Sim</span>
                     </label>
-                    <label for="medicamentos2">
-                        <input type="radio" id="medicamentos2" value="1" name="medicamentos"> <span>Não</span>
+                    <label for="medicamentos">
+                        <input type="radio" id="medicamentos" value="1" name="medicamentos"> <span>Não</span>
                     </label>
                     <span id="erroMedicamentos" class="spanForm"></span>
                 </p>
@@ -173,15 +173,15 @@
                         <input type="radio" id="qualidade" value="0" name="qualidade">
                         <span>Ótimo</span>
                     </label>
-                    <label for="qualidade1">
-                        <input type="radio" id="qualidade1" value="1" name="qualidade"> <span>Bom</span>
+                    <label for="qualidade">
+                        <input type="radio" id="qualidade" value="1" name="qualidade"> <span>Bom</span>
                     </label>
-                    <label for="qualidade2">
-                        <input type="radio" id="qualidade2" value="2" name="qualidade">
+                    <label for="qualidade">
+                        <input type="radio" id="qualidade" value="2" name="qualidade">
                         <span>Médio</span>
                     </label>
-                    <label for="qualidade3">
-                        <input type="radio" id="qualidade3" value="3" name="qualidade"> <span>Ruim</span>
+                    <label for="qualidade">
+                        <input type="radio" id="qualidade" value="3" name="qualidade"> <span>Ruim</span>
                     </label>
                     <span id="erroQualidade" class="spanForm"></span>
                 </p>
@@ -191,10 +191,10 @@
         </section>
         <section class="resultado" style="display: none;">
             <h2>Resposta do Formulário:</h2>
-            <p class="respostaDormir">Resposta</p>
-            <p class="respostaTelas">Resposta</p>
-            <p class="respostaMedicamento">Resposta</p>
-            <p class="respostaQualidade">Resposta</p>
+            <p class="respostaDormir" id="respostaDormir">Resposta</p>
+            <p class="respostaTelas" id="respostaTelas">Resposta</p>
+            <p class="respostaMedicamento" id="respostaMedicamento">Resposta</p>
+            <p class="respostaQualidade" id="respostaQualidade">Resposta</p>
         </section>
         <hr>
         <section class="calculadora" id="calculadora">
@@ -227,6 +227,7 @@
 
         </section>
     </main>
+    
         <footer>
         <script src="https://kit.fontawesome.com/f3b88a6706.js" crossorigin="anonymous"></script>
         <nav>
@@ -310,15 +311,34 @@
             event.preventDefault();
             let dormir = document.querySelector(`section.formulario`);
             let resposta = document.querySelector(`section.resultado`);
+            
+            let resUsDormir = parseInt(document.getElementById(`dormir`).value);
+            let resUsTelas = parseInt(document.getElementById(`telas`).value);
+            let resUsMedicamento = parseInt(document.getElementById(`medicamentos`).value);
+            let resUsQualidade = parseInt(document.getElementById(`qualidade`).value);
+
 
             dormir.style.display = `none`;
             resposta.style.display = `block`;
 
-            let respostaDormir = document.querySelector(`section.resposta p.respostaDormir`).innerHTML;
-            let respostaTelas = document.querySelector(`section.resposta p.respostaTelas`).innerHTML;
-            let respostaMedicamento = document.querySelector(`section.resposta p.respostaMedicamento`).innerHTML;
-            let respostaQualidade = document.querySelector(`section.resposta p.respostaQualidade`).innerHTML;
-            respostaDormir.textContent = `Resposta Para o usuário`;
+            let respostaDormir = document.getElementById(`respostaDormir`);
+            let respostaTelas = document.getElementById(`respostaTelas`);
+            let respostaMedicamento = document.getElementById(`respostaMedicamento`);
+            let respostaQualidade = document.getElementById(`respostaQualidade`);
+            if (resUsDormir == 1) {
+                respostaDormir.textContent = `Dormir cedo é bom, mas cdo demais pode ser prejudicial também, quando dormimos muito cedo, não dormimos num horário ideal, já que podemos acabar dormindo ainda com a presença do Sol, dormir menos do que o normal e acordar muito antes do Sol nascer, o que pode prejudicar em muitas coisas relacionadas à saúde.`; 
+            } else if (resUsDormir >= 2 || resUsDormir <= 4) {
+                respostaDormir.textContent = `Você está dormindo numa hora aceitável, porém ainda dá para melhorar. Dormir cedo demais também pode ser prejudicial à saúde.`;
+            } else if (resUsDormir >= 5 || resUsDormir <= 8) {
+                respostaDormir.textContent = `Você está dormindo em um horário muito bom! Esse horário, para dormir é muito bom por não ser nem muito cedo, nem muito tarde, assim, podemos descansar bem e dormir muito bem também, mas tomando cuidado para o horário que acordamos também`;
+            }
+            
+            
+            if (resUsDormir == resUsTelas || resUsDormir == (resUsTelas - 1)) {
+                respostaTelas.textContent = `Você deve deixar de usar as telas pelo menos meia hora antes de ir dormir`
+            }
+
+
         }
 
 

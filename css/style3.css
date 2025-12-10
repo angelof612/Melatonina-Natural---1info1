@@ -96,7 +96,7 @@ main ul li {
   border-radius: 45px;
 }
 main ul li img {
-  width: 40%;
+  width: 500px;
   border-radius: 20px;
   margin: 2vw 0 3vw 0;
   transition: transform 0.3s ease;
@@ -113,48 +113,54 @@ section div.voltar p a svg {
 Footer
 ===================================================
 */
+
 footer {
-  margin: 10vw 0 0 0;
-  background: linear-gradient(#2a2b5b, #12122c);
-  /*bizarro*/
-  padding: 3vw 7vw 3vw 7vw;
-  align-items: center;
-  color: aquamarine;
-  font-size: 0.8rem;
+    margin: 10vw 0 0 0;
+    background: linear-gradient(#2A2B5B, #12122c);
+    /*bizarro*/
+    padding: 3vw 7vw 3vw 7vw;
+    align-items: center;
+    color: aquamarine;
+    font-size: 0.8rem;
 }
 
 footer a,
 span {
-  color: #e8d257;
+    color: #E8D257;
 }
 
 footer nav {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-content: space-between;
-  align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    justify-content: space-between;
+    align-items: center;
 }
 
-footer div.imagemFooter img {
-  width: 40%;
+footer img {
+    width: 40%;
 }
 
-footer div.links p {
-  color: #c7baff;
+footer p {
+    color: #C7BAFF;
 }
 
 footer nav ul li {
-  width: 50%;
-  align-items: center;
-  margin: 2vw 0 2vw 0;
-  gap: 10px 20px;
+    width: 50%;
+    align-items: center;
+    margin: 2vw 0 2vw 0;
+    gap: 10px 20px;
 }
 
 footer nav ul li img {
-  width: 5%;
-  margin: 0 10px 0 10px;
-  border-radius: 100px;
+    width: 5%;
+    margin: 0 10px 0 10px;
+    border-radius: 100px;
 }
+
+
+
+
+
 
 @media (max-width: 600px) {
   html {
@@ -182,30 +188,38 @@ footer nav ul li img {
     text-align: center;
   }
 
-  footer nav {
-    display: block;
-    margin: 0 auto;
-  }
+    footer nav ul li img {
+        display: none;
+    }
 
-  footer nav ul {
-    align-items: center;
-    margin: 0 auto;
-  }
+    main section ul li {
+        transition: none;
+    }
 
-  footer nav ul li {
-    margin: 1vw 2vw 1vw 2vw;
-  }
+    footer nav {
+        display: block;
+        margin: 0 auto;
+    }
 
-  footer ul li p {
-    margin: 2vw 3vw 2vw 3vw;
-    font-size: 1rem;
-  }
+        footer nav ul {
+            align-items: center;
+            margin: 0 auto;
+        }
 
-  footer img {
-    display: none;
-  }
-  footer div {
-    margin: 2vw 0 1vw 0;
-    padding: 0 auto 0 auto;
-  }
+        footer nav ul li {
+            margin: 1vw 2vw 1vw 2vw;
+        }
+
+        footer ul li p {
+            margin: 2vw 3vw 2vw 3vw;
+            font-size: 1rem;
+        }
+
+        footer img {
+            display: none;
+        }
+        footer div {
+            margin: 2vw 0 1vw 0;
+            padding: 0 0 0 0;
+        }
 }

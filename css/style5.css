@@ -40,6 +40,10 @@ header nav div.direita svg.menu {
     display: none;
 }
 
+hr {
+    display: none;
+}
+
 
 
 /*
@@ -164,18 +168,16 @@ footer nav {
     align-items: center;
 }
 
-footer div.imagemFooter img {
+footer img {
     width: 40%;
 }
 
-footer div.links p {
+footer p {
     color: #C7BAFF;
-
 }
 
 footer nav ul li {
     width: 50%;
-    display: flex;
     align-items: center;
     margin: 2vw 0 2vw 0;
     gap: 10px 20px;
@@ -186,6 +188,8 @@ footer nav ul li img {
     margin: 0 10px 0 10px;
     border-radius: 100px;
 }
+
+
 
 @media (max-width: 600px) {
 
@@ -206,6 +210,14 @@ header nav div.direita ul li {
         padding: 5px 10px 5px 10px;
         text-align: center;
         
+    }
+
+    footer nav ul li img {
+        display: none;
+    }
+
+    main section ul li {
+        transition: none;
     }
 
     footer nav {
@@ -232,7 +244,7 @@ header nav div.direita ul li {
         }
         footer div {
             margin: 2vw 0 1vw 0;
-            padding: 0 auto 0 auto;
+            padding: 0 0 0 0;
         }
 }
 

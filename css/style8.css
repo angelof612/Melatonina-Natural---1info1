@@ -181,18 +181,16 @@ footer nav {
     align-items: center;
 }
 
-footer div.imagemFooter img {
+footer img {
     width: 40%;
 }
 
-footer div.links p {
+footer p {
     color: #C7BAFF;
-
 }
 
 footer nav ul li {
     width: 50%;
-    display: flex;
     align-items: center;
     margin: 2vw 0 2vw 0;
     gap: 10px 20px;
@@ -203,6 +201,7 @@ footer nav ul li img {
     margin: 0 10px 0 10px;
     border-radius: 100px;
 }
+
 
 
 @media (max-width: 600px) {
@@ -237,6 +236,12 @@ footer nav ul li img {
         font-size: 1rem;
     }
 
+
+header nav div.esquerda  h1 {
+    display: none;
+}
+
+
     header nav div.direita ul li {
         margin: 10px 10px 10px 10px;
         background-color: #5b5d968a;
@@ -250,6 +255,14 @@ footer nav ul li img {
         width: 30px;
         margin: 0 auto;
         margin-top: 6vw;
+    }
+
+    footer nav ul li img {
+        display: none;
+    }
+
+    main section ul li {
+        transition: none;
     }
 
     footer nav {
@@ -276,7 +289,6 @@ footer nav ul li img {
         }
         footer div {
             margin: 2vw 0 1vw 0;
-            padding: 0 auto 0 auto;
+            padding: 0 0 0 0;
         }
-
 }

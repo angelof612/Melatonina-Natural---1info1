@@ -18,7 +18,7 @@
                     
                         Hallana (presente): Pesquisas;
                     
-                        Lucas (presente): Roteirizando;
+                        Lucas (presente): Roteirizando; 
                     
                         Victor H. (presente): Roteiro de perguntas e secretário;
 

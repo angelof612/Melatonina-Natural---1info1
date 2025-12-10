@@ -29,6 +29,7 @@ header nav ul li.atual p a {
 }
 hr {
     margin: 3vw 0 3vw 0;
+    display: none;
 }
 section {
     margin: 2vw 3vw 2vw 3vw;
@@ -67,12 +68,13 @@ header nav div.esquerda  {
     align-items: center;
 }
 header nav img {
+    max-width:30%;
     width: 40%;
     margin: 0 1vw 0 0;
     padding: 0 0 0 0;
 }
 header nav div.direita ul.nav {
-    border:solid, 1.5px,  #5B5D96;
+    border: solid 2px #5B5D96;
     padding: 5px 5px 5px 1.3vw;
     border-radius: 100px;
     display: flex;
@@ -114,6 +116,7 @@ section h2{
 }
 section.projeto p {
     color: #C7BAFF;
+    font-size: 1.4rem;
 }
 section.projeto h3 {
     font-size: 1.5rem;
@@ -223,18 +226,16 @@ footer nav {
     align-items: center;
 }
 
-footer div.imagemFooter img {
+footer img {
     width: 40%;
 }
 
-footer div.links p {
+footer p {
     color: #C7BAFF;
-
 }
 
 footer nav ul li {
     width: 50%;
-    display: flex;
     align-items: center;
     margin: 2vw 0 2vw 0;
     gap: 10px 20px;
@@ -247,6 +248,7 @@ footer nav ul li img {
 }
 
 
+
 @media (max-width: 600px) {
 
 
@@ -255,19 +257,22 @@ footer nav ul li img {
 
         font-size: 1.4rem;
         }
+
     * hr {
         display: none;
     }
 
     p {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     h1, h2, h3, h4, h5, h6 {
         font-size: 1rem;
     } 
 
-
+    a {
+        max-width: 50%;
+    }
 
     header nav {
         background: linear-gradient(#12122c, #2A2B5B);
@@ -290,6 +295,7 @@ footer nav ul li img {
         height: 0px;
         transition: 0.6s height;
         overflow: hidden;
+        
     }
 
 
@@ -299,8 +305,9 @@ footer nav ul li img {
     }
 
     header nav a img {
-        height: 150px;
-        width: 140px;
+        /*height: 150px;
+        width: 140px;*/
+        max-width: 70%;
         margin: 5vw 0 0 0;
         position: relative;
     }
@@ -334,6 +341,12 @@ footer nav ul li img {
         float: left;
         clear: both;
     }
+
+
+header nav div.esquerda  h1 {
+    display: none;
+}
+
 
     header nav div.direita ul li p a {
         margin: 0 0px 0 30px;
@@ -384,7 +397,15 @@ section.projeto p {
     text-align: center;
 }
 
-footer nav {
+    footer nav ul li img {
+        display: none;
+    }
+
+    main section ul li {
+        transition: none;
+    }
+
+    footer nav {
         display: block;
         margin: 0 auto;
     }
@@ -408,6 +429,6 @@ footer nav {
         }
         footer div {
             margin: 2vw 0 1vw 0;
-            padding: 0 auto 0 auto;
+            padding: 0 0 0 0;
         }
 }
