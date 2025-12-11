@@ -15,11 +15,11 @@ html {
 }
 p a {
     color: #E8D257;
-    text-decoration: none;
+    text-decoration: underline;
 }
 nav a {
     color: #E8D257;
-    text-decoration: none;
+    text-decoration: underline;
 }
 header nav ul li.atual p a {
     font-weight: bold;
@@ -67,9 +67,13 @@ header nav div.esquerda  {
     display: flex;
     align-items: center;
 }
+header nav a {
+    display: flex;
+    align-items: center;
+}
 header nav img {
-    max-width:30%;
-    width: 40%;
+    
+    
     margin: 0 1vw 0 0;
     padding: 0 0 0 0;
 }
@@ -295,7 +299,7 @@ footer nav ul li img {
         height: 0px;
         transition: 0.6s height;
         overflow: hidden;
-        
+        border: none;
     }
 
 
@@ -338,7 +342,7 @@ footer nav ul li img {
 
     header nav div.direita svg,
     header nav div.direita ul {
-        float: left;
+        float: right;
         clear: both;
     }
 

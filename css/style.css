@@ -15,7 +15,7 @@ html {
 
 nav a {
     color: #E8D257;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 p {
@@ -69,9 +69,11 @@ header nav div.esquerda  {
     display: flex;
     align-items: center;
 }
+header nav a {
+    display: flex;
+    align-items: center;
+}
 header nav img {
-    max-width:30%;
-    width: 500px;
     margin: 0 1vw 0 0;
     padding: 0 0 0 0;
 }
@@ -86,12 +88,14 @@ header nav div.direita ul.nav {
     gap: 30px;
     
 }
+
 header nav div.direita ul.nav li.atual {
     background-color: black;
     padding: 1vw 1.3vw;
     border-radius: 100px;
     display: block;
     font-weight: bold;
+    
 }
 
 header nav div.esquerda  h1 {
@@ -394,6 +398,7 @@ footer nav ul li img {
         height: 0px;
         transition: 0.6s height;
         overflow: hidden;
+        border: none;
     }
 
 
@@ -428,6 +433,7 @@ footer nav ul li img {
         display: block;
         width: 8vw;
         margin: 5vw;
+        text-align: right;
     }
 
     header nav div.direita {
@@ -436,7 +442,7 @@ footer nav ul li img {
 
     header nav div.direita svg,
     header nav div.direita ul {
-        float: left;
+        float: right;
         clear: both;
     }
 
@@ -457,14 +463,13 @@ header nav div.esquerda  h1 {
     }
 
     header nav div.esquerda h1 {
-        font-size: 2rem;
+        
         margin-bottom: 10vw;
-    }
-
-    header nav div.esquerda h1 {
         font-size: 1.6rem;
         font-weight: bold;
     }
+
+   
 
     section.anatomia p {
         max-width: 80%;

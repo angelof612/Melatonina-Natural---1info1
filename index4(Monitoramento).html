@@ -11,14 +11,15 @@
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <nav>
             <div class="esquerda">
                 
                 <a href="index.html">
                     <img src="imagens/Melatonina_Natural__.png" alt="logo" width="250">
+                    <h1>Serviços de Monitoramento</h1>
                 </a>
-                <h1>Serviços de Monitoramento</h1>
+                
                 
 
 
@@ -161,10 +162,10 @@
                 </p>
                 <p>
                     <label for="medicamentos">Você utiliza algum medicamento ou toma algum chá para dormir?
-                        <input type="radio" id="medicamentos" value="0" name="medicamentos"> <span>Sim</span>
+                        <input type="radio" id="medicamentos" value="1" name="medicamentos"> <span>Sim</span>
                     </label>
                     <label for="medicamentos">
-                        <input type="radio" id="medicamentos" value="1" name="medicamentos"> <span>Não</span>
+                        <input type="radio" id="medicamentos" value=0" name="medicamentos"> <span>Não</span>
                     </label>
                     <span id="erroMedicamentos" class="spanForm"></span>
                 </p>
@@ -191,10 +192,13 @@
         </section>
         <section class="resultado" style="display: none;">
             <h2>Resposta do Formulário:</h2>
-            <p class="respostaDormir" id="respostaDormir">Resposta</p>
-            <p class="respostaTelas" id="respostaTelas">Resposta</p>
-            <p class="respostaMedicamento" id="respostaMedicamento">Resposta</p>
-            <p class="respostaQualidade" id="respostaQualidade">Resposta</p>
+            <p class="respostaDormir" id="respostaDormir"></p>
+            <p class="respostaTelas" id="respostaTelas"></p>
+            <p class="respostaMedicamento" id="respostaMedicamento" style="display: none;">
+                Gostaria de nos contar o que você usa para dormir?
+                <textarea name="medicamentoUs" id="medicamentoUs" placeholder="Medicamento" style="display: none;"></textarea>
+            </p>
+            <p class="respostaQualidade" id="respostaQualidade"></p>
         </section>
         <hr>
         <section class="calculadora" id="calculadora">
@@ -232,7 +236,9 @@
         <script src="https://kit.fontawesome.com/f3b88a6706.js" crossorigin="anonymous"></script>
         <nav>
             <div class="imagemFooter ">
-                <img src="imagens/Melatonina_Natural__.png" alt="Logo Footer">
+                <a href="#header">
+                    <img src="imagens/Melatonina_Natural__.png" alt="Logo Footer">
+                </a>
             </div>
             <div class="links">
                 <ul>
@@ -317,7 +323,7 @@
             let resUsMedicamento = parseInt(document.getElementById(`medicamentos`).value);
             let resUsQualidade = parseInt(document.getElementById(`qualidade`).value);
 
-
+            let pergUsMedicamentos = document.querySelector(`section.resultado p.respostaMedicamentos`);
             dormir.style.display = `none`;
             resposta.style.display = `block`;
 
@@ -326,18 +332,25 @@
             let respostaMedicamento = document.getElementById(`respostaMedicamento`);
             let respostaQualidade = document.getElementById(`respostaQualidade`);
             if (resUsDormir == 1) {
-                respostaDormir.textContent = `Dormir cedo é bom, mas cdo demais pode ser prejudicial também, quando dormimos muito cedo, não dormimos num horário ideal, já que podemos acabar dormindo ainda com a presença do Sol, dormir menos do que o normal e acordar muito antes do Sol nascer, o que pode prejudicar em muitas coisas relacionadas à saúde.`; 
-            } else if (resUsDormir >= 2 || resUsDormir <= 4) {
+                respostaDormir.textContent = `Dormir cedo é bom, mas cedo demais pode ser prejudicial também, quando dormimos muito cedo, não dormimos num horário ideal, já que podemos acabar dormindo ainda com a presença do Sol, dormir menos do que o normal e acordar muito antes do Sol nascer, o que pode prejudicar em muitas coisas relacionadas à saúde.`; 
+            } else if (resUsDormir >= 2 && resUsDormir <= 4) {
                 respostaDormir.textContent = `Você está dormindo numa hora aceitável, porém ainda dá para melhorar. Dormir cedo demais também pode ser prejudicial à saúde.`;
-            } else if (resUsDormir >= 5 || resUsDormir <= 8) {
+            } else if (resUsDormir >= 5 && resUsDormir <= 8) {
                 respostaDormir.textContent = `Você está dormindo em um horário muito bom! Esse horário, para dormir é muito bom por não ser nem muito cedo, nem muito tarde, assim, podemos descansar bem e dormir muito bem também, mas tomando cuidado para o horário que acordamos também`;
-            }
+            } else if (resUsDormir > 8 && resUsDormir < 11) {
+                respostaDormir.textContent = `Cuidado! Você está dormindo tarde, ainda não é demais, porém já pode ser prejudicial para o seu sono, justamente porque você pode acabar dormindo bem menos que o necessário.`; 
+            } else if (resUsDormir == 11) {
+                resUsDormir.textContent = `Você está indo domrir muito tarde! isso pode ser extremamente prejudicial à saúde, já que, ao dormir depois das 00:00, você está propenso a dormir d e menos, se você usa despertador para acordar ou dormir demais se você não costuma controlar quando acorda. Além disso, dormir enquanto o Sol já estiver alto pode ser ruim também, por perder uma parte do dia e dormir com alta incidência de luz.`;
+            } 
             
             
-            if (resUsDormir == resUsTelas || resUsDormir == (resUsTelas - 1)) {
-                respostaTelas.textContent = `Você deve deixar de usar as telas pelo menos meia hora antes de ir dormir`
+            if (resUsDormir == resUsTelas) {
+                respostaTelas.textContent = `Você deve deixar de usar as telas pelo menos meia hora antes de ir dormir! Já que a maioria das telas que estamos acostumados a usar emitem luz azul, luz essa que nos deixa em estado de alerta e nos traz dificuldade para dormir`
             }
 
+            if (resUsMedicamento == 1) {
+                pergUsMedicamentos.style.display = `block`;
+            }
 
         }
 
@@ -403,7 +416,7 @@
                         mensagem += `Você está na fase de crescimento, para crescer bem, é bom dormir por pelo menos 8 horas, para isso, você deve dormir ${horasMaisMenos} hora${(horasMaisMenos == 1) ? `` : `s`} a mais do que você está dormindo.`;
                     } else if (hrDeSono > 10) {
                         horasMaisMenos = hrDeSono - 10;
-                        mensagem = `Você está dormindo demais! Apesar de precisar dormir bastante, não é bom passar de 10 horas de sono, para dormir por um tempo adequado, é bom dormir ${horasMaisMenos} hora${(horasMaisMenos == 1) ? `` : `s`} a menos do que você está dormindo.`;
+                        mensagem += `Você está dormindo demais! Apesar de precisar dormir bastante, não é bom passar de 10 horas de sono, para dormir por um tempo adequado, é bom dormir ${horasMaisMenos} hora${(horasMaisMenos == 1) ? `` : `s`} a menos do que você está dormindo.`;
                     } else if (hrDeSono >= 8 && hrDeSono <= 10) {
                         mensagem += `Você está dormindo por um tempo bom! Mas atente-se, a OMS indica que o ideal é evitar dormir menos de 8 horas e mais que 10 horas`;
                     } else if (hrDeSono < 0) {

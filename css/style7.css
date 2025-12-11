@@ -19,11 +19,11 @@ html {
 
 p a {
     color: #E8D257;
-    text-decoration: none;
+    text-decoration: underline;
 }
 nav a {
     color: #E8D257;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 header nav ul li.atual p a {
@@ -86,15 +86,19 @@ header nav div.esquerda  {
     display: flex;
     align-items: center;
 }
+header nav a {
+    display: flex;
+    align-items: center;
+}
 header nav img {
-    max-width:30%;
-    width: 40%;
+    
+    
     margin: 0 1vw 0 0;
     padding: 0 0 0 0;
 }
 header nav div.direita ul.nav {
     border: solid 2px #5B5D96;
-    padding: 5px 1.3vw 5px 5px;
+    padding: 5px 1.3vw 5px 1.3vw;
     border-radius: 100px;
     display: flex;
     justify-content: space-between;         
@@ -362,6 +366,7 @@ footer nav ul li img {
         height: 0px;
         transition: 0.6s height;
         overflow: hidden;
+        border: none;
     }
 
 
@@ -404,7 +409,7 @@ footer nav ul li img {
 
     header nav div.direita svg,
     header nav div.direita ul {
-        float: left;
+        float: right;
         clear: both;
     }
 
