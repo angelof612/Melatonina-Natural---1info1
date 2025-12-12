@@ -35,11 +35,10 @@ section {
     margin: 2vw 3vw 2vw 3vw;
 }
 a {
-    color: rgb(123, 213, 255);
-      font-family: "Mukta", sans-serif;  
-
-}
-
+        width: 100%;
+        text-align: center;
+        word-break: break-word;
+    }
 
 h1, h2, h3, h4, h5, h6 {
       font-family: "Leckerli One", cursive;
@@ -275,7 +274,7 @@ footer nav ul li img {
     } 
 
     a {
-        max-width: 50%;
+        max-width: 40%;
     }
 
     header nav {
@@ -427,6 +426,17 @@ section.projeto p {
             margin: 2vw 3vw 2vw 3vw;
             font-size: 1rem;
         }
+
+        footer ul li p.email {
+            
+         display: block;
+        width: 100%;
+        font-size: 1rem;
+        text-align: center;
+        word-break: break-all;
+
+        }
+
 
         footer img {
             display: none;
