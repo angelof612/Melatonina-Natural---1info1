@@ -262,9 +262,22 @@ section p span.spanForm {
     margin: 5px 0 5px 0;
 }
 
+section.resultado {
+    background: #5A5BA1;
+    border-radius: 15px;
+    padding: 15px 15px 15px 15px;
+    height: 70%;    
+}
+
+section.resultado h2 {
+    margin: 3vw 0 3vw 0;
+}
 section.resultado p {
     font-size: 1.2rem;
     font-weight: bold;
+    margin: 1vw 0 1vw 0;
+    
+    
 }
 
 /*
@@ -576,6 +589,24 @@ footer nav ul li img {
 
     section.calculadora div img {
         width: 50px;
+    }
+
+    section.resultado {
+        padding: 6vw;
+        margin: 4vw;
+        border-radius: 15px;
+    }
+
+    section.resultado h2 {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    section.resultado p {
+        font-size: 1rem;
+        padding: 4vw;
+        background-color: #6C6EC4; 
+        border-radius: 10px;
     }
 
     footer nav ul li img {
