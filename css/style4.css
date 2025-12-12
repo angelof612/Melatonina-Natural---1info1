@@ -602,12 +602,6 @@ footer nav ul li img {
         text-align: center;
     }
 
-    section.resultado p {
-        font-size: 1rem;
-        padding: 4vw;
-        background-color: #6C6EC4; 
-        border-radius: 10px;
-    }
 
     footer nav ul li img {
         display: none;
