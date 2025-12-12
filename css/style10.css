@@ -400,6 +400,12 @@ section.projeto p {
     text-align: center;
 }
 
+section.referencias p a {
+           width: 100%;
+        text-align: center;
+        word-break: break-word;
+}
+
     footer nav ul li img {
         display: none;
     }
@@ -434,7 +440,6 @@ section.projeto p {
         font-size: 1rem;
         text-align: center;
         word-break: break-all;
-
         }
 
 
