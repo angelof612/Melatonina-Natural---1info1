@@ -401,9 +401,10 @@ section.projeto p {
 }
 
 section.referencias p a {
-           width: 100%;
-        text-align: center;
-        word-break: break-word;
+          word-break: break-all;
+          overflow-wrap: anywhere;
+          white-space: normal;
+          
 }
 
     footer nav ul li img {
