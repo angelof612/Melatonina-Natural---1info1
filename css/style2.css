@@ -36,10 +36,7 @@ h1 {
 section {
     margin: 2vw 3vw 2vw 3vw;
 }
-nav a {
-    color: #E8D257;
-    text-decoration: none;
-}
+
 a {
     color: rgb(123, 213, 255);
       font-family: "Mukta", sans-serif;  
